@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;font-family:'Cairo','Plus Jakarta Sans',sans-serif;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "on-primary": "#ffffff",
+        "outline-variant": "#c6c6cd",
+        "on-secondary-fixed-variant": "#5d4201",
+        "error-container": "#ffdad6",
+        "on-secondary-container": "#785a1a",
+        "gold-light": "#E2C98F",
+        "on-tertiary-container": "#76859b",
+        "inverse-surface": "#2d3133",
+        "canvas-white": "#FFFFFF",
+        "on-primary-fixed": "#131b2e",
+        "on-tertiary-fixed-variant": "#3a485c",
+        "on-primary-container": "#7c839b",
+        "primary-fixed": "#dae2fd",
+        "surface-container-highest": "#e0e3e5",
+        "on-error-container": "#93000a",
+        "inverse-on-surface": "#eff1f3",
+        "surface-container-lowest": "#ffffff",
+        "on-primary-fixed-variant": "#3f465c",
+        "surface": "#f7f9fb",
+        "canvas-subtle": "#F8FAFC",
+        "secondary-container": "#fed488",
+        "tertiary-fixed-dim": "#b9c7e0",
+        "on-tertiary-fixed": "#0d1c2f",
+        "surface-variant": "#e0e3e5",
+        "primary": "#000000",
+        "background": "#f7f9fb",
+        "inverse-primary": "#bec6e0",
+        "tertiary-fixed": "#d5e3fd",
+        "tertiary": "#000000",
+        "secondary-fixed": "#ffdea5",
+        "on-surface-variant": "#45464d",
+        "surface-container-high": "#e6e8ea",
+        "border-prominent": "#CBD5E1",
+        "secondary": "#775a19",
+        "slate-mid": "#1E293B",
+        "secondary-fixed-dim": "#e9c176",
+        "tertiary-container": "#0d1c2f",
+        "on-secondary-fixed": "#261900",
+        "slate-dark": "#0F172A",
+        "primary-fixed-dim": "#bec6e0",
+        "border-hairline": "#E2E8F0",
+        "gold-deep": "#9E7B35",
+        "on-secondary": "#ffffff",
+        "on-error": "#ffffff",
+        "outline": "#76777d",
+        "on-background": "#191c1e",
+        "error": "#ba1a1a",
+        "on-surface": "#191c1e",
+        "surface-container-low": "#f2f4f6",
+        "surface-container": "#eceef0",
+        "surface-bright": "#f7f9fb",
+        "on-tertiary": "#ffffff",
+        "surface-tint": "#565e74",
+        "slate-muted": "#64748B",
+        "surface-dim": "#d8dadc",
+        "gold-primary": "#C5A059",
+        "primary-container": "#131b2e"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      "spacing": {
+        "space-md": "1rem",
+        "margin-mobile": "1.25rem",
+        "gutter-mobile": "1rem",
+        "space-xl": "2.5rem",
+        "space-xs": "0.25rem",
+        "gutter": "1.5rem",
+        "space-sm": "0.5rem",
+        "margin": "3rem",
+        "space-lg": "1.5rem",
+        "space-2xl": "4rem"
+      },
+      "fontFamily": {
+        "display-hero": [
+          "Playfair Display"
+        ],
+        "display-hero-mobile": [
+          "Playfair Display"
+        ],
+        "body-sm": [
+          "Plus Jakarta Sans"
+        ],
+        "headline-lg-mobile": [
+          "Playfair Display"
+        ],
+        "label-eyebrow": [
+          "Plus Jakarta Sans"
+        ],
+        "label-action": [
+          "Plus Jakarta Sans"
+        ],
+        "body-md": [
+          "Plus Jakarta Sans"
+        ],
+        "headline-md": [
+          "Plus Jakarta Sans"
+        ],
+        "metric-display": [
+          "Playfair Display"
+        ],
+        "headline-lg": [
+          "Playfair Display"
+        ],
+        "headline-sm": [
+          "Plus Jakarta Sans"
+        ],
+        "body-lg": [
+          "Plus Jakarta Sans"
+        ]
+      },
+      "fontSize": {
+        "display-hero": [
+          "56px",
+          {
+            "lineHeight": "64px",
+            "letterSpacing": "-0.02em",
+            "fontWeight": "600"
+          }
+        ],
+        "display-hero-mobile": [
+          "36px",
+          {
+            "lineHeight": "44px",
+            "letterSpacing": "-0.01em",
+            "fontWeight": "600"
+          }
+        ],
+        "body-sm": [
+          "13px",
+          {
+            "lineHeight": "20px",
+            "letterSpacing": "0.01em",
+            "fontWeight": "400"
+          }
+        ],
+        "headline-lg-mobile": [
+          "28px",
+          {
+            "lineHeight": "34px",
+            "letterSpacing": "0em",
+            "fontWeight": "600"
+          }
+        ],
+        "label-eyebrow": [
+          "11px",
+          {
+            "lineHeight": "16px",
+            "letterSpacing": "0.15em",
+            "fontWeight": "700"
+          }
+        ],
+        "label-action": [
+          "12px",
+          {
+            "lineHeight": "16px",
+            "letterSpacing": "0.1em",
+            "fontWeight": "700"
+          }
+        ],
+        "body-md": [
+          "15px",
+          {
+            "lineHeight": "24px",
+            "letterSpacing": "0em",
+            "fontWeight": "400"
+          }
+        ],
+        "headline-md": [
+          "24px",
+          {
+            "lineHeight": "32px",
+            "letterSpacing": "-0.01em",
+            "fontWeight": "600"
+          }
+        ],
+        "metric-display": [
+          "32px",
+          {
+            "lineHeight": "36px",
+            "letterSpacing": "-0.01em",
+            "fontWeight": "700"
+          }
+        ],
+        "headline-lg": [
+          "38px",
+          {
+            "lineHeight": "46px",
+            "letterSpacing": "-0.01em",
+            "fontWeight": "600"
+          }
+        ],
+        "headline-sm": [
+          "18px",
+          {
+            "lineHeight": "26px",
+            "letterSpacing": "0em",
+            "fontWeight": "600"
+          }
+        ],
+        "body-lg": [
+          "18px",
+          {
+            "lineHeight": "28px",
+            "letterSpacing": "-0.005em",
+            "fontWeight": "400"
+          }
+        ]
+      }
+    }
+  }
+}</script></head><body class="bg-surface text-on-surface antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-canvas-white/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,23,42,0.06)]"><div class="bg-slate-dark text-canvas-white text-body-sm font-body-sm py-2 px-margin hidden md:block"><div class="max-w-[1440px] mx-auto flex items-center justify-between"><div class="flex items-center gap-space-md text-slate-muted"><span class="text-gold-light font-bold">مجموعة BSN للصناعات النسيجية</span><span>•</span><span>حلول OEM / ODM التصديرية العالمية</span><span>•</span><span>مراكز التصنيع: إسطنبول • وان، تركيا</span><span>•</span><span class="text-canvas-white dir-ltr font-sans">+90 535 233 6073</span></div><div class="flex items-center gap-space-sm text-label-eyebrow font-label-eyebrow tracking-normal"><span class="text-gold-primary font-bold border-b border-gold-primary pb-0.5">AR</span><span class="text-slate-muted">|</span><a class="text-slate-muted hover:text-canvas-white transition-colors" href="#">EN</a><span class="text-slate-muted">|</span><a class="text-slate-muted hover:text-canvas-white transition-colors" href="#">TR</a><span class="text-slate-muted">|</span><a class="text-slate-muted hover:text-canvas-white transition-colors" href="#">RU</a><span class="text-slate-muted">|</span><a class="text-slate-muted hover:text-canvas-white transition-colors" href="#">FA</a></div></div></div><div class="h-20 max-w-[1440px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm focus:outline-none" data-path="al-raisiya" href="#"><img alt="BSN Textile Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBHyroOpXF3UQhUkdr0oiKgzBro-s5ECOmLRxlxW8_wHTm9DEwJWPCnD_U7T8VJ4q1tv7s6YX5SgGcVO2LrQvZdVbK0DqEfiwzvJTNAeIKPpeDsB4uOFv7tL0DE1w8cKyYtvBYPGnW2oFAQy4pan50LqdLcTvKsMVccIxi1N003MPD1TLFdAUiP4sYETY76CLeiBeX78MVrhbkRigzKY5bnA1RiWJAl7msLd2pIsKe97A"/><div class="flex flex-col text-right"><span class="text-headline-sm font-headline-sm font-bold text-slate-dark leading-tight">بي إس إن تكستيل</span><span class="text-label-eyebrow font-label-eyebrow text-gold-deep tracking-wider uppercase">BSN TEXTILE TURKEY</span></div></a><nav class="hidden lg:flex items-center gap-space-lg text-body-md font-body-md" data-active-classes="text-slate-dark font-bold relative after:absolute after:bottom-[-6px] after:inset-x-0 after:h-[2px] after:bg-gold-primary"><a aria-current="page" class="transition-colors py-1 text-slate-dark font-bold relative after:absolute after:bottom-[-6px] after:inset-x-0 after:h-[2px] after:bg-gold-primary" data-path="al-raisiya" href="#">الرئيسية</a><a class="text-on-surface-variant hover:text-slate-dark transition-colors py-1" data-path="al-muntajat" href="#">المنتجات</a><a class="text-on-surface-variant hover:text-slate-dark transition-colors py-1" data-path="al-binya-al-tahtiya" href="#">البنية التحتية والإنتاج</a><a class="text-on-surface-variant hover:text-slate-dark transition-colors py-1" data-path="al-kataluj-al-raqami" href="#">الكتالوج الرقمي</a><a class="text-on-surface-variant hover:text-slate-dark transition-colors py-1" data-path="man-nahnu" href="#">من نحن</a><a class="text-on-surface-variant hover:text-slate-dark transition-colors py-1" data-path="ittasil-bina" href="#">اتصل بنا</a></nav></div><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center gap-space-xs bg-slate-dark hover:bg-slate-mid text-on-primary text-label-action font-label-action px-space-lg py-3 rounded transition-all duration-200 border-b-2 border-gold-primary shadow-sm hover:shadow" data-path="talab-ard-asaar" href="#"><span>طلب عرض أسعار وعينات</span><span class="text-gold-light text-base leading-none">↗</span></a><a class="p-2 text-on-surface-variant hover:text-slate-dark transition-colors" data-path="ittasil-bina" href="#" title="تواصل مباشر"><span class="material-symbols-outlined text-[24px]">support_agent</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full text-right" dir="rtl">
+<!-- ========================================== -->
+<!-- 1. HERO SECTION & STRATEGIC PRODUCTION PIPELINE -->
+<!-- ========================================== -->
+<section class="relative bg-canvas-white pt-space-xl pb-space-2xl px-margin-mobile md:px-margin overflow-hidden">
+<!-- Ambient Structural Background Elements -->
+<div class="absolute inset-0 pointer-events-none opacity-40">
+<div class="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-gold-light/20 via-transparent to-transparent rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-slate-mid/5 via-transparent to-transparent rounded-full blur-2xl"></div>
+</div>
+<div class="max-w-[1440px] mx-auto relative z-10 flex flex-col gap-space-xl">
+<!-- Top Operational Metadata Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="inline-flex items-center gap-space-sm bg-surface-container px-space-md py-1.5 rounded-full">
+<span class="w-2.5 h-2.5 rounded-full bg-gold-primary animate-pulse"></span>
+<span class="text-label-eyebrow font-label-eyebrow text-slate-dark tracking-normal">صناعة وتصدير الملابس الجاهزة الفاخرة من تركيا • OEM / ODM معتمد</span>
+</div>
+<div class="inline-flex items-center gap-space-sm bg-slate-dark text-canvas-white px-space-md py-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-gold-light text-[18px]">precision_manufacturing</span>
+<span class="text-label-eyebrow font-label-eyebrow tracking-normal text-gold-light font-bold">طاقة إنتاجية متاحة للربع الثاني / الثالث:</span>
+<span class="text-label-eyebrow font-label-eyebrow text-canvas-white font-bold font-sans dir-ltr">+250,000 PCS/MONTH</span>
+</div>
+</div>
+<!-- Hero Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Text & Action Column (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<h1 class="text-display-hero font-display-hero text-slate-dark tracking-tight leading-[1.15]">
+            تصنيع الملابس الهندسية
+            <span class="block font-serif italic text-gold-primary mt-1 font-normal">لأرقى العلامات التجارية</span>
+            العالمية وفق أعلى المعايير.
+          </h1>
+<p class="text-body-lg font-body-lg text-slate-muted max-w-2xl leading-relaxed">
+            استوديو ومصانع متكاملة للتصنيع التعاقدي OEM / ODM مقرها إسطنبول ومجمع وان تكستيل كينت في تركيا. نختص في ملابس السباحة التقنية المتطورة، ألبسة التريكو الثقيلة، الفساتين المنسوجة الراقية، وملابس الشارع المعاصرة الفاخرة لأسواق دول الخليج العربي، أوروبا وأمريكا الشمالية.
+          </p>
+<!-- Call to Actions -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-sm bg-slate-dark hover:bg-slate-mid text-canvas-white text-label-action font-label-action px-space-xl py-4 rounded transition-all shadow-md hover:shadow-lg" href="#rfq-section">
+<span>طلب عرض سعر وعينة فورية</span>
+<span class="text-gold-light font-serif text-lg leading-none">↗</span>
+</a>
+<a class="inline-flex items-center gap-space-sm bg-[#10b981] hover:bg-[#059669] text-canvas-white text-label-action font-label-action px-space-lg py-4 rounded transition-all shadow-sm hover:shadow" href="https://wa.me/905352336073" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span class="font-sans dir-ltr font-bold">+90 535 233 6073</span>
+<span class="text-canvas-white/90">| واتساب مباشر للتصدير</span>
+</a>
+<a class="inline-flex items-center gap-space-xs text-slate-dark hover:text-gold-deep text-label-action font-label-action px-space-md py-4 rounded transition-colors" href="#lines-section">
+<span>استكشف خطوط الإنتاج الأربعة</span>
+<span class="material-symbols-outlined text-[18px]">south</span>
+</a>
+</div>
+</div>
+<!-- Visual Hero Showcase & Metrics Bento (5 Cols) -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-xl overflow-hidden bg-surface-container shadow-xl aspect-[4/5] max-h-[560px]">
+<img class="w-full h-full object-cover" data-alt="High-end apparel manufacturing studio in Istanbul with industrial sewing tables, precision cloth cutting machinery, roll bolts of luxury fabric, and tailored finished garments in warm architectural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB1pD9cUMtrhbay_22WgSa212izCuo0q7EdOi_Ai9CNYUGUq1zbXksM7qKOdCAGq10FcR_mpwX5oR6Sq7kznASQ5VgYBSVVQbbfy0NtvTHEdsYNO4OlMQWcT7VpGZHoAyNhivl6BXRU2r9NnfjIdcbQolExtO3Z7ZCSm4Cel8XpSDjVFfesrZW35sRrH1FlYaPJmlP78rzyYZB5RRGwLuFbBxtsFvHrTlMDXnHzixY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-dark via-slate-dark/30 to-transparent"></div>
+<!-- Floating Overlay Quality Pill -->
+<div class="absolute bottom-6 inset-x-6 bg-canvas-white/95 backdrop-blur-md p-space-md rounded shadow-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-gold-primary/10 flex items-center justify-center text-gold-deep">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="text-body-sm font-body-sm font-bold text-slate-dark">معايير فحص النسيج والجودة</span>
+<span class="text-label-eyebrow font-label-eyebrow text-slate-muted">معتمدة من كبرى المنظمات العالمية</span>
+</div>
+</div>
+<div class="text-left font-sans">
+<span class="text-metric-display font-metric-display text-slate-dark font-bold leading-none">AQL 1.5</span>
+<span class="block text-label-eyebrow font-label-eyebrow text-gold-deep">LEVEL II STRICT</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 4 Key Industrial Pillars (High Contrast Bento Strip) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md pt-space-lg">
+<div class="bg-canvas-subtle p-space-lg rounded shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="text-label-eyebrow font-label-eyebrow text-gold-deep tracking-wider font-bold">01 / الحد الأدنى</span>
+<span class="material-symbols-outlined text-slate-muted text-[22px]">inventory_2</span>
+</div>
+<div>
+<div class="text-headline-md font-headline-md font-bold text-slate-dark font-sans">500 <span class="text-body-md font-body-md font-normal text-slate-muted">قطعة / موديل</span></div>
+<p class="text-body-sm font-body-sm text-slate-muted mt-1">مرونة عالية لدعم العلامات الصاعدة والمجموعات الخاصة</p>
+</div>
+</div>
+<div class="bg-canvas-subtle p-space-lg rounded shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="text-label-eyebrow font-label-eyebrow text-gold-deep tracking-wider font-bold">02 / النماذج الأولية</span>
+<span class="material-symbols-outlined text-slate-muted text-[22px]">architecture</span>
+</div>
+<div>
+<div class="text-headline-md font-headline-md font-bold text-slate-dark font-sans">5 - 7 <span class="text-body-md font-body-md font-normal text-slate-muted">أيام عمل</span></div>
+<p class="text-body-sm font-body-sm text-slate-muted mt-1">تطوير سريع للباترون والقصة واعتماد المقاسات الفنية</p>
+</div>
+</div>
+<div class="bg-canvas-subtle p-space-lg rounded shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="text-label-eyebrow font-label-eyebrow text-gold-deep tracking-wider font-bold">03 / دورة التصنيع</span>
+<span class="material-symbols-outlined text-slate-muted text-[22px]">local_shipping</span>
+</div>
+<div>
+<div class="text-headline-md font-headline-md font-bold text-slate-dark font-sans">3 - 4 <span class="text-body-md font-body-md font-normal text-slate-muted">أسابيع تسليم</span></div>
+<p class="text-body-sm font-body-sm text-slate-muted mt-1">سرعة إنجاز وشحن مباشر لموانئ ومطارات التصدير</p>
+</div>
+</div>
+<div class="bg-canvas-subtle p-space-lg rounded shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="text-label-eyebrow font-label-eyebrow text-gold-deep tracking-wider font-bold">04 / رقابة الجودة</span>
+<span class="material-symbols-outlined text-slate-muted text-[22px]">policy</span>
+</div>
+<div>
+<div class="text-headline-md font-headline-md font-bold text-slate-dark font-sans">AQL 1.5 <span class="text-body-md font-body-md font-normal text-slate-muted">Level II</span></div>
+<p class="text-body-sm font-body-sm text-slate-muted mt-1">فحص أقمشة وخياطة ووزن بنظام تدقيق مرحلي صارم</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 2. INDUSTRIAL FACILITIES SHOWCASE (DUAL-HUB) -->
+<!-- ========================================== -->
+<section class="bg-surface py-space-2xl px-margin-mobile md:px-margin">
+<div class="max-w-[1440px] mx-auto flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="text-label-eyebrow font-label-eyebrow text-gold-deep tracking-widest uppercase font-bold">البنية التحتية التصنيعية المزدوجة</span>
+<h2 class="text-headline-lg font-headline-lg text-slate-dark mt-1 font-serif">
+            استوديو النماذج ومصانع الإنتاج المتكامل
+          </h2>
+</div>
+<p class="text-body-md font-body-md text-slate-muted max-w-lg">
+          نجمع بين الابتكار التصميمي السريع في عاصمة الموضة إسطنبول، والقدرة الإنتاجية العملاقة بتكلفة تنافسية في مجمع وان تكستيل كينت.
+        </p>
+</div>
+<!-- Facility Cards Mosaic -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-xl">
+<!-- Card 1: Istanbul Atelier -->
+<div class="bg-canvas-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative h-72 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Modern technical pattern design lab in Istanbul featuring digital CAD monitors, Gerber precision plotters, fabric tension testing gear, and skilled master tailor fitting a prototype garment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGqWK8eNTyjr4LB0Id5CBW97TMMTZZd3V-PvRCA7SDHBuG94p7dHsGpCaO8sJnHSU03pPxHJzebRm4aS-ghxhaParz3ua4Y5VxBkT0dMx92ss1cjp_mopv8fy6k2CE-8njfAwRboEdii9ORw44Qt-hq-Ayot-zH9LM4vXkTpD2x2t_TbNlOZISXAXKIigTEq5QS527WhQYn70xh6MqYAWVYk2uCrWGEEpBLh0634fC"/>
+<div class="absolute top-4 right-4 bg-slate-dark/90 text-canvas-white text-label-eyebrow font-label-eyebrow px-3 py-1 rounded">
+              مركز إسطنبول للابتكار والتحضير الفني
+            </div>
+</div>
+<div class="p-space-xl flex flex-col gap-space-md flex-1 justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm text-gold-deep">
+<span class="material-symbols-outlined text-[20px]">draw</span>
+<span class="text-label-eyebrow font-label-eyebrow font-bold">GERBER CAD • 3D CLO VIRTUAL FIT</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-slate-dark font-bold">
+                استوديو إسطنبول للنماذج والباترون
+              </h3>
+<p class="text-body-md font-body-md text-slate-muted leading-relaxed">
+                مقر تطوير التصاميم الفنية (Tech Packs)، صياغة الباترونات الدقيقة، ومختبر فحص عينات الأقمشة. هنا نحول أفكار المصممين إلى عينات إنتاجية متقنة قابلة للتنفيذ التجاري بأعلى درجات الدقة قبل بدء التكرار الصناعي.
+              </p>
+</div>
+<div class="pt-space-md bg-canvas-subtle p-space-md rounded flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-slate-dark font-semibold">موقع المركز:</span>
+<span class="text-slate-muted">Avrasya Plaza, Bağlar, İstanbul</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Van Mega Plant -->
+<div class="bg-canvas-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative h-72 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Massive modern garment manufacturing facility interior in Van Tekstilkent Turkey, automated textile spreading and cutting lines, rows of synchronized industrial sewing stations, and clean packing logistics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo6wVL1oX5YJ8mrv5UisrVuQOZzp6YLo35IZRdmfsyyIHRftW7StOMuc7yq0VGsj_iQAUWOFQy78UrGSaR0GkH0psmE_I2_CPk-FuizehWcoQOsdylqCr4XlwssVwMGSEV23Z20CBotdFHtUOUVSwajaMdbsswWv8M2hJkp7-RZJLnak3I1DHoXv2L4mHffJuYzXXDmWVOkRtJ9vwf3q335baFLR4auk825GWz7Pvg"/>
+<div class="absolute top-4 right-4 bg-gold-primary text-slate-dark font-bold text-label-eyebrow font-label-eyebrow px-3 py-1 rounded">
+              مجمع التصنيع الكمي واللوجستيات
+            </div>
+</div>
+<div class="p-space-xl flex flex-col gap-space-md flex-1 justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm text-gold-deep">
+<span class="material-symbols-outlined text-[20px]">factory</span>
+<span class="text-label-eyebrow font-label-eyebrow font-bold">18,000+ M² • AUTOMATED CUTTING &amp; ASSEMBLY</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-slate-dark font-bold">
+                مجمع مصانع تكستيل كينت في وان
+              </h3>
+<p class="text-body-md font-body-md text-slate-muted leading-relaxed">
+                مجمع صناعي رائد يضم خطوط قص ليزري آلية، خطوط خياطة تجميعية متعددة، وحدات غسيل متوافقة بيئياً، ومستودعات جاهزة للشحن الدولي. طاقة استيعابية تتجاوز 250,000 قطعة شهرياً موجهة للتصدير الفوري.
+              </p>
+</div>
+<div class="pt-space-md bg-canvas-subtle p-space-md rounded flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-slate-dark font-semibold">موقع المصانع:</span>
+<span class="text-slate-muted">Tekstilkent 1009 Sk. &amp; Kurubaş, Van</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 3. 4 CORE PRODUCT ENGINEERING LINES -->
+<!-- ========================================== -->
+<section class="bg-canvas-white py-space-2xl px-margin-mobile md:px-margin" id="lines-section">
+<div class="max-w-[1440px] mx-auto flex flex-col gap-space-2xl">
+<!-- Section Title & Narrative -->
+<div class="text-center max-w-3xl mx-auto flex flex-col gap-space-sm">
+<span class="text-label-eyebrow font-label-eyebrow text-gold-deep font-bold tracking-widest uppercase">التخصصات الهندسية الأربعة</span>
+<h2 class="text-display-hero-mobile md:text-headline-lg font-headline-lg text-slate-dark font-serif">
+          خطوط إنتاجية متخصصة ومصممة للتصدير
+        </h2>
+<p class="text-body-md font-body-md text-slate-muted">
+          تمتلك BSN Textile أقساماً مستقلة بمكائن مخصصة لإنتاج وتطوير الفئات الأربع الأكثر طلباً لدى أرقى بيوت الأزياء والعلامات التجارية العالمية.
+        </p>
+</div>
+<!-- 4 Lines Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- LINE 01: SWIM SHORTS -->
+<div class="group bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden bg-slate-mid">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxury tailored mens swim shorts laid out on minimalist stone surface, technical quick-dry microfiber weave, custom engraved gold eyelets, water-repellent droplet bead texture, editorial product photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp6lfayiWeU0xfWniiMRu5s7QiEF5fE7tQcqFWR89sGTDbZmtBjtzKiwcgdliV6j__T6fG58UKj3TO9qg9dFaRiy2-llb635PsxK8qWtIGprsNOaHq96FkKdic32u_NMEeekgGiTsopY_t1BrKi0VQ1xwnk_0vGJ7Ja_3BwOxnXg0_PVdC0VPQoxy2gqM0UwlLXc71mu_h4fB71OdHy1J6qWbyZx8AgPZ4H97-e61R"/>
+<div class="absolute top-3 right-3 bg-slate-dark text-gold-light text-label-eyebrow font-label-eyebrow px-2.5 py-1 rounded">
+              خط 01 • SWIMWEAR
+            </div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md flex-1 justify-between">
+<div class="flex flex-col gap-space-xs">
+<span class="text-label-eyebrow font-label-eyebrow text-gold-deep font-bold">110 - 140 GSM POLYESTER</span>
+<h3 class="text-headline-sm font-headline-sm font-bold text-slate-dark">شورتات السباحة التقنية الفاخرة</h3>
+<p class="text-body-sm font-body-sm text-slate-muted leading-relaxed">
+                أقمشة سريعة الجفاف مقاومة لمياه البحر والكلور، بطانات ميكرو شبكية مضادة للتهيج، أربطة محبوكة بإكسسوارات معدنية محفورة بالليزر بشعار علامتك.
+              </p>
+</div>
+<a class="inline-flex items-center justify-between w-full bg-canvas-white hover:bg-slate-dark hover:text-canvas-white text-slate-dark text-label-action font-label-action px-space-md py-3 rounded transition-colors shadow-sm" href="#rfq-section">
+<span>طلب عينات شورتات السباحة</span>
+<span class="text-gold-light font-serif">↗</span>
+</a>
+</div>
+</div>
+<!-- LINE 02: HEAVYWEIGHT KNITWEAR & PANTS -->
+<div class="group bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden bg-slate-mid">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Heavyweight tailored cotton sweatpants and French terry knit joggers folded precisely, high-density 400 GSM loopback cotton texture, flatlock reinforced seams, metallic custom aglets." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT24PViiIdyIogDVMAdJFCt3rX6-pZBTusD9G7ap6xtCVNHzYnL0yjAc-7U5W7ZxYmLc_dO2ldYnWmzGGwchoyEmgh46ylIxikHya71Qz7BAq27ABd1iIYtj1w6G9g0aiAOIP4VeJFKFvQFzyV32mMj4OELk8mbeucSdYt71aW37NcT7001sHGSdTCczeR91p5DgNbolMku9j8euXxvFlTyn441QOH2Lta1AzYSKlo"/>
+<div class="absolute top-3 right-3 bg-slate-dark text-gold-light text-label-eyebrow font-label-eyebrow px-2.5 py-1 rounded">
+              خط 02 • KNITWEAR
+            </div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md flex-1 justify-between">
+<div class="flex flex-col gap-space-xs">
+<span class="text-label-eyebrow font-label-eyebrow text-gold-deep font-bold">280 - 450 GSM HEAVY TERRY</span>
+<h3 class="text-headline-sm font-headline-sm font-bold text-slate-dark">بناطيل وأطقم التريكو الثقيلة</h3>
+<p class="text-body-sm font-body-sm text-slate-muted leading-relaxed">
+                قطن تركي عضوي معالج ضد الانكماش وثبات الألوان، درزات فلات لوك رباعية الإبرة للتحمل الشاق، وقصات مريحة مستقيمة أو محددة للماركات العالمية.
+              </p>
+</div>
+<a class="inline-flex items-center justify-between w-full bg-canvas-white hover:bg-slate-dark hover:text-canvas-white text-slate-dark text-label-action font-label-action px-space-md py-3 rounded transition-colors shadow-sm" href="#rfq-section">
+<span>طلب عينات ألبسة التريكو</span>
+<span class="text-gold-light font-serif">↗</span>
+</a>
+</div>
+</div>
+<!-- LINE 03: LUXURY DRESSES & WOVEN -->
+<div class="group bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden bg-slate-mid">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High fashion tailored women summer dress hanging gracefully on brass hanger, airy pure linen and modal silk drape, fine French seams, luxury boutique lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByXe__O4a6IxY3tHwZJat8bU0ezV0ygQMIyoQly6jrzwGzTxjwd3ONjJWUKKhpuZ9FoXwDDDhX5pzqzHFAP-SRATehSmeCAJzu5QvrfdJKvzjx0ORaFQapd7m454xHTE8hIMVxhtKPVtEi0d4OCY_ZcsOETPjqc6ifunRFXG9BTIt1Yfoh-AZP-q0fZuWcovAZ06tXPk3poBzcBpdVRvgGYimsqKNTqpiYjCQceKwa"/>
+<div class="absolute top-3 right-3 bg-slate-dark text-gold-light text-label-eyebrow font-label-eyebrow px-2.5 py-1 rounded">
+              خط 03 • WOVEN ATELIER
+            </div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md flex-1 justify-between">
+<div class="flex flex-col gap-space-xs">
+<span class="text-label-eyebrow font-label-eyebrow text-gold-deep font-bold">VISCOSE • LINEN • SILK BLENDS</span>
+<h3 class="text-headline-sm font-headline-sm font-bold text-slate-dark">الفساتين النسائية والأزياء المنسوجة</h3>
+<p class="text-body-sm font-body-sm text-slate-muted leading-relaxed">
+                تنفيذ تصاميم الفساتين الانسيابية من الكتان الصافي، الفسكوز الناعم وأمزجة الحرير، مع درزات فرنسية متناهية الصغر وسحابات غير مرئية دقيقة.
+              </p>
+</div>
+<a class="inline-flex items-center justify-between w-full bg-canvas-white hover:bg-slate-dark hover:text-canvas-white text-slate-dark text-label-action font-label-action px-space-md py-3 rounded transition-colors shadow-sm" href="#rfq-section">
+<span>طلب عينات خط الفساتين</span>
+<span class="text-gold-light font-serif">↗</span>
+</a>
+</div>
+</div>
+<!-- LINE 04: STREETWEAR & HOODIES -->
+<div class="group bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden bg-slate-mid">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-end streetwear oversized heavyweight hoodie in vintage washed charcoal grey, dense embroidery branding detail on chest, 480 GSM dense fleece ribbing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBICw9ZjyW4OAh9VxELZw8gqnUhHgHorlIpsvBYKiNm6o08GwL3zpiO1lHnhxFSW_1HsEqQmDzWhSKdW-QkByu_9lkrv8-KkUvpblG1rv869PA_bC-IoprZm5BPbb2URz4TeLaN2JNLoRgYnJOOXYDKGAwQfTq2DFIYze77Z-ftREgEYw8fil2JCRjrbD41iG64H9MhxVQbdifkGBuuqDRMe4qzyGBBQlPXk_QKK5kM"/>
+<div class="absolute top-3 right-3 bg-slate-dark text-gold-light text-label-eyebrow font-label-eyebrow px-2.5 py-1 rounded">
+              خط 04 • STREETWEAR
+            </div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md flex-1 justify-between">
+<div class="flex flex-col gap-space-xs">
+<span class="text-label-eyebrow font-label-eyebrow text-gold-deep font-bold">350 - 500 GSM PREMIUM FLEECE</span>
+<h3 class="text-headline-sm font-headline-sm font-bold text-slate-dark">ملابس الشارع والهوديز الفاخرة</h3>
+<p class="text-body-sm font-body-sm text-slate-muted leading-relaxed">
+                أوزان ثقيلة، غسيل أسيدي عتيق (Vintage Mineral Wash)، طباعة شاشية سميكة (High-Density Puff)، وتطريز حاسوبي ثلاثي الأبعاد لخطوط الشباب الراقية.
+              </p>
+</div>
+<a class="inline-flex items-center justify-between w-full bg-canvas-white hover:bg-slate-dark hover:text-canvas-white text-slate-dark text-label-action font-label-action px-space-md py-3 rounded transition-colors shadow-sm" href="#rfq-section">
+<span>طلب عينات ملابس الشارع</span>
+<span class="text-gold-light font-serif">↗</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 4. INDUSTRIAL LOGISTICS & COMPLIANCE METRICS -->
+<!-- ========================================== -->
+<section class="bg-slate-dark text-canvas-white py-space-2xl px-margin-mobile md:px-margin relative">
+<div class="max-w-[1440px] mx-auto flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-6 flex flex-col gap-space-sm">
+<span class="text-gold-light text-label-eyebrow font-label-eyebrow font-bold tracking-widest uppercase">اللوجستيات والمعايير الدولية</span>
+<h2 class="text-headline-lg font-headline-lg text-canvas-white font-serif">
+            شراكة تصديرية موثوقة تلبي اشتراطات الاتحاد الأوروبي والخليج
+          </h2>
+<p class="text-slate-muted text-body-md font-body-md leading-relaxed">
+            تتم جميع مراحل سلاسل الإمداد بموجب اتفاقيات جمركية ميسرة بين تركيا ومختلف دول العالم، مع تقارير تتبع فني أسبوعية لكل طلبية من الصباغة وحتى الشحن النهائي.
+          </p>
+</div>
+<!-- 4 Badges in Slate Box -->
+<div class="lg:col-span-6 grid grid-cols-2 sm:grid-cols-4 gap-space-md">
+<div class="bg-slate-mid p-space-md rounded text-center flex flex-col items-center justify-center gap-1 shadow-inner">
+<span class="material-symbols-outlined text-gold-light text-[28px]">eco</span>
+<span class="text-body-sm font-body-sm font-bold text-canvas-white">OEKO-TEX</span>
+<span class="text-label-eyebrow font-label-eyebrow text-gold-light">Standard 100</span>
+</div>
+<div class="bg-slate-mid p-space-md rounded text-center flex flex-col items-center justify-center gap-1 shadow-inner">
+<span class="material-symbols-outlined text-gold-light text-[28px]">groups</span>
+<span class="text-body-sm font-body-sm font-bold text-canvas-white">BSCI</span>
+<span class="text-label-eyebrow font-label-eyebrow text-gold-light">Social Audit</span>
+</div>
+<div class="bg-slate-mid p-space-md rounded text-center flex flex-col items-center justify-center gap-1 shadow-inner">
+<span class="material-symbols-outlined text-gold-light text-[28px]">verified</span>
+<span class="text-body-sm font-body-sm font-bold text-canvas-white">ISO 9001</span>
+<span class="text-label-eyebrow font-label-eyebrow text-gold-light">2015 System</span>
+</div>
+<div class="bg-slate-mid p-space-md rounded text-center flex flex-col items-center justify-center gap-1 shadow-inner">
+<span class="material-symbols-outlined text-gold-light text-[28px]">nature_people</span>
+<span class="text-body-sm font-body-sm font-bold text-canvas-white">GOTS</span>
+<span class="text-label-eyebrow font-label-eyebrow text-gold-light">Organic Cotton</span>
+</div>
+</div>
+</div>
+<!-- Facility Specific Addresses Detailed Bar -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg pt-space-md">
+<div class="bg-slate-mid/70 p-space-lg rounded flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm text-gold-light">
+<span class="material-symbols-outlined text-[20px]">location_city</span>
+<span class="text-body-sm font-body-sm font-bold">المقر الإداري واستوديو إسطنبول:</span>
+</div>
+<p class="text-slate-muted text-body-sm font-body-sm leading-relaxed">
+            Evren Mah. Gülbahar Cad. Avrasya Plaza No: 1 Kat: 4 D: 35 Bağlar / Güneşli, İstanbul, Türkiye
+          </p>
+</div>
+<div class="bg-slate-mid/70 p-space-lg rounded flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm text-gold-light">
+<span class="material-symbols-outlined text-[20px]">precision_manufacturing</span>
+<span class="text-body-sm font-body-sm font-bold">مجمعات المصانع الرئيسية في وان:</span>
+</div>
+<p class="text-slate-muted text-body-sm font-body-sm leading-relaxed">
+            Süphan Mah. 1009 Sk. No: 3I Tekstilkent &amp; Kurubaş Mah. 123 Sk. No: 440 Edremit, Van, Türkiye
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 5. INTERACTIVE B2B RFQ FORM & ORDER SYSTEM -->
+<!-- ========================================== -->
+<section class="bg-surface py-space-2xl px-margin-mobile md:px-margin" id="rfq-section">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left / Informational Column (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col justify-between gap-space-xl">
+<div class="flex flex-col gap-space-md">
+<span class="text-label-eyebrow font-label-eyebrow text-gold-deep font-bold tracking-widest uppercase">طلب عروض الأسعار والإنتاج</span>
+<h2 class="text-headline-lg font-headline-lg text-slate-dark font-serif">
+              ابدأ تصنيع مجموعتك القادمة مع BSN
+            </h2>
+<p class="text-body-md font-body-md text-slate-muted leading-relaxed">
+              قم بتعبئة بيانات المشروع الفني ليقوم مهندس تكاليف الإنتاج ومدير التصدير بدراسة المتطلبات وتقديم تسعير مفصل مع جدول زمني للعينات خلال 24 ساعة.
+            </p>
+<div class="bg-canvas-white p-space-lg rounded shadow-sm flex flex-col gap-space-sm mt-space-sm">
+<div class="flex items-center gap-space-sm text-slate-dark font-bold text-body-md font-body-md">
+<span class="material-symbols-outlined text-gold-deep">badge</span>
+<span>المسؤول المباشر لحسابات التصدير</span>
+</div>
+<div class="text-headline-sm font-headline-sm font-bold text-slate-dark">Sedat Üzümcü</div>
+<div class="text-body-sm font-body-sm text-slate-muted">مدير العمليات والتجارة الدولية</div>
+<div class="pt-space-sm flex flex-col gap-1 text-body-sm font-body-sm">
+<a class="text-gold-deep hover:underline dir-ltr text-right font-sans" href="mailto:sedatuzumcu@bsntextile.com">sedatuzumcu@bsntextile.com</a>
+<a class="text-slate-dark hover:text-gold-deep dir-ltr text-right font-sans font-bold" href="tel:+905352336073">+90 535 233 6073</a>
+</div>
+</div>
+</div>
+<!-- Micro FAQ snippet -->
+<div class="bg-canvas-subtle p-space-md rounded text-body-sm font-body-sm text-slate-muted flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-gold-deep text-[20px] shrink-0 mt-0.5">info</span>
+<span>نحافظ على سرية التصاميم الفنية تماماً ونوقع اتفاقيات عدم إفصاح (NDA) رسمية عند الطلب قبل استلام أي Tech Pack.</span>
+</div>
+</div>
+<!-- Right / Form Container (8 Cols) -->
+<div class="lg:col-span-8 bg-canvas-white p-space-xl md:p-space-2xl rounded-xl shadow-md">
+<form class="flex flex-col gap-space-lg" id="rfq-form" onsubmit="event.preventDefault(); document.getElementById('rfq-success').classList.remove('hidden');">
+<!-- Category Tabs Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="text-label-eyebrow font-label-eyebrow text-slate-muted uppercase font-bold">1. اختر خط الإنتاج المطلوب *</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm" id="category-selector">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="product_line" type="radio" value="swimwear"/>
+<div class="p-space-sm rounded text-center bg-surface-container peer-checked:bg-slate-dark peer-checked:text-canvas-white text-body-sm font-body-sm text-slate-dark transition-all">
+                    شورتات السباحة
+                  </div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="product_line" type="radio" value="knitwear"/>
+<div class="p-space-sm rounded text-center bg-surface-container peer-checked:bg-slate-dark peer-checked:text-canvas-white text-body-sm font-body-sm text-slate-dark transition-all">
+                    بناطيل وتريكو
+                  </div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="product_line" type="radio" value="dresses"/>
+<div class="p-space-sm rounded text-center bg-surface-container peer-checked:bg-slate-dark peer-checked:text-canvas-white text-body-sm font-body-sm text-slate-dark transition-all">
+                    فساتين منسوجة
+                  </div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="product_line" type="radio" value="streetwear"/>
+<div class="p-space-sm rounded text-center bg-surface-container peer-checked:bg-slate-dark peer-checked:text-canvas-white text-body-sm font-body-sm text-slate-dark transition-all">
+                    ملابس الشارع
+                  </div>
+</label>
+</div>
+</div>
+<!-- Volume Estimator / Range Input -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="text-label-eyebrow font-label-eyebrow text-slate-muted uppercase font-bold" for="quantity-slider">2. حجم الطلبية المقدر (الحد الأدنى 500 قطعة لكل موديل) *</label>
+<span class="font-sans font-bold text-headline-sm font-headline-sm text-gold-deep" id="qty-val">1,500 قطعة</span>
+</div>
+<input class="w-full h-2 bg-surface-container rounded-lg appearance-none cursor-pointer accent-gold-primary" id="quantity-slider" max="50000" min="500" oninput="document.getElementById('qty-val').innerText = Number(this.value).toLocaleString() + ' قطعة';" step="500" type="range" value="1500"/>
+<div class="flex justify-between text-body-sm font-body-sm text-slate-muted">
+<span>500 قطعة (عينة إنتاجية)</span>
+<span>10,000+ قطعة</span>
+<span>50,000+ قطعة (برنامج سنوي)</span>
+</div>
+</div>
+<!-- Client & Business Inputs (Grid) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="text-label-eyebrow font-label-eyebrow text-slate-muted uppercase font-bold">اسم الشركة أو العلامة التجارية *</label>
+<input class="h-12 px-space-md rounded bg-surface text-slate-dark placeholder:text-slate-muted text-body-md font-body-md focus:outline-none focus:ring-2 focus:ring-gold-primary" placeholder="مثال: Maison Luxury Apparel" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="text-label-eyebrow font-label-eyebrow text-slate-muted uppercase font-bold">دولة وجهة التصدير *</label>
+<input class="h-12 px-space-md rounded bg-surface text-slate-dark placeholder:text-slate-muted text-body-md font-body-md focus:outline-none focus:ring-2 focus:ring-gold-primary" placeholder="مثال: الإمارات العربية المتحدة، السعودية، ألمانيا" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="text-label-eyebrow font-label-eyebrow text-slate-muted uppercase font-bold">البريد الإلكتروني للشركات *</label>
+<input class="h-12 px-space-md rounded bg-surface text-slate-dark placeholder:text-slate-muted text-body-md font-body-md focus:outline-none focus:ring-2 focus:ring-gold-primary dir-ltr text-right" placeholder="procurement@brand.com" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="text-label-eyebrow font-label-eyebrow text-slate-muted uppercase font-bold">رقم الهاتف / الواتساب مع الرمز الدولي *</label>
+<input class="h-12 px-space-md rounded bg-surface text-slate-dark placeholder:text-slate-muted text-body-md font-body-md focus:outline-none focus:ring-2 focus:ring-gold-primary dir-ltr text-right" placeholder="+971 50 000 0000" required="" type="tel"/>
+</div>
+</div>
+<!-- Fabric & GSM Target Notes -->
+<div class="flex flex-col gap-space-xs">
+<label class="text-label-eyebrow font-label-eyebrow text-slate-muted uppercase font-bold">مواصفات القماش، الوزن المستهدف (GSM) والتفاصيل الفنية</label>
+<textarea class="p-space-md rounded bg-surface text-slate-dark placeholder:text-slate-muted text-body-md font-body-md focus:outline-none focus:ring-2 focus:ring-gold-primary" placeholder="حدد نوع النسيج (مثال: 100% قطن عضوي 420 غرام، أو بوليستر سريع الجفاف 125 غرام مع بطانة)، نوع الطباعة أو التطريز، وأي ملاحظات خاصة بالقصة..." rows="3"></textarea>
+</div>
+<!-- Tech Pack File Dropzone Mockup -->
+<div class="flex flex-col gap-space-xs">
+<label class="text-label-eyebrow font-label-eyebrow text-slate-muted uppercase font-bold">رفع ملف المواصفات الفنية (Tech Pack / Artwork / PDF / AI / ZIP)</label>
+<div class="p-space-lg rounded bg-canvas-subtle text-center cursor-pointer hover:bg-surface-container transition-colors flex flex-col items-center justify-center gap-space-xs">
+<span class="material-symbols-outlined text-gold-deep text-[32px]">upload_file</span>
+<span class="text-body-md font-body-md text-slate-dark font-medium">اسحب الملف هنا أو اضغط للاختيار من جهازك</span>
+<span class="text-label-eyebrow font-label-eyebrow text-slate-muted">الحجم الأقصى 50 ميغابايت • نقبل ملفات PDF, AI, PSD, ZIP</span>
+</div>
+</div>
+<!-- Submit Button -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-center gap-space-md">
+<button class="w-full sm:w-auto flex-1 bg-slate-dark hover:bg-slate-mid text-canvas-white text-label-action font-label-action px-space-xl py-4 rounded transition-all shadow-md flex items-center justify-center gap-space-sm" type="submit">
+<span>حجز طاقة الإنتاج وطلب عرض السعر الفوري</span>
+<span class="text-gold-light font-serif text-lg leading-none">↗</span>
+</button>
+<div class="flex items-center gap-space-xs text-slate-muted text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-gold-deep text-[18px]">lock</span>
+<span>بياناتكم مشفرة ومحمية بموجب اللائحة الدولية</span>
+</div>
+</div>
+<!-- Success Feedback Container -->
+<div class="hidden p-space-md rounded bg-emerald-50 text-emerald-900 text-body-sm font-body-sm flex items-center gap-space-sm" id="rfq-success">
+<span class="material-symbols-outlined text-[#10b981] text-[24px]">task_alt</span>
+<div>
+<strong>تم استلام طلبكم بنجاح.</strong> سيقوم المهندس المسؤول بالتواصل معكم عبر الواتساب والبريد الإلكتروني المذكور خلال 24 ساعة لتقديم الدراسة الفنية.
+              </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-slate-dark text-canvas-white pt-space-2xl pb-space-xl border-t border-slate-mid"><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-2xl"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="BSN Textile Logo" class="h-8 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/ALJJyrBHyroOpXF3UQhUkdr0oiKgzBro-s5ECOmLRxlxW8_wHTm9DEwJWPCnD_U7T8VJ4q1tv7s6YX5SgGcVO2LrQvZdVbK0DqEfiwzvJTNAeIKPpeDsB4uOFv7tL0DE1w8cKyYtvBYPGnW2oFAQy4pan50LqdLcTvKsMVccIxi1N003MPD1TLFdAUiP4sYETY76CLeiBeX78MVrhbkRigzKY5bnA1RiWJAl7msLd2pIsKe97A"/><span class="text-headline-sm font-headline-sm text-canvas-white font-bold">مجموعة BSN للصناعات النسيجية</span></div><p class="text-slate-muted text-body-md font-body-md leading-relaxed">شريككم الاستراتيجي لتصنيع وتصدير الملابس الجاهزة بعقود OEM و ODM في الجمهورية التركية. تصاميم فاخرة، قدرة إنتاجية تفوق 120,000 قطعة شهرياً، والتزام بمعايير الجودة والاستدامة الأوروبية.</p><div class="flex items-center gap-space-sm text-slate-muted text-body-sm font-body-sm"><span class="w-2 h-2 rounded-full bg-gold-primary"></span><span>معايير تصدير معتمدة للاتحاد الأوروبي والشرق الأوسط</span></div></div><div class="lg:col-span-3 flex flex-col gap-space-md"><h4 class="text-body-md font-body-md text-gold-light font-bold tracking-wide">مجموعات الإنتاج الرئيسية</h4><ul class="flex flex-col gap-space-sm text-body-sm font-body-sm text-slate-muted"><li class="hover:text-canvas-white transition-colors"><a data-path="al-muntajat" href="#">شورتات السباحة الفاخرة (Swim Shorts)</a></li><li class="hover:text-canvas-white transition-colors"><a data-path="al-muntajat" href="#">بناطيل وأطقم التريكو والنسيج الدائري</a></li><li class="hover:text-canvas-white transition-colors"><a data-path="al-muntajat" href="#">الفساتين النسائية والأزياء العصرية</a></li><li class="hover:text-canvas-white transition-colors"><a data-path="al-muntajat" href="#">ملابس الشارع والهوديز الفاخرة (Streetwear)</a></li><li class="hover:text-canvas-white transition-colors"><a data-path="al-kataluj-al-raqami" href="#">تحميل الكتالوج الفني والمواصفات ↗</a></li></ul></div><div class="lg:col-span-3 flex flex-col gap-space-md"><h4 class="text-body-md font-body-md text-gold-light font-bold tracking-wide">مراكز التصنيع والإدارة</h4><div class="flex flex-col gap-space-sm text-body-sm font-body-sm text-slate-muted"><div class="flex flex-col"><span class="text-canvas-white font-semibold">المقر الرئيسي والإدارة:</span><span>Beylikdüzü OSB, İstanbul, Türkiye</span></div><div class="flex flex-col"><span class="text-canvas-white font-semibold">مجمعات التصنيع المتكاملة:</span><span>Tekstilkent Sanayi Bölgesi, Van, Türkiye</span></div><div class="flex flex-col mt-space-xs"><span class="text-canvas-white font-semibold">خط الاتصال والمبيعات الدولية:</span><span class="dir-ltr text-right font-sans text-canvas-white">+90 535 233 6073</span><span class="dir-ltr text-right text-slate-muted">sedatuzumcu@bsntextile.com</span></div></div></div><div class="lg:col-span-2 flex flex-col gap-space-md"><h4 class="text-body-md font-body-md text-gold-light font-bold tracking-wide">شهادات الجودة الدولية</h4><div class="grid grid-cols-2 gap-space-sm"><div class="bg-slate-mid p-space-sm rounded text-center border border-slate-muted/20"><span class="block text-body-sm font-bold text-canvas-white">OEKO-TEX</span><span class="block text-label-eyebrow text-gold-light">Standard 100</span></div><div class="bg-slate-mid p-space-sm rounded text-center border border-slate-muted/20"><span class="block text-body-sm font-bold text-canvas-white">BSCI</span><span class="block text-label-eyebrow text-gold-light">Audited</span></div><div class="bg-slate-mid p-space-sm rounded text-center border border-slate-muted/20"><span class="block text-body-sm font-bold text-canvas-white">ISO 9001</span><span class="block text-label-eyebrow text-gold-light">Certified</span></div><div class="bg-slate-mid p-space-sm rounded text-center border border-slate-muted/20"><span class="block text-body-sm font-bold text-canvas-white">GOTS</span><span class="block text-label-eyebrow text-gold-light">Organic</span></div></div></div></div><div class="pt-space-lg border-t border-slate-mid/60 flex flex-col md:flex-row items-center justify-between gap-space-md text-slate-muted text-body-sm font-body-sm"><div>© 2025 BSN Textile Sanayi ve Dış Ticaret A.Ş. جميع الحقوق محفوظة.</div><div class="flex items-center gap-space-lg"><a class="hover:text-canvas-white transition-colors" data-path="ittasil-bina" href="#">شروط التوريد الدولي</a><a class="hover:text-canvas-white transition-colors" data-path="ittasil-bina" href="#">سياسة الخصوصية وحماية البيانات</a><a class="hover:text-canvas-white transition-colors" data-path="talab-ard-asaar" href="#">بوابة المشتريات والطلبات</a></div></div></div></footer></body></html>

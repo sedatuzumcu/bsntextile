@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"canvas-subtle":"#F8FAFC","on-secondary-fixed":"#261900","on-surface-variant":"#45464d","surface-variant":"#e0e3e5","on-tertiary-container":"#76859b","primary-container":"#131b2e","tertiary-fixed-dim":"#b9c7e0","error-container":"#ffdad6","on-tertiary":"#ffffff","primary-fixed-dim":"#bec6e0","secondary-fixed":"#ffdea5","gold-light":"#E2C98F","outline-variant":"#c6c6cd","slate-mid":"#1E293B","primary":"#000000","on-background":"#191c1e","inverse-primary":"#bec6e0","on-primary-fixed-variant":"#3f465c","on-secondary-fixed-variant":"#5d4201","border-hairline":"#E2E8F0","on-secondary":"#ffffff","on-error-container":"#93000a","on-surface":"#191c1e","on-secondary-container":"#785a1a","secondary-fixed-dim":"#e9c176","surface-container":"#eceef0","surface-container-lowest":"#ffffff","surface":"#f7f9fb","on-tertiary-fixed":"#0d1c2f","gold-deep":"#9E7B35","outline":"#76777d","surface-container-low":"#f2f4f6","surface-container-highest":"#e0e3e5","inverse-on-surface":"#eff1f3","surface-dim":"#d8dadc","on-tertiary-fixed-variant":"#3a485c","inverse-surface":"#2d3133","on-primary":"#ffffff","surface-tint":"#565e74","secondary":"#775a19","gold-primary":"#C5A059","on-primary-container":"#7c839b","slate-dark":"#0F172A","on-primary-fixed":"#131b2e","slate-muted":"#64748B","surface-bright":"#f7f9fb","tertiary-container":"#0d1c2f","primary-fixed":"#dae2fd","surface-container-high":"#e6e8ea","secondary-container":"#fed488","background":"#f7f9fb","tertiary":"#000000","error":"#ba1a1a","canvas-white":"#FFFFFF","border-prominent":"#CBD5E1","on-error":"#ffffff","tertiary-fixed":"#d5e3fd"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"margin-mobile":"1.25rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-lg":"1.5rem","space-md":"1rem","space-2xl":"4rem",margin:"3rem","space-xl":"2.5rem",gutter:"1.5rem"},fontFamily:{"body-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-action":["Plus Jakarta Sans"],"headline-lg":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"display-hero-mobile":["Playfair Display"],"body-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"metric-display":["Playfair Display"],"headline-md":["Plus Jakarta Sans"],"label-eyebrow":["Plus Jakarta Sans"],"display-hero":["Playfair Display"]},fontSize:{"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"600"}],"label-action":["12px",{lineHeight:"16px",letterSpacing:"0.1em",fontWeight:"700"}],"headline-lg":["38px",{lineHeight:"46px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["28px",{lineHeight:"34px",letterSpacing:"0em",fontWeight:"600"}],"display-hero-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"400"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"metric-display":["32px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-eyebrow":["11px",{lineHeight:"16px",letterSpacing:"0.15em",fontWeight:"700"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-canvas-white/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin"><div class="hidden lg:flex items-center justify-between py-space-xs text-slate-muted font-label-eyebrow text-label-eyebrow uppercase tracking-widest"><div class="flex items-center gap-space-lg"><span class="flex items-center gap-space-xs text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-gold-primary inline-block"></span>BSN TEXTILE INDUSTRIAL GROUP • GLOBAL OEM/ODM SOLUTIONS</span><span class="text-border-prominent">|</span><span class="text-slate-muted">TURKEY MANUFACTURING HUBS: ISTANBUL • VAN</span></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-gold-primary text-[15px]">chat</span><a class="font-label-action text-label-action text-slate-dark hover:text-gold-deep transition-colors tracking-normal" href="https://wa.me/905352336073" target="_blank">WHATSAPP: +90 535 233 6073</a></div><span class="text-border-prominent">|</span><div class="flex items-center gap-space-sm text-slate-muted"><span class="font-label-action text-label-action text-slate-dark font-bold relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[2px] after:bg-gold-primary">EN</span><span class="text-border-prominent">/</span><a class="hover:text-slate-dark transition-colors" href="#">TR</a><span class="text-border-prominent">/</span><a class="hover:text-slate-dark transition-colors" href="#">AR</a><span class="text-border-prominent">/</span><a class="hover:text-slate-dark transition-colors" href="#">RU</a><span class="text-border-prominent">/</span><a class="hover:text-slate-dark transition-colors" href="#">FA</a></div></div></div><div class="h-20 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><img alt="BSN Textile Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBHyroOpXF3UQhUkdr0oiKgzBro-s5ECOmLRxlxW8_wHTm9DEwJWPCnD_U7T8VJ4q1tv7s6YX5SgGcVO2LrQvZdVbK0DqEfiwzvJTNAeIKPpeDsB4uOFv7tL0DE1w8cKyYtvBYPGnW2oFAQy4pan50LqdLcTvKsMVccIxi1N003MPD1TLFdAUiP4sYETY76CLeiBeX78MVrhbkRigzKY5bnA1RiWJAl7msLd2pIsKe97A"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-slate-dark tracking-tight leading-none group-hover:text-slate-mid transition-colors">BSN TEXTILE</span><span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase tracking-widest mt-1">Apparel Engineering</span></div></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-slate-dark font-bold relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[2px] after:bg-gold-primary"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-slate-dark transition-colors" data-path="home" href="#">Home</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-slate-dark transition-colors" data-path="products" href="#">Products</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-slate-dark transition-colors" data-path="manufacturing" href="#">Manufacturing</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-slate-dark transition-colors" data-path="digital-catalogue" href="#">Digital Catalogue</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-slate-dark transition-colors" data-path="about-us" href="#">About Us</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-slate-dark transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:flex lg:hidden items-center gap-space-xs text-slate-dark hover:text-gold-deep text-body-sm transition-colors" href="https://wa.me/905352336073" target="_blank"><span class="material-symbols-outlined text-gold-primary text-[18px]">chat</span><span class="font-label-action text-label-action">WhatsApp</span></a><a class="inline-flex items-center gap-space-xs bg-slate-dark hover:bg-slate-mid text-canvas-white hover:text-gold-light font-label-action text-label-action px-space-md py-space-sm rounded-lg transition-all duration-200 shadow-[0_4px_14px_rgba(15,23,42,0.12)]" data-path="request-rfq" href="#"><span>REQUEST RFQ &amp; SAMPLE</span><span class="text-gold-primary font-bold">↗</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Industrial Bar & Breadcrumb Matrix -->
+<section class="w-full bg-slate-dark text-surface-container-low py-space-sm">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin flex flex-wrap items-center justify-between gap-space-sm text-[11px] font-label-eyebrow tracking-widest uppercase">
+<div class="flex items-center gap-space-md">
+<span class="text-gold-light flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+          OEM/ODM CONTEMPORARY READY-TO-WEAR DIVISION
+        </span>
+<span class="text-slate-muted hidden md:inline">•</span>
+<span class="text-slate-muted hidden md:inline">AUDITED FACILITIES: ISTANBUL ATELIER &amp; VAN TEKSTİLKENT PLANT</span>
+</div>
+<div class="flex items-center gap-space-lg text-slate-muted">
+<span>SAMPLING: 5–7 WORKING DAYS</span>
+<span class="text-slate-muted">•</span>
+<span>PRODUCTION RUNS: 500 – 50,000 PCS</span>
+</div>
+</div>
+</section>
+<!-- Editorial Hero Section: Sartorial Splendor meets Industrial Precision -->
+<section class="relative w-full bg-surface-container-lowest overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left Editorial Block -->
+<div class="lg:col-span-7 flex flex-col justify-center space-y-space-lg z-10">
+<div class="inline-flex items-center gap-space-xs self-start px-3 py-1.5 rounded bg-surface-container text-slate-mid font-label-eyebrow text-label-eyebrow uppercase tracking-widest">
+<span class="w-2 h-2 rounded-full bg-gold-deep"></span>
+            Haute Contemporary Dress &amp; Fluid Woven Manufacturing
+          </div>
+<div class="space-y-space-sm">
+<h1 class="font-display-hero text-display-hero text-slate-dark tracking-tight leading-[1.08]">
+              Architectural Draping. <br class="hidden sm:inline"/>
+<span class="italic font-normal text-gold-deep">Couture-Grade</span> Finish.
+            </h1>
+<p class="font-body-lg text-body-lg text-slate-muted max-w-2xl pt-space-xs leading-relaxed">
+              BSN Textile engineers private-label women's woven dresses for premier European, British, and North American contemporary fashion houses. From bias-cut sandwashed silks and sustainable Tencel™ twills to precision-tailored linen chemisiers, we bridge runway aesthetics with scalable industrial execution.
+            </p>
+</div>
+<!-- Key Operational Metrics Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-gutter pt-space-sm">
+<div class="p-space-md bg-canvas-subtle rounded shadow-sm">
+<span class="block font-metric-display text-metric-display text-slate-dark">500</span>
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase">MOQ / Colorway</span>
+</div>
+<div class="p-space-md bg-canvas-subtle rounded shadow-sm">
+<span class="block font-metric-display text-metric-display text-slate-dark">5–7</span>
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase">Days Proto Sample</span>
+</div>
+<div class="p-space-md bg-canvas-subtle rounded shadow-sm">
+<span class="block font-metric-display text-metric-display text-slate-dark">100%</span>
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase">French Seam Spec</span>
+</div>
+<div class="p-space-md bg-canvas-subtle rounded shadow-sm">
+<span class="block font-metric-display text-metric-display text-slate-dark">CLO 3D</span>
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase">Virtual Prototyping</span>
+</div>
+</div>
+<!-- CTA Controls -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<a class="inline-flex items-center gap-space-sm bg-slate-dark hover:bg-slate-mid text-canvas-white hover:text-gold-light font-label-action text-label-action px-space-lg py-space-md rounded shadow-md transition-all duration-200" href="#rfq-section">
+<span>INITIATE DRESS TECH PACK &amp; RFQ</span>
+<span class="text-gold-primary">↗</span>
+</a>
+<a class="inline-flex items-center gap-space-sm bg-surface-container hover:bg-surface-variant text-slate-dark font-label-action text-label-action px-space-lg py-space-md rounded transition-all duration-200" href="#materials-matrix">
+<span class="material-symbols-outlined text-[18px]">texture</span>
+<span>EXPLORE FABRICS MATRIX</span>
+</a>
+</div>
+</div>
+<!-- Right Hero Visual Grid with Overlapping Layers -->
+<div class="lg:col-span-5 relative mt-space-lg lg:mt-0">
+<div class="relative w-full aspect-[4/5] rounded overflow-hidden shadow-xl bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Editorial close-up of a model wearing a luxury champagne bias-cut sandwashed silk slip dress, delicate French seam construction visible on edges, studio lighting with subtle warm shadows, high-end European fashion lookbook aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5QN0xInu3b4UvwTXbd94IXnXO4JKwJs_hQ5aPXdBhzqJEHk8WL75g7kpDfpCa-DrbsLqrFnHYqwb-fNZue9sDIxZ4mWgLeIdVdgRJiV8u3mzW6VETfEc0xvNC4GrBj-F4LHi3HvaG1RGLT5y3mpcK675flMvgempIHmVKFssjDVPdZ8qgExX_Rg-QySxus7ZTurbP9qtfL0v29b4OFdtN_CWUKqdbe3edOQQXPubb"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-dark/70 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 p-space-md bg-canvas-white/95 backdrop-blur-md rounded shadow-lg text-slate-dark">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase block">Atelier Grade Series</span>
+<span class="font-headline-sm text-headline-sm">Mulberry Silk Slip • Bias Grain 45°</span>
+</div>
+<span class="material-symbols-outlined text-gold-primary text-[28px]">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-muted mt-1">Single-needle clean French seams, 0.4cm micro-turn hems, YKK Conceal® invisible back closure.</p>
+</div>
+</div>
+<!-- Asymmetric Accent Tile -->
+<div class="hidden sm:block absolute -top-6 -left-8 bg-slate-dark text-canvas-white p-space-md rounded shadow-xl max-w-[210px] z-20">
+<div class="flex items-center gap-space-xs text-gold-primary mb-1">
+<span class="material-symbols-outlined text-[18px]">architecture</span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase">Gerber / CLO 3D</span>
+</div>
+<p class="font-body-sm text-body-sm text-surface-container-high leading-snug">Zero fabric distortion through precision laser knife cutting on pure bias weaves.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Highlights Tape: Why European Labels Choose BSN -->
+<section class="w-full bg-canvas-subtle py-space-lg">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="flex items-start gap-space-md p-space-lg bg-canvas-white rounded shadow-sm">
+<span class="w-12 h-12 rounded bg-surface-container flex items-center justify-center shrink-0 text-gold-deep">
+<span class="material-symbols-outlined text-[26px]">straighten</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-slate-dark">True Bias Cutting Mastery</h2>
+<p class="font-body-sm text-body-sm text-slate-muted mt-1 leading-relaxed">
+              Cut at a strict 45-degree angle with relaxed tension resting tables to eliminate vertical seam spiraling, side bunching, and uneven hems across production cycles.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-lg bg-canvas-white rounded shadow-sm">
+<span class="w-12 h-12 rounded bg-surface-container flex items-center justify-center shrink-0 text-gold-deep">
+<span class="material-symbols-outlined text-[26px]">eco</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-slate-dark">Circular &amp; Certified Fibers</h2>
+<p class="font-body-sm text-body-sm text-slate-muted mt-1 leading-relaxed">
+              Oeko-Tex Standard 100 Class I &amp; GOTS-certified dyes. Fully traceable Lenzing™ Tencel, European Normandy flax linen, and Asahi Kasei Bemberg™ cupro yarns.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-lg bg-canvas-white rounded shadow-sm">
+<span class="w-12 h-12 rounded bg-surface-container flex items-center justify-center shrink-0 text-gold-deep">
+<span class="material-symbols-outlined text-[26px]">speed</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-slate-dark">5-Day Fast-Track Sampling</h2>
+<p class="font-body-sm text-body-sm text-slate-muted mt-1 leading-relaxed">
+              Dedicated Istanbul sample atelier delivering first fit protos, digital 3D fit renders, and custom lab-dips to your London, Paris, or Milan offices in under one week.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 1: Premium Woven & Draped Fabrics Matrix -->
+<section class="w-full bg-surface-container-lowest py-space-2xl" id="materials-matrix">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin space-y-space-xl">
+<!-- Section Header with Editorial Counter -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs font-label-eyebrow text-label-eyebrow text-gold-deep uppercase tracking-widest">
+<span>01</span>
+<span class="w-8 h-[1px] bg-gold-primary"></span>
+<span>Substrate Engineering</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-slate-dark">Premium Draped &amp; Woven Fabric Library</h2>
+</div>
+<p class="font-body-md text-body-md text-slate-muted max-w-md">
+          Sourced from premier Italian, Turkish, and Japanese spinning mills. Fully customizable weights, finishes, and reactive custom dye lot matches.
+        </p>
+</div>
+<!-- 4-Column High Density Fabric Matrix -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-gutter">
+<!-- Fabric 1 -->
+<div class="flex flex-col bg-canvas-subtle rounded overflow-hidden shadow-sm group hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Macro textile photograph of pure sandwashed mulberry silk fabric in an ivory tone, showing subtle sueded matte texture, gentle soft folds, and luminous sheen under direct clean gallery lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaZR5XmBxFqJPD-l27zEAy7UCEjdN5TAgCrV7yI9uTqC1P-PC4bTVa8Gs6LkquvDDuX0UVaWqFJb6wCCdeDkdmjaRhdrAFgMKeJh9v9PyBz_LQVkRBHp9-jGX15HoO-zJ_DDre_yssqKH3Mw9YEG8y34tVLBawDvhdp7ZXzksDNFIQ4Rt-Go48i-AYeh8DYbCvgf1buvxxYIMPrSAxUVDQRHt2SwHcBp598CZa1Gar"/>
+<div class="absolute top-3 left-3 bg-slate-dark/90 text-gold-light px-2.5 py-1 rounded text-[11px] font-label-eyebrow uppercase">
+              16–19 Momme
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase">Ultra-Luxury</span>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark">Sandwashed Silk &amp; Silk Twill</h3>
+<p class="font-body-sm text-body-sm text-slate-muted leading-relaxed">
+                100% Grade 6A Mulberry silk subjected to micro-sandwashing for a peach-skin velvety tactile hand. Zero water-drop staining properties and heavy fluid drop.
+              </p>
+</div>
+<div class="space-y-2 pt-space-xs bg-canvas-white p-space-sm rounded">
+<div class="flex justify-between text-[12px] text-slate-muted">
+<span>Composition:</span>
+<strong class="text-slate-dark">100% Pure Mulberry Silk</strong>
+</div>
+<div class="flex justify-between text-[12px] text-slate-muted">
+<span>Ideal Silhouette:</span>
+<strong class="text-slate-dark">Bias Slip, Cowl Neck Gown</strong>
+</div>
+<div class="flex justify-between text-[12px] text-slate-muted">
+<span>Shrinkage Tolerance:</span>
+<strong class="text-slate-dark">&lt; 1.5% Pre-shrunk</strong>
+</div>
+</div>
+<button class="w-full py-2 bg-slate-dark hover:bg-slate-mid text-canvas-white text-label-action font-label-action rounded transition-colors flex items-center justify-center gap-space-xs" onclick="selectFabric('Sandwashed Silk')" type="button">
+<span>SELECT FOR RFQ</span>
+<span class="text-gold-primary">→</span>
+</button>
+</div>
+</div>
+<!-- Fabric 2 -->
+<div class="flex flex-col bg-canvas-subtle rounded overflow-hidden shadow-sm group hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close-up macro of forest green Tencel lyocell twill fabric with fluid liquid-like drapery, visible diagonal twill weave, soft natural luster, luxury eco-friendly fashion textile studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo5zezQW88jkm2B2XuymJZzmjCqu8Fk06_kLRo4c55MmL4ZeYyCyIFok6iJchJSiGZvcqIeq4n6nKYwO4p5pKvdUV0wSEg9Krb_VuQYEIxjaDRo5vmLNed0vOBvN-4nGGAA9uFcFGUrNskMhIviAKphvZ-hUTsq3szuIqHlUBl3UnoRVCxdX8UP7nRgUGBJpQmfkpU1l4PmceCnopI7-0C-ATX_k-es-VMN-8cC3il"/>
+<div class="absolute top-3 left-3 bg-slate-dark/90 text-gold-light px-2.5 py-1 rounded text-[11px] font-label-eyebrow uppercase">
+              180–220 GSM
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase">Sustainable Essential</span>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark">Lenzing™ Tencel &amp; Lyocell Twill</h3>
+<p class="font-body-sm text-body-sm text-slate-muted leading-relaxed">
+                Closed-loop botanic wood pulp construction. Heavyweight fluid drape with high breathability, thermal regulation, and superior wrinkle recovery compared to pure viscose.
+              </p>
+</div>
+<div class="space-y-2 pt-space-xs bg-canvas-white p-space-sm rounded">
+<div class="flex justify-between text-[12px] text-slate-muted">
+<span>Composition:</span>
+<strong class="text-slate-dark">100% Lyocell or Cotton-Blend</strong>
+</div>
+<div class="flex justify-between text-[12px] text-slate-muted">
+<span>Ideal Silhouette:</span>
+<strong class="text-slate-dark">Belted Shirtdress, Trench Dress</strong>
+</div>
+<div class="flex justify-between text-[12px] text-slate-muted">
+<span>Certification:</span>
+<strong class="text-slate-dark">FSC® / Lenzing Certified</strong>
+</div>
+</div>
+<button class="w-full py-2 bg-slate-dark hover:bg-slate-mid text-canvas-white text-label-action font-label-action rounded transition-colors flex items-center justify-center gap-space-xs" onclick="selectFabric('Tencel &amp; Lyocell Twill')" type="button">
+<span>SELECT FOR RFQ</span>
+<span class="text-gold-primary">→</span>
+</button>
+</div>
+</div>
+<!-- Fabric 3 -->
+<div class="flex flex-col bg-canvas-subtle rounded overflow-hidden shadow-sm group hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Macro texture of pre-softened French linen textile in warm oatmeal and stone color, showing artisanal slub weave, relaxed natural folds, and crisp tactile organic character in soft natural morning sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIrtzOcPd0ZMjXhL-QFl1oT37WxFIzucbe4ndQxrEdE4kSHMP9IwJE3ECNcrH22scuzc6AzV8lVvZFxcpq68A0qB0u-NONhxWumtnRkY94Pw-NdjZu67U3ZtMzQRd7MusBKf0HcRESuXDvuXz4N3R3OQGoWYATUmHLWFUUzv2b6YmkSsHsvjtBIQmB35W_ItPVpEKMXHFImvTOHEwcs6Zzo_I_EoltDhyGJ8styL8f"/>
+<div class="absolute top-3 left-3 bg-slate-dark/90 text-gold-light px-2.5 py-1 rounded text-[11px] font-label-eyebrow uppercase">
+              155–210 GSM
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase">European Heritage</span>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark">Aero-Finished French Linen</h3>
+<p class="font-body-sm text-body-sm text-slate-muted leading-relaxed">
+                Woven from long-staple Normandy flax and pre-softened with tumbling aero-wash mechanics. Non-scratchy skin feel with elegant natural slubs and architectural structure.
+              </p>
+</div>
+<div class="space-y-2 pt-space-xs bg-canvas-white p-space-sm rounded">
+<div class="flex justify-between text-[12px] text-slate-muted">
+<span>Composition:</span>
+<strong class="text-slate-dark">100% Certified European Flax</strong>
+</div>
+<div class="flex justify-between text-[12px] text-slate-muted">
+<span>Ideal Silhouette:</span>
+<strong class="text-slate-dark">Summer Tiered Maxi, Chemisier</strong>
+</div>
+<div class="flex justify-between text-[12px] text-slate-muted">
+<span>Finishing:</span>
+<strong class="text-slate-dark">Garment Enzyme Washed</strong>
+</div>
+</div>
+<button class="w-full py-2 bg-slate-dark hover:bg-slate-mid text-canvas-white text-label-action font-label-action rounded transition-colors flex items-center justify-center gap-space-xs" onclick="selectFabric('French Linen')" type="button">
+<span>SELECT FOR RFQ</span>
+<span class="text-gold-primary">→</span>
+</button>
+</div>
+</div>
+<!-- Fabric 4 -->
+<div class="flex flex-col bg-canvas-subtle rounded overflow-hidden shadow-sm group hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Macro shot of midnight blue Bemberg cupro fabric with satin weave sheen, flowing gracefully with deep liquid draping, zero static cling visual, luxury high fashion interior and dress material." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0E1Yn-YH8tINn2-36GVNPOn40k8nocNV11Y9IrBHjcS0FWzr9_GQCVZxqSBH5EpYmsR7d5Jws0dA6KPOJBEieAKsRJQa4r5lXu55MvAQEgTmaoZhLsyX9UbCQNRKUKgYOaRy9bC4gYlIspyhYgBYCX4wZRblJzBeNMpf9EndcLV0H850mPoYV1m4JooeD1qG0AASyZKCY8jXOkKU8RnWAbzE5tDTdh8-nfkpOJPVH"/>
+<div class="absolute top-3 left-3 bg-slate-dark/90 text-gold-light px-2.5 py-1 rounded text-[11px] font-label-eyebrow uppercase">
+              110–140 GSM
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase">Liquid Sheen</span>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark">Bemberg™ Cupro &amp; Georgette</h3>
+<p class="font-body-sm text-body-sm text-slate-muted leading-relaxed">
+                Regenerated cotton linter fiber that breathes like cotton yet cascades with the fluid gloss of silk. Static-free, hypoallergenic, and ideal for self-lined slips and evening pieces.
+              </p>
+</div>
+<div class="space-y-2 pt-space-xs bg-canvas-white p-space-sm rounded">
+<div class="flex justify-between text-[12px] text-slate-muted">
+<span>Composition:</span>
+<strong class="text-slate-dark">100% Cupro / Viscose Georgette</strong>
+</div>
+<div class="flex justify-between text-[12px] text-slate-muted">
+<span>Ideal Silhouette:</span>
+<strong class="text-slate-dark">Evening Wrap, Slip Linings</strong>
+</div>
+<div class="flex justify-between text-[12px] text-slate-muted">
+<span>Special Feature:</span>
+<strong class="text-slate-dark">Anti-static, Zero Cling</strong>
+</div>
+</div>
+<button class="w-full py-2 bg-slate-dark hover:bg-slate-mid text-canvas-white text-label-action font-label-action rounded transition-colors flex items-center justify-center gap-space-xs" onclick="selectFabric('Bemberg Cupro')" type="button">
+<span>SELECT FOR RFQ</span>
+<span class="text-gold-primary">→</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Haute Sartorial Construction & Trims -->
+<section class="w-full bg-slate-dark text-canvas-white py-space-2xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin space-y-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs font-label-eyebrow text-label-eyebrow text-gold-primary uppercase tracking-widest">
+<span>02</span>
+<span class="w-8 h-[1px] bg-gold-primary"></span>
+<span>Atelier Craftsmanship</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-canvas-white">Couture Construction &amp; Luxury Trims</h2>
+</div>
+<p class="font-body-md text-body-md text-slate-muted max-w-md">
+          Interior clean finishing is the true hallmark of contemporary luxury. Every piece produced in our facilities passes a strict 100% manual inspection.
+        </p>
+</div>
+<!-- Feature Grid with Custom Visual SVGs -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Spec Card 1 -->
+<div class="p-space-lg bg-slate-mid/60 rounded flex flex-col justify-between space-y-space-md shadow-md">
+<div class="space-y-space-md">
+<div class="w-12 h-12 rounded bg-slate-dark flex items-center justify-center text-gold-primary">
+<span class="material-symbols-outlined text-[24px]">join_inner</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-canvas-white">Clean French Seams</h3>
+<span class="text-gold-deep text-[11px] font-label-eyebrow uppercase block mt-1">Double-Stitched Enclosure</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-muted leading-relaxed">
+              Complete raw edge encasement with 0.5cm ultra-fine French seam tolerances. No overlocking fray, resulting in a pristine inside-out couture garment.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-[11px] text-gold-light font-label-eyebrow">
+<span>TOLERANCE: ±0.5MM</span>
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+</div>
+<!-- Spec Card 2 -->
+<div class="p-space-lg bg-slate-mid/60 rounded flex flex-col justify-between space-y-space-md shadow-md">
+<div class="space-y-space-md">
+<div class="w-12 h-12 rounded bg-slate-dark flex items-center justify-center text-gold-primary">
+<span class="material-symbols-outlined text-[24px]">tune</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-canvas-white">Blind Hemming &amp; Bias Binding</h3>
+<span class="text-gold-deep text-[11px] font-label-eyebrow uppercase block mt-1">Zero Hem Distortion</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-muted leading-relaxed">
+              Invisible blind stitch hemming and 100% self-fabric bias binding across armholes and necklines to preserve delicate drape and fluidity.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-[11px] text-gold-light font-label-eyebrow">
+<span>HAND-ROLLED AVAILABLE</span>
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+</div>
+<!-- Spec Card 3 -->
+<div class="p-space-lg bg-slate-mid/60 rounded flex flex-col justify-between space-y-space-md shadow-md">
+<div class="space-y-space-md">
+<div class="w-12 h-12 rounded bg-slate-dark flex items-center justify-center text-gold-primary">
+<span class="material-symbols-outlined text-[24px]">radio_button_checked</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-canvas-white">Shell &amp; Corozo Buttons</h3>
+<span class="text-gold-deep text-[11px] font-label-eyebrow uppercase block mt-1">Laser Engraved Branding</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-muted leading-relaxed">
+              Natural Australian Mother-of-Pearl, sustainably harvested Tagua Corozo, and matte buffalo horn buttons with cross-stitched shank stability.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-[11px] text-gold-light font-label-eyebrow">
+<span>CUSTOM ENGRAVING</span>
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+</div>
+<!-- Spec Card 4 -->
+<div class="p-space-lg bg-slate-mid/60 rounded flex flex-col justify-between space-y-space-md shadow-md">
+<div class="space-y-space-md">
+<div class="w-12 h-12 rounded bg-slate-dark flex items-center justify-center text-gold-primary">
+<span class="material-symbols-outlined text-[24px]">vertical_align_center</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-canvas-white">YKK Conceal® Hardware</h3>
+<span class="text-gold-deep text-[11px] font-label-eyebrow uppercase block mt-1">Exact Pantoned Zip Tape</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-muted leading-relaxed">
+              Genuine YKK Conceal invisible zippers paired with discreet hook-and-eye safety closures. Hidden cleanly beneath silk fabric folds.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-[11px] text-gold-light font-label-eyebrow">
+<span>LAB-DIP COLOR MATCH</span>
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+</div>
+</div>
+<!-- Live Spec Comparison Banner -->
+<div class="p-space-lg bg-surface-container/10 rounded flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<span class="w-10 h-10 rounded-full bg-gold-primary/20 text-gold-light flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-canvas-white">ISO 9001 &amp; BSCI Social Compliance Audited</h4>
+<p class="font-body-sm text-body-sm text-slate-muted">All Van and Istanbul facilities maintain full labor transparency, ethical pay grids, and zero harmful discharge.</p>
+</div>
+</div>
+<a class="inline-flex items-center gap-space-xs text-gold-primary hover:text-gold-light font-label-action text-label-action" href="#rfq-section">
+<span>REQUEST AUDIT REPORTS &amp; SPEC BOOK</span>
+<span>→</span>
+</a>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Proven Silhouette & Pattern Master Library -->
+<section class="w-full bg-canvas-subtle py-space-2xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin space-y-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs font-label-eyebrow text-label-eyebrow text-gold-deep uppercase tracking-widest">
+<span>03</span>
+<span class="w-8 h-[1px] bg-gold-primary"></span>
+<span>Archetypal Silhouettes</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-slate-dark">Master Pattern &amp; Silhouette Library</h2>
+</div>
+<p class="font-body-md text-body-md text-slate-muted max-w-md">
+          Pre-tested digital grade blocks ready for immediate private-label branding, customized measurements, and sleeve/collar modifications.
+        </p>
+</div>
+<!-- 3 Master Silhouettes Detailed Showcase -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Silhouette 1: The Bias-Cut Slip Dress -->
+<div class="bg-canvas-white rounded overflow-hidden shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Editorial model wearing an elegant olive green bias-cut silk slip dress with delicate spaghetti straps and cowl neckline, minimal modern studio background with architectural shadow lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaujNL2ojKF56Wp9Spn-AFHTWE22xr7a0K-k5ta8YbtoWAMbDbSCPD0cHGthfYG7F82XTq-U-S-VYaQFCaLkU0l9WKZdAydofva_xcMf56ElM1xKuIozrHhN7dSQ9oeMDiW4EcgMbU8v1mSvzQ4Vo2mW-BuuPUAwVJ_tVOM-k7N4uST2tOo63klxxVy4QD0vgNnbUqY9ecmxjlxMvmhk2EcdsR20Gq7j96QxsibbFi"/>
+<div class="absolute bottom-4 left-4 bg-slate-dark/90 text-gold-light px-3 py-1 rounded text-[11px] font-label-eyebrow uppercase">
+                Silhouette Code: BSN-SLP-01
+              </div>
+</div>
+<div class="p-space-lg space-y-space-md">
+<div class="space-y-1">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase">90s Minimalist Icon</span>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark">The Bias-Cut Slip Dress</h3>
+</div>
+<p class="font-body-sm text-body-sm text-slate-muted leading-relaxed">
+                Precision cut on the true diagonal grain for fluid contouring without cling. Features adjustable rouleau silk straps, scoop or cowl neck variants, and French seam interior construction.
+              </p>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-slate-mid">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-gold-deep text-[18px]">check</span>
+<span>Fabric Options: 100% Silk Twill, Cupro, Tencel</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-gold-deep text-[18px]">check</span>
+<span>Edge Finish: 0.3cm micro-turn hem or scallop lace</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-gold-deep text-[18px]">check</span>
+<span>Standard Sizes: EU 32–46 / US 0–14</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="p-space-lg pt-0">
+<button class="w-full py-2.5 bg-canvas-subtle hover:bg-slate-dark hover:text-canvas-white text-slate-dark text-label-action font-label-action rounded transition-colors flex items-center justify-center gap-space-xs" onclick="selectSilhouette('The Bias-Cut Slip Dress')" type="button">
+<span>CONFIGURE THIS SILHOUETTE</span>
+<span class="text-gold-primary">↗</span>
+</button>
+</div>
+</div>
+<!-- Silhouette 2: The Tailored Belted Shirt-Dress -->
+<div class="bg-canvas-white rounded overflow-hidden shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Editorial lookbook of a model in a crisp white tailored linen chemisier shirt dress with fabric tie belt, crisp pointed collar, rolled sleeve cuffs, and pearl buttons, European minimalist aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXYE03f1-1j2iy97VjzHvsnMf39WL8xuc-NCIN4gwzwIOR47H_IU8taI8_cZteKmDn2_NvQ8VUXV4u2j3ZpHgNibvgjXKvATXcTuoZVdWbwUis-ulRoUYFfWeAfv5QxA2Hu4eNV91V-BtD_207homSqd5HG-ZQTGouumVHYDhUoplzY7XhlMb7vkzUAZfip9n5hBHkUmSuK1ycLjbn5YFwsm6CHpiGxsMaYO9ZX_MF"/>
+<div class="absolute bottom-4 left-4 bg-slate-dark/90 text-gold-light px-3 py-1 rounded text-[11px] font-label-eyebrow uppercase">
+                Silhouette Code: BSN-SHT-04
+              </div>
+</div>
+<div class="p-space-lg space-y-space-md">
+<div class="space-y-1">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase">Sartorial Contemporary</span>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark">The Tailored Belted Shirt-Dress</h3>
+</div>
+<p class="font-body-sm text-body-sm text-slate-muted leading-relaxed">
+                Structured fusion of high tailoring and effortless wear. Sharp fusible-interlined collar, continuous front placket, side slit vents, and an optional matching fabric sash with brass D-rings.
+              </p>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-slate-mid">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-gold-deep text-[18px]">check</span>
+<span>Fabric Options: French Linen, Organic Poplin, Tencel Twill</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-gold-deep text-[18px]">check</span>
+<span>Trims: Engraved MOP buttons &amp; double-needle stitching</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-gold-deep text-[18px]">check</span>
+<span>Standard Sizes: EU 34–48 / US 2–16</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="p-space-lg pt-0">
+<button class="w-full py-2.5 bg-canvas-subtle hover:bg-slate-dark hover:text-canvas-white text-slate-dark text-label-action font-label-action rounded transition-colors flex items-center justify-center gap-space-xs" onclick="selectSilhouette('The Tailored Belted Shirt-Dress')" type="button">
+<span>CONFIGURE THIS SILHOUETTE</span>
+<span class="text-gold-primary">↗</span>
+</button>
+</div>
+</div>
+<!-- Silhouette 3: The Tiered Resort Maxi Dress -->
+<div class="bg-canvas-white rounded overflow-hidden shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Fashion photo of a model wearing a billowy terracotta tiered maxi dress with soft volume gathers, delicate keyhole tie back, lightweight semi-sheer cotton silk voile, golden hour sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsPdAoyme73wQCvDpp8GMfysMjTGEgW0mziuorXr8b52NX0wHNs9SJB-pfhgURVLgvuh7vcxOGq1HfDIL1ObDH5Lva3QCNYSwI1sIYS-taQ6PCs8JurH4nEKtQKvtJzE8YIl9Dr5SfG1tPlC5eqQnYC0eaOcFIC_SW3o7ZHtg21fy8G8nkkEv0wKpUgxUmQnw_Zu_j4M4XmhEHI32SctN7lR0XvcLb-nqEuDdBY_sr"/>
+<div class="absolute bottom-4 left-4 bg-slate-dark/90 text-gold-light px-3 py-1 rounded text-[11px] font-label-eyebrow uppercase">
+                Silhouette Code: BSN-MAX-07
+              </div>
+</div>
+<div class="p-space-lg space-y-space-md">
+<div class="space-y-1">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase">Bohemian Luxury</span>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark">The Tiered Resort Maxi Dress</h3>
+</div>
+<p class="font-body-sm text-body-sm text-slate-muted leading-relaxed">
+                Effortless voluminous tiers gathered with precise stitch density. Soft drop shoulder, optional balloon sleeves with elasticized cuffs, and integrated tonal lightweight cotton voile lining.
+              </p>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-slate-mid">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-gold-deep text-[18px]">check</span>
+<span>Fabric Options: Cotton-Silk Voile, Viscose Georgette</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-gold-deep text-[18px]">check</span>
+<span>Construction: Multi-tier micro-shirring &amp; blind hem</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-gold-deep text-[18px]">check</span>
+<span>Standard Sizes: XS to XXL Relaxed Fit</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="p-space-lg pt-0">
+<button class="w-full py-2.5 bg-canvas-subtle hover:bg-slate-dark hover:text-canvas-white text-slate-dark text-label-action font-label-action rounded transition-colors flex items-center justify-center gap-space-xs" onclick="selectSilhouette('The Tiered Resort Maxi Dress')" type="button">
+<span>CONFIGURE THIS SILHOUETTE</span>
+<span class="text-gold-primary">↗</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Production Flow Timeline: From Sketch to Port -->
+<section class="w-full bg-surface-container-lowest py-space-2xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin space-y-space-xl">
+<div class="text-center max-w-2xl mx-auto space-y-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase tracking-widest">End-to-End European Integration</span>
+<h2 class="font-headline-lg text-headline-lg text-slate-dark">From Tech Pack to Bulk Port Delivery</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<div class="p-space-md bg-canvas-subtle rounded shadow-sm relative">
+<span class="font-metric-display text-metric-display text-gold-deep/30 block mb-1">01</span>
+<h4 class="font-headline-sm text-headline-sm text-slate-dark">Tech Review &amp; 3D</h4>
+<p class="font-body-sm text-body-sm text-slate-muted mt-1 leading-snug">CLO 3D simulation, digital pattern grading on Gerber AccuMark, and lab-dip formulation.</p>
+<span class="block mt-3 text-[11px] font-label-eyebrow text-gold-deep uppercase font-bold">2–3 Days</span>
+</div>
+<div class="p-space-md bg-canvas-subtle rounded shadow-sm relative">
+<span class="font-metric-display text-metric-display text-gold-deep/30 block mb-1">02</span>
+<h4 class="font-headline-sm text-headline-sm text-slate-dark">Atelier Prototyping</h4>
+<p class="font-body-sm text-body-sm text-slate-muted mt-1 leading-snug">First fit sample sewn in Istanbul atelier with correct substrate drape and initial trim sets.</p>
+<span class="block mt-3 text-[11px] font-label-eyebrow text-gold-deep uppercase font-bold">5–7 Days</span>
+</div>
+<div class="p-space-md bg-canvas-subtle rounded shadow-sm relative">
+<span class="font-metric-display text-metric-display text-gold-deep/30 block mb-1">03</span>
+<h4 class="font-headline-sm text-headline-sm text-slate-dark">Bulk Weaving &amp; Cut</h4>
+<p class="font-body-sm text-body-sm text-slate-muted mt-1 leading-snug">Fabric quality clearance, pre-shrinkage washing, and tensionless multi-ply laser knife cutting.</p>
+<span class="block mt-3 text-[11px] font-label-eyebrow text-gold-deep uppercase font-bold">14–20 Days</span>
+</div>
+<div class="p-space-md bg-canvas-subtle rounded shadow-sm relative">
+<span class="font-metric-display text-metric-display text-gold-deep/30 block mb-1">04</span>
+<h4 class="font-headline-sm text-headline-sm text-slate-dark">Sewing &amp; Finishing</h4>
+<p class="font-body-sm text-body-sm text-slate-muted mt-1 leading-snug">Assembly in Van manufacturing plant, French seam executions, and delicate hand steam pressing.</p>
+<span class="block mt-3 text-[11px] font-label-eyebrow text-gold-deep uppercase font-bold">15–25 Days</span>
+</div>
+<div class="p-space-md bg-canvas-subtle rounded shadow-sm relative">
+<span class="font-metric-display text-metric-display text-gold-deep/30 block mb-1">05</span>
+<h4 class="font-headline-sm text-headline-sm text-slate-dark">AQL 1.5 &amp; Logistics</h4>
+<p class="font-body-sm text-body-sm text-slate-muted mt-1 leading-snug">In-line and final garment audit, individual eco-bagging, and DDP shipping to European hubs.</p>
+<span class="block mt-3 text-[11px] font-label-eyebrow text-gold-deep uppercase font-bold">3–7 Days Freight</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: Direct Factory RFQ & Spec Evaluation Form -->
+<section class="w-full bg-slate-dark text-canvas-white py-space-2xl" id="rfq-section">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left Side: Factory Authority, Lead Director & Mutual NDA -->
+<div class="lg:col-span-5 space-y-space-lg">
+<div class="space-y-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-primary uppercase tracking-widest">Immediate Factory Procurement</span>
+<h2 class="font-headline-lg text-headline-lg text-canvas-white">Request Dress Tech Pack Evaluation &amp; RFQ</h2>
+<p class="font-body-md text-body-md text-slate-muted">
+              Submit your technical sheets, CLO 3D assets, or target silhouette parameters. Our export engineering team delivers a cost matrix and sample schedule within 24 hours.
+            </p>
+</div>
+<!-- Direct Executive Contact Card -->
+<div class="p-space-lg bg-slate-mid/70 rounded shadow-md space-y-space-md">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-light uppercase tracking-wider block">Lead Executive Direct Desk</span>
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded bg-surface-container/20 flex items-center justify-center text-gold-primary">
+<span class="material-symbols-outlined text-[32px]">manage_accounts</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-canvas-white">Sedat Üzümcü</h4>
+<p class="font-body-sm text-body-sm text-slate-muted">Head of Global Apparel Sourcing &amp; Export</p>
+</div>
+</div>
+<div class="space-y-space-xs pt-space-xs text-body-sm">
+<div class="flex items-center gap-space-sm text-surface-container-high">
+<span class="material-symbols-outlined text-gold-primary text-[18px]">call</span>
+<a class="hover:text-gold-light transition-colors" href="tel:+905352336073">+90 535 233 6073</a>
+</div>
+<div class="flex items-center gap-space-sm text-surface-container-high">
+<span class="material-symbols-outlined text-gold-primary text-[18px]">mail</span>
+<a class="hover:text-gold-light transition-colors" href="mailto:sedatuzumcu@bsntextile.com">sedatuzumcu@bsntextile.com</a>
+</div>
+<div class="flex items-center gap-space-sm text-surface-container-high">
+<span class="material-symbols-outlined text-gold-primary text-[18px]">chat</span>
+<a class="text-gold-light hover:underline font-label-action" href="https://wa.me/905352336073" target="_blank">Direct WhatsApp Business Channel ↗</a>
+</div>
+</div>
+</div>
+<!-- Mutual NDA Guarantee Shield -->
+<div class="p-space-md bg-slate-mid/40 rounded flex items-start gap-space-md">
+<span class="material-symbols-outlined text-gold-primary text-[28px] shrink-0 mt-0.5">lock_clock</span>
+<div class="space-y-1">
+<h5 class="font-headline-sm text-headline-sm text-canvas-white">100% Intellectual Property &amp; NDA Guarantee</h5>
+<p class="font-body-sm text-body-sm text-slate-muted">
+                Your pattern files, measurements, and artwork remain strictly confidential under European industrial trade NDA protocols. We never replicate client silhouettes.
+              </p>
+</div>
+</div>
+</div>
+<!-- Right Side: The RFQ System Form -->
+<div class="lg:col-span-7 bg-canvas-white rounded p-space-lg lg:p-space-xl text-slate-dark shadow-xl">
+<form class="space-y-space-md" id="dress-rfq-form" onsubmit="handleFormSubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="space-y-1">
+<label class="font-label-eyebrow text-label-eyebrow text-slate-muted uppercase" for="brand-name">Brand / Company Name *</label>
+<input class="w-full h-12 px-space-md rounded bg-canvas-subtle text-slate-dark text-body-md focus:bg-canvas-white focus:outline-none focus:ring-2 focus:ring-gold-deep transition-all" id="brand-name" placeholder="e.g., Maison Blanche Paris" required="" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-eyebrow text-label-eyebrow text-slate-muted uppercase" for="contact-person">Contact Person &amp; Title *</label>
+<input class="w-full h-12 px-space-md rounded bg-canvas-subtle text-slate-dark text-body-md focus:bg-canvas-white focus:outline-none focus:ring-2 focus:ring-gold-deep transition-all" id="contact-person" placeholder="e.g., Claire Dupont, Production Dir." required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="space-y-1">
+<label class="font-label-eyebrow text-label-eyebrow text-slate-muted uppercase" for="contact-email">Corporate Email *</label>
+<input class="w-full h-12 px-space-md rounded bg-canvas-subtle text-slate-dark text-body-md focus:bg-canvas-white focus:outline-none focus:ring-2 focus:ring-gold-deep transition-all" id="contact-email" placeholder="claire@maisonblanche.com" required="" type="email"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-eyebrow text-label-eyebrow text-slate-muted uppercase" for="contact-phone">Phone / WhatsApp *</label>
+<input class="w-full h-12 px-space-md rounded bg-canvas-subtle text-slate-dark text-body-md focus:bg-canvas-white focus:outline-none focus:ring-2 focus:ring-gold-deep transition-all" id="contact-phone" placeholder="+33 6 12 34 56 78" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="space-y-1">
+<label class="font-label-eyebrow text-label-eyebrow text-slate-muted uppercase" for="fabric-substrate">Preferred Fabric *</label>
+<select class="w-full h-12 px-space-md rounded bg-canvas-subtle text-slate-dark text-body-md focus:bg-canvas-white focus:outline-none focus:ring-2 focus:ring-gold-deep transition-all" id="fabric-substrate" required="">
+<option value="">Select Fabric Substrate</option>
+<option value="Sandwashed Silk">100% Sandwashed Silk Twill</option>
+<option value="Tencel &amp; Lyocell Twill">Lenzing™ Tencel / Lyocell</option>
+<option value="French Linen">Normandy French Linen</option>
+<option value="Bemberg Cupro">Bemberg™ Cupro / Georgette</option>
+<option value="Organic Cotton Voile">GOTS Organic Cotton Voile</option>
+<option value="Custom Yarn Development">Custom Yarn / Lab Development</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-eyebrow text-label-eyebrow text-slate-muted uppercase" for="target-silhouette">Target Silhouette *</label>
+<select class="w-full h-12 px-space-md rounded bg-canvas-subtle text-slate-dark text-body-md focus:bg-canvas-white focus:outline-none focus:ring-2 focus:ring-gold-deep transition-all" id="target-silhouette" required="">
+<option value="">Select Base Model</option>
+<option value="The Bias-Cut Slip Dress">The Bias-Cut Slip Dress</option>
+<option value="The Tailored Belted Shirt-Dress">The Tailored Belted Shirt-Dress</option>
+<option value="The Tiered Resort Maxi Dress">The Tiered Resort Maxi Dress</option>
+<option value="Bespoke Tech Pack Silhouette">Bespoke Custom Tech Pack</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-eyebrow text-label-eyebrow text-slate-muted uppercase" for="order-volume">Estimated Volume *</label>
+<select class="w-full h-12 px-space-md rounded bg-canvas-subtle text-slate-dark text-body-md focus:bg-canvas-white focus:outline-none focus:ring-2 focus:ring-gold-deep transition-all" id="order-volume" required="">
+<option value="500 - 1,000 pcs">500 – 1,000 Pcs (Initial MOQ)</option>
+<option value="1,000 - 3,000 pcs">1,000 – 3,000 Pcs</option>
+<option value="3,000 - 10,000 pcs">3,000 – 10,000 Pcs</option>
+<option value="10,000+ pcs">10,000+ Pcs (High Volume)</option>
+</select>
+</div>
+</div>
+<!-- Tech Pack Drag & Drop Area -->
+<div class="space-y-1">
+<label class="font-label-eyebrow text-label-eyebrow text-slate-muted uppercase">Upload Tech Pack / Spec Sheet / 3D CAD (Optional)</label>
+<div class="p-space-lg bg-canvas-subtle rounded text-center cursor-pointer hover:bg-surface-container transition-colors relative" onclick="document.getElementById('file-upload-input').click()">
+<input accept=".pdf,.ai,.dxf,.zprj,.zip,.png,.jpg" class="hidden" id="file-upload-input" onchange="updateFileName(this)" type="file"/>
+<span class="material-symbols-outlined text-gold-deep text-[32px] block mb-1">cloud_upload</span>
+<span class="font-body-sm text-body-sm text-slate-mid block" id="file-upload-label">
+                  Drag and drop files here, or <strong class="text-slate-dark underline">browse system</strong>
+</span>
+<span class="font-label-eyebrow text-label-eyebrow text-slate-muted block mt-1">Supports Gerber (.dxf), CLO 3D (.zprj), Adobe Tech Packs (.pdf, .ai) up to 25MB</span>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label-eyebrow text-label-eyebrow text-slate-muted uppercase" for="project-notes">Project Details &amp; Specific Finishing Notes</label>
+<textarea class="w-full p-space-md rounded bg-canvas-subtle text-slate-dark text-body-md focus:bg-canvas-white focus:outline-none focus:ring-2 focus:ring-gold-deep transition-all" id="project-notes" placeholder="Specify targeted delivery window, custom dye PANTONE codes, French seam allowances, or specific trim branding requirements..." rows="3"></textarea>
+</div>
+<div class="pt-space-xs flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs text-[12px] text-slate-muted">
+<span class="material-symbols-outlined text-gold-deep text-[16px]">verified</span>
+<span>Direct submission to Istanbul Factory Engineering Desk</span>
+</div>
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm bg-slate-dark hover:bg-slate-mid text-canvas-white hover:text-gold-light font-label-action text-label-action px-space-xl py-space-md rounded shadow-md transition-all" type="submit">
+<span>TRANSMIT RFQ &amp; REQUEST SAMPLE DRAFT</span>
+<span class="text-gold-primary font-bold">↗</span>
+</button>
+</div>
+<div class="hidden p-space-md bg-canvas-subtle rounded text-slate-dark text-center space-y-1" id="form-success-message">
+<div class="flex items-center justify-center gap-space-xs text-gold-deep font-bold">
+<span class="material-symbols-outlined">check_circle</span>
+<span>RFQ Successfully Dispatched</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-muted">Mr. Sedat Üzümcü and the contemporary dress engineering team will contact you within 24 hours with your preliminary cost breakdown.</p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript -->
+<script>
+    function selectFabric(fabricName) {
+      const select = document.getElementById('fabric-substrate');
+      if (select) {
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].text.includes(fabricName) || select.options[i].value === fabricName) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+        document.getElementById('rfq-section').scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function selectSilhouette(silhouetteName) {
+      const select = document.getElementById('target-silhouette');
+      if (select) {
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].value === silhouetteName) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+        document.getElementById('rfq-section').scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function updateFileName(input) {
+      const label = document.getElementById('file-upload-label');
+      if (input.files && input.files[0]) {
+        label.innerHTML = '<span class="text-slate-dark font-bold">Selected:</span> ' + input.files[0].name;
+      }
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const successMsg = document.getElementById('form-success-message');
+      if (successMsg) {
+        successMsg.classList.remove('hidden');
+        document.getElementById('dress-rfq-form').reset();
+        document.getElementById('file-upload-label').innerHTML = 'Drag and drop files here, or <strong class="text-slate-dark underline">browse system</strong>';
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-slate-dark text-surface-container-low pt-space-2xl pb-space-xl"><div class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter mb-space-2xl"><div class="lg:col-span-4 flex flex-col justify-between pr-0 lg:pr-space-lg"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="BSN Textile Logo" class="h-8 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/ALJJyrBHyroOpXF3UQhUkdr0oiKgzBro-s5ECOmLRxlxW8_wHTm9DEwJWPCnD_U7T8VJ4q1tv7s6YX5SgGcVO2LrQvZdVbK0DqEfiwzvJTNAeIKPpeDsB4uOFv7tL0DE1w8cKyYtvBYPGnW2oFAQy4pan50LqdLcTvKsMVccIxi1N003MPD1TLFdAUiP4sYETY76CLeiBeX78MVrhbkRigzKY5bnA1RiWJAl7msLd2pIsKe97A"/><span class="font-headline-sm text-headline-sm text-canvas-white tracking-tight">BSN TEXTILE</span></div><p class="font-body-sm text-body-sm text-slate-muted leading-relaxed">BSN Textile is a European-standard OEM/ODM garment manufacturer and exporter headquartered in Istanbul, operating high-volume integrated production facilities in Van Tekstilkent.</p><div class="pt-space-xs"><span class="font-label-eyebrow text-label-eyebrow text-gold-primary uppercase tracking-widest block mb-space-xs">Certified Production Standards</span><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center px-2 py-1 rounded bg-slate-mid text-gold-light text-[11px] font-bold font-label-action">OEKO-TEX 100</span><span class="inline-flex items-center px-2 py-1 rounded bg-slate-mid text-gold-light text-[11px] font-bold font-label-action">BSCI AUDITED</span><span class="inline-flex items-center px-2 py-1 rounded bg-slate-mid text-gold-light text-[11px] font-bold font-label-action">ISO 9001</span><span class="inline-flex items-center px-2 py-1 rounded bg-slate-mid text-gold-light text-[11px] font-bold font-label-action">GOTS ORGANIC</span></div></div></div></div><div class="lg:col-span-2 space-y-space-md"><h4 class="font-label-action text-label-action text-canvas-white uppercase tracking-wider">Core Collections</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-slate-muted"><li><a class="hover:text-gold-light transition-colors flex items-center justify-between" data-path="products-swim-shorts" href="#"><span>Swim Shorts</span><span class="text-[11px] text-gold-deep">↗</span></a></li><li><a class="hover:text-gold-light transition-colors flex items-center justify-between" data-path="products-knit-pants" href="#"><span>Knit Pants</span><span class="text-[11px] text-gold-deep">↗</span></a></li><li><a class="hover:text-gold-light transition-colors flex items-center justify-between" data-path="products-womens-dresses" href="#"><span>Women's Dresses</span><span class="text-[11px] text-gold-deep">↗</span></a></li><li><a class="hover:text-gold-light transition-colors flex items-center justify-between" data-path="products-streetwear" href="#"><span>Streetwear</span><span class="text-[11px] text-gold-deep">↗</span></a></li><li><a class="hover:text-gold-light transition-colors text-gold-primary font-medium pt-space-xs inline-block" data-path="digital-catalogue" href="#">View 2025 Lookbook →</a></li></ul></div><div class="lg:col-span-3 space-y-space-md"><h4 class="font-label-action text-label-action text-canvas-white uppercase tracking-wider">Manufacturing Facilities</h4><div class="space-y-space-md font-body-sm text-body-sm text-slate-muted"><div class="space-y-space-xs"><div class="flex items-center gap-space-xs text-canvas-white font-medium"><span class="material-symbols-outlined text-gold-primary text-[16px]">apartment</span><span>Istanbul HQ &amp; Showroom</span></div><p class="pl-6 text-[12px] leading-relaxed text-slate-muted">Avrasya Plaza, Oruçreis Mah. Tekstilkent Cad. No:10-B/208, Esenler / Istanbul, Turkey</p></div><div class="space-y-space-xs"><div class="flex items-center gap-space-xs text-canvas-white font-medium"><span class="material-symbols-outlined text-gold-primary text-[16px]">precision_manufacturing</span><span>Van Production Plant</span></div><p class="pl-6 text-[12px] leading-relaxed text-slate-muted">Tekstilkent 2. Etap 4. Blok No:12, İpekyolu / Van, Turkey</p></div></div></div><div class="lg:col-span-3 space-y-space-md"><h4 class="font-label-action text-label-action text-canvas-white uppercase tracking-wider">Direct Procurement</h4><div class="space-y-space-sm font-body-sm text-body-sm"><div class="flex items-start gap-space-xs text-slate-muted"><span class="material-symbols-outlined text-gold-primary text-[18px] shrink-0 mt-0.5">call</span><div><span class="block text-[11px] uppercase tracking-wider text-slate-muted">Direct Phone &amp; Export Desk</span><a class="text-canvas-white hover:text-gold-light font-medium tracking-wide transition-colors" href="tel:+905352336073">+90 535 233 6073</a></div></div><div class="flex items-start gap-space-xs text-slate-muted"><span class="material-symbols-outlined text-gold-primary text-[18px] shrink-0 mt-0.5">mail</span><div><span class="block text-[11px] uppercase tracking-wider text-slate-muted">Procurement &amp; Management</span><a class="block text-canvas-white hover:text-gold-light transition-colors" href="mailto:sedatuzumcu@bsntextile.com">sedatuzumcu@bsntextile.com</a><a class="block text-canvas-white hover:text-gold-light transition-colors" href="mailto:info@bsntextile.com">info@bsntextile.com</a></div></div><div class="pt-space-xs"><a class="inline-flex items-center gap-space-xs bg-slate-mid hover:bg-slate-dark text-canvas-white hover:text-gold-light text-label-action font-label-action px-space-md py-space-xs rounded transition-colors" href="https://wa.me/905352336073" target="_blank"><span class="material-symbols-outlined text-gold-primary text-[16px]">chat</span><span>WHATSAPP DIRECT INQUIRY</span></a></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-slate-muted"><div class="flex flex-wrap items-center gap-space-md text-[12px]"><span>© 2025 BSN Textile Sanayi ve Dış Ticaret A.Ş. All rights reserved.</span><span class="hidden md:inline text-slate-mid">|</span><span class="text-gold-deep">Bespoke Garment &amp; Technical Apparel Sourcing</span></div><div class="flex items-center gap-space-lg text-[12px]"><a class="hover:text-canvas-white transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-canvas-white transition-colors" data-path="terms-of-trade" href="#">Terms of Trade</a><a class="hover:text-canvas-white transition-colors" data-path="kvkk-compliance" href="#">KVKK Compliance</a><a class="hover:text-canvas-white transition-colors" data-path="quality-assurance" href="#">Quality Assurance</a></div></div></div></footer></body></html>

@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"canvas-subtle":"#F8FAFC","on-secondary-fixed":"#261900","on-surface-variant":"#45464d","surface-variant":"#e0e3e5","on-tertiary-container":"#76859b","primary-container":"#131b2e","tertiary-fixed-dim":"#b9c7e0","error-container":"#ffdad6","on-tertiary":"#ffffff","primary-fixed-dim":"#bec6e0","secondary-fixed":"#ffdea5","gold-light":"#E2C98F","outline-variant":"#c6c6cd","slate-mid":"#1E293B","primary":"#000000","on-background":"#191c1e","inverse-primary":"#bec6e0","on-primary-fixed-variant":"#3f465c","on-secondary-fixed-variant":"#5d4201","border-hairline":"#E2E8F0","on-secondary":"#ffffff","on-error-container":"#93000a","on-surface":"#191c1e","on-secondary-container":"#785a1a","secondary-fixed-dim":"#e9c176","surface-container":"#eceef0","surface-container-lowest":"#ffffff","surface":"#f7f9fb","on-tertiary-fixed":"#0d1c2f","gold-deep":"#9E7B35","outline":"#76777d","surface-container-low":"#f2f4f6","surface-container-highest":"#e0e3e5","inverse-on-surface":"#eff1f3","surface-dim":"#d8dadc","on-tertiary-fixed-variant":"#3a485c","inverse-surface":"#2d3133","on-primary":"#ffffff","surface-tint":"#565e74","secondary":"#775a19","gold-primary":"#C5A059","on-primary-container":"#7c839b","slate-dark":"#0F172A","on-primary-fixed":"#131b2e","slate-muted":"#64748B","surface-bright":"#f7f9fb","tertiary-container":"#0d1c2f","primary-fixed":"#dae2fd","surface-container-high":"#e6e8ea","secondary-container":"#fed488","background":"#f7f9fb","tertiary":"#000000","error":"#ba1a1a","canvas-white":"#FFFFFF","border-prominent":"#CBD5E1","on-error":"#ffffff","tertiary-fixed":"#d5e3fd"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"margin-mobile":"1.25rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-lg":"1.5rem","space-md":"1rem","space-2xl":"4rem",margin:"3rem","space-xl":"2.5rem",gutter:"1.5rem"},fontFamily:{"body-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-action":["Plus Jakarta Sans"],"headline-lg":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"display-hero-mobile":["Playfair Display"],"body-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"metric-display":["Playfair Display"],"headline-md":["Plus Jakarta Sans"],"label-eyebrow":["Plus Jakarta Sans"],"display-hero":["Playfair Display"]},fontSize:{"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"600"}],"label-action":["12px",{lineHeight:"16px",letterSpacing:"0.1em",fontWeight:"700"}],"headline-lg":["38px",{lineHeight:"46px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["28px",{lineHeight:"34px",letterSpacing:"0em",fontWeight:"600"}],"display-hero-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"400"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"metric-display":["32px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-eyebrow":["11px",{lineHeight:"16px",letterSpacing:"0.15em",fontWeight:"700"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-canvas-white/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin"><div class="hidden lg:flex items-center justify-between py-space-xs text-slate-muted font-label-eyebrow text-label-eyebrow uppercase tracking-widest"><div class="flex items-center gap-space-lg"><span class="flex items-center gap-space-xs text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-gold-primary inline-block"></span>BSN TEXTILE INDUSTRIAL GROUP • GLOBAL OEM/ODM SOLUTIONS</span><span class="text-border-prominent">|</span><span class="text-slate-muted">TURKEY MANUFACTURING HUBS: ISTANBUL • VAN</span></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-gold-primary text-[15px]">chat</span><a class="font-label-action text-label-action text-slate-dark hover:text-gold-deep transition-colors tracking-normal" href="https://wa.me/905352336073" target="_blank">WHATSAPP: +90 535 233 6073</a></div><span class="text-border-prominent">|</span><div class="flex items-center gap-space-sm text-slate-muted"><span class="font-label-action text-label-action text-slate-dark font-bold relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[2px] after:bg-gold-primary">EN</span><span class="text-border-prominent">/</span><a class="hover:text-slate-dark transition-colors" href="#">TR</a><span class="text-border-prominent">/</span><a class="hover:text-slate-dark transition-colors" href="#">AR</a><span class="text-border-prominent">/</span><a class="hover:text-slate-dark transition-colors" href="#">RU</a><span class="text-border-prominent">/</span><a class="hover:text-slate-dark transition-colors" href="#">FA</a></div></div></div><div class="h-20 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><img alt="BSN Textile Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBHyroOpXF3UQhUkdr0oiKgzBro-s5ECOmLRxlxW8_wHTm9DEwJWPCnD_U7T8VJ4q1tv7s6YX5SgGcVO2LrQvZdVbK0DqEfiwzvJTNAeIKPpeDsB4uOFv7tL0DE1w8cKyYtvBYPGnW2oFAQy4pan50LqdLcTvKsMVccIxi1N003MPD1TLFdAUiP4sYETY76CLeiBeX78MVrhbkRigzKY5bnA1RiWJAl7msLd2pIsKe97A"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-slate-dark tracking-tight leading-none group-hover:text-slate-mid transition-colors">BSN TEXTILE</span><span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase tracking-widest mt-1">Apparel Engineering</span></div></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-slate-dark font-bold relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[2px] after:bg-gold-primary"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-slate-dark transition-colors" data-path="home" href="#">Home</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-slate-dark transition-colors" data-path="products" href="#">Products</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-slate-dark transition-colors" data-path="manufacturing" href="#">Manufacturing</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-slate-dark transition-colors" data-path="digital-catalogue" href="#">Digital Catalogue</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-slate-dark transition-colors" data-path="about-us" href="#">About Us</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-slate-dark transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:flex lg:hidden items-center gap-space-xs text-slate-dark hover:text-gold-deep text-body-sm transition-colors" href="https://wa.me/905352336073" target="_blank"><span class="material-symbols-outlined text-gold-primary text-[18px]">chat</span><span class="font-label-action text-label-action">WhatsApp</span></a><a class="inline-flex items-center gap-space-xs bg-slate-dark hover:bg-slate-mid text-canvas-white hover:text-gold-light font-label-action text-label-action px-space-md py-space-sm rounded-lg transition-all duration-200 shadow-[0_4px_14px_rgba(15,23,42,0.12)]" data-path="request-rfq" href="#"><span>REQUEST RFQ &amp; SAMPLE</span><span class="text-gold-primary font-bold">↗</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Technical Breadcrumb & Specification Ledger -->
+<section class="w-full bg-slate-dark text-surface-container-low py-space-sm border-b border-border-hairline/10">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin flex flex-wrap items-center justify-between gap-space-sm text-[12px]">
+<div class="flex items-center gap-space-xs font-label-eyebrow tracking-widest text-slate-muted uppercase">
+<span>Portfolio</span>
+<span class="text-gold-primary">/</span>
+<span>Apparel Engineering</span>
+<span class="text-gold-primary">/</span>
+<span class="text-canvas-white font-bold">Streetwear &amp; Heavyweight Apparel</span>
+</div>
+<div class="flex items-center gap-space-lg text-slate-muted font-label-action">
+<span class="hidden sm:inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>2025 SLOTS OPEN (ISTANBUL &amp; VAN)</span>
+<span class="text-border-prominent/40">|</span>
+<span class="text-gold-light">AQL 1.5 AUDITED</span>
+<span class="text-border-prominent/40">|</span>
+<span>CURRENCY: EUR / USD / GBP</span>
+</div>
+</div>
+</section>
+<!-- Architectural Hero & Technical Spec Header -->
+<section class="relative w-full bg-gradient-to-b from-slate-dark via-slate-mid to-slate-dark text-canvas-white overflow-hidden py-space-xl lg:py-space-2xl">
+<div class="absolute inset-0 opacity-5 pointer-events-none bg-[radial-gradient(#C5A059_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="relative max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left: Editorial Typography & Procurement Badges -->
+<div class="lg:col-span-7 flex flex-col space-y-space-md">
+<div class="inline-flex items-center gap-space-xs bg-slate-dark/80 border border-gold-primary/30 px-3 py-1 rounded w-fit backdrop-blur-sm">
+<span class="w-2 h-2 rounded-full bg-gold-primary"></span>
+<span class="font-label-eyebrow text-label-eyebrow text-gold-light uppercase tracking-widest">BESPOKE LUXURY KNITWEAR &amp; INDUSTRIAL STREETWEAR OEM / ODM</span>
+</div>
+<h1 class="font-headline-lg lg:text-[54px] lg:leading-[62px] text-canvas-white tracking-tight font-serif">
+            Streetwear &amp; Heavyweight <span class="italic font-normal text-gold-light">Apparel Engineering</span>
+</h1>
+<p class="font-body-lg text-body-lg text-slate-muted max-w-2xl leading-relaxed">
+            240 – 520 GSM high-density compact combed cotton, loopback French Terry, and brushed fleece engineered to AQL 1.5 international luxury standards with guaranteed zero-shrinkage sanforization.
+          </p>
+<!-- Production Capability Pill Matrix -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-space-xs">
+<div class="bg-slate-dark/90 p-space-sm rounded border border-border-hairline/10 flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-gold-primary uppercase tracking-wider">Minimum Order</span>
+<span class="font-headline-sm text-canvas-white font-bold mt-1">500 Pcs</span>
+<span class="text-[11px] text-slate-muted">per Colorway</span>
+</div>
+<div class="bg-slate-dark/90 p-space-sm rounded border border-border-hairline/10 flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-gold-primary uppercase tracking-wider">Rapid Prototyping</span>
+<span class="font-headline-sm text-canvas-white font-bold mt-1">5-7 Days</span>
+<span class="text-[11px] text-slate-muted">Pattern &amp; Sample</span>
+</div>
+<div class="bg-slate-dark/90 p-space-sm rounded border border-border-hairline/10 flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-gold-primary uppercase tracking-wider">Monthly Volume</span>
+<span class="font-headline-sm text-canvas-white font-bold mt-1">150,000+</span>
+<span class="text-[11px] text-slate-muted">Pcs / Month</span>
+</div>
+<div class="bg-slate-dark/90 p-space-sm rounded border border-border-hairline/10 flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-gold-primary uppercase tracking-wider">Dual Hubs</span>
+<span class="font-headline-sm text-canvas-white font-bold mt-1">TR Export</span>
+<span class="text-[11px] text-slate-muted">Istanbul &amp; Van Plants</span>
+</div>
+</div>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<a class="inline-flex items-center gap-space-xs bg-gold-primary hover:bg-gold-deep text-slate-dark hover:text-canvas-white font-label-action text-label-action px-6 py-3.5 rounded transition-all duration-200 shadow-lg tracking-wider font-bold" href="#rfq-costing">
+<span>REQUEST RFQ &amp; SWATCH HANGERS</span>
+<span class="text-base font-bold">↗</span>
+</a>
+<a class="inline-flex items-center gap-space-xs bg-transparent hover:bg-slate-dark text-canvas-white border border-border-prominent/40 hover:border-gold-primary font-label-action text-label-action px-6 py-3.5 rounded transition-all duration-200 tracking-wider" href="#fabric-spectrum">
+<span class="material-symbols-outlined text-[18px] text-gold-primary">picture_as_pdf</span>
+<span>DOWNLOAD 2025 LOOKBOOK (PDF)</span>
+</a>
+</div>
+<!-- Institutional Trust Marker -->
+<div class="flex items-center gap-space-md pt-space-xs text-[12px] text-slate-muted">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-gold-primary text-[18px]">verified</span>
+<span class="font-medium text-slate-muted">Sanforized Pre-Shrunk &lt; 1%</span>
+</div>
+<span class="text-border-prominent/30">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-gold-primary text-[18px]">local_shipping</span>
+<span class="font-medium text-slate-muted">EU Delivery via TIR in 5-8 Days</span>
+</div>
+</div>
+</div>
+<!-- Right: Technical Sample Feature Card -->
+<div class="lg:col-span-5 relative">
+<div class="relative bg-slate-dark rounded-lg overflow-hidden shadow-2xl border border-border-hairline/20 p-2 group">
+<div class="relative w-full h-[460px] overflow-hidden rounded">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Close up architectural fashion studio shot of a 480 GSM unbrushed loopback French Terry hoodie in raw chalk-white, showing substantial heavy knit structure, rigid double-layer hood shape, dropped shoulder construction, clean industrial stitching, and luxury garment engineering tags on slate dark minimal background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4F3-UHo7UFmtAMV9RpKHqZ7C80wqUVvtsrlCyp9wCQ-DzlwkwHm6RSkWKILPic_xhbXeOvkXKcC4H9KJJks3Rc_0lyRJ9QcczxHeas7JCiJhr1_mB5TDHpLrffZvo1XKi401oBKceyO_EXwBILh3amv74cvX7XcDv8wqNJywKTWksRUBYC80dSoyQ93vYYjt8CwDb-ynidFh2tMUafwiGBv_4PF2Yw8EhxLQmVRCj"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-dark/95 via-transparent to-slate-dark/40"></div>
+<!-- Top Certification Stamp Overlay -->
+<div class="absolute top-4 left-4 bg-canvas-white/95 backdrop-blur-md px-3 py-1.5 rounded shadow-sm text-slate-dark flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+<span class="font-label-eyebrow text-[10px] tracking-wider font-bold">AQL 1.5 FINAL QC PASSED</span>
+</div>
+<div class="absolute top-4 right-4 bg-slate-dark/90 backdrop-blur-md border border-gold-primary/40 px-3 py-1.5 rounded text-gold-light flex items-center gap-1.5 font-label-action text-[11px]">
+<span class="material-symbols-outlined text-[14px]">scale</span>
+<span>480 GSM LOOPBACK</span>
+</div>
+<!-- Card Spec Ledger Overlay -->
+<div class="absolute bottom-4 left-4 right-4 bg-slate-dark/90 backdrop-blur-md p-space-md rounded border border-border-hairline/20 text-canvas-white space-y-2">
+<div class="flex items-center justify-between text-xs border-b border-border-hairline/10 pb-2">
+<span class="text-gold-light font-label-eyebrow uppercase">SILHOUETTE 01 // ARCHITECTURAL HOODIE</span>
+<span class="font-mono text-slate-muted text-[11px]">SKU: BSN-ST-520H</span>
+</div>
+<div class="grid grid-cols-3 gap-2 text-[12px] pt-1">
+<div>
+<span class="text-slate-muted block text-[10px] uppercase font-label-eyebrow">Yarn Count</span>
+<span class="font-semibold text-canvas-white">16/1 + 10/1 Ne</span>
+</div>
+<div>
+<span class="text-slate-muted block text-[10px] uppercase font-label-eyebrow">Cotton Origin</span>
+<span class="font-semibold text-canvas-white">Aegean Compact</span>
+</div>
+<div>
+<span class="text-slate-muted block text-[10px] uppercase font-label-eyebrow">Wash Stability</span>
+<span class="font-semibold text-emerald-400">Class 4-5 ISO</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Atelier Seal Bar -->
+<div class="mt-2 px-3 py-2 bg-slate-mid/70 rounded flex items-center justify-between">
+<div class="flex items-center gap-2">
+<img alt="BSN Textile Logo" class="h-6 w-auto object-contain brightness-0 invert opacity-90" src="https://lh3.googleusercontent.com/aida/ALJJyrDUZ5wBEO9bAI3JAyFdaK2iDzEekTY1qvlnUV2rA7OF_IHsOquH86hMQnncV4Dfir2LvZ8iISiv7WbhiC_yKiTL9GFsCAtcbAPaYWcmmZMBanmj6XL17DH9qQUTZOfEmVA5wq6Hk5z9fpT7A082STmEI-FaRZ2-Ct37aQ2FUjD0q68GdyoC6zamXszGEy65N3CKY8mhyDMMIk__BgKK5wr4_xs05kaKchitcryJkt52ig"/>
+<span class="text-[11px] text-slate-muted font-label-action">Istanbul &amp; Van Engineering Atelier</span>
+</div>
+<span class="text-[11px] font-label-eyebrow text-gold-primary">PREMIUM PRIVATE LABEL</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1: Fabric Density & Yarn GSM Spectrum -->
+<section class="w-full bg-canvas-white py-space-2xl border-b border-border-hairline" id="fabric-spectrum">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<!-- Section Header -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between mb-space-xl gap-space-md border-b border-border-hairline pb-space-lg">
+<div class="space-y-space-xs max-w-2xl">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase tracking-widest block">01 / MATERIAL ENGINEERING</span>
+<h2 class="font-headline-lg text-headline-lg text-slate-dark font-serif">
+            High-Density Fabric &amp; GSM Spectrum
+          </h2>
+<p class="font-body-md text-body-md text-slate-muted">
+            Engineered knit substrates tailored for high-end streetwear labels. Spun from certified 100% Aegean compact ring combed cotton to eliminate pilling, torque skewing, and fabric distortion.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-auto">
+<div class="bg-surface-container-low px-4 py-2 rounded border border-border-hairline flex items-center gap-2 text-slate-mid text-[12px] font-label-action">
+<span class="material-symbols-outlined text-gold-deep text-[18px]">verified</span>
+<span>OEKO-TEX STANDARD 100 CLASS 1 CERTIFIED</span>
+</div>
+</div>
+</div>
+<!-- 4 Structured Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl">
+<!-- Card 1: 480-520 GSM French Terry -->
+<div class="bg-surface-bright rounded border border-border-hairline overflow-hidden flex flex-col group hover:shadow-xl transition-all duration-300">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Macro detail texture photograph of 500 GSM heavyweight unbrushed diagonal loopback French Terry fabric in carbon black, highlighting dense structural loops, matte combed yarn surface, and substantial architectural hand-feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFi-NZxLkkVaELk-HgorWwulLqbwY77otJmdyaADI0__8jVNRRIs6rOuwsbQnNwkRh9PKu_pp2K3wyTVMZyZKX6F1yv7Tji-Y_dm_S1ew_AI-qGaOFLktnCN0Qkp1xEucvbhtdwA-OAaogFf1MMkM67cPw5jwdIeyvdeCy-PD6pLwbph0ocWXaFdtoCQD8wRuXNizCDNefKxByD-YMeef3nxCy_GOnVLZmjY6AXjlB"/>
+<div class="absolute top-3 left-3 bg-slate-dark text-canvas-white px-2.5 py-1 rounded text-[11px] font-label-action font-bold">
+              480 – 520 GSM
+            </div>
+<div class="absolute top-3 right-3 bg-gold-primary text-slate-dark px-2 py-0.5 rounded text-[10px] font-label-eyebrow font-bold">
+              SUPER HEAVYWEIGHT
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-sm">
+<div>
+<span class="text-gold-deep font-label-eyebrow text-[11px] tracking-wider block">UNBRUSHED &amp; BRUSHED FLEECE</span>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark mt-1">Super Heavyweight French Terry</h3>
+<p class="font-body-sm text-body-sm text-slate-muted mt-2">
+                100% Aegean compact combed long-staple cotton, 16/1 + 10/1 Ne unbrushed diagonal loopback. Stiff, architectural drape for boxy luxury hoodies and heavyweight joggers.
+              </p>
+</div>
+<div class="pt-space-sm border-t border-border-hairline space-y-1.5 text-[12px]">
+<div class="flex justify-between text-slate-muted"><span>Shrinkage:</span><span class="font-bold text-slate-dark">&lt; 1.0% (Sanforized)</span></div>
+<div class="flex justify-between text-slate-muted"><span>Yarn Spin:</span><span class="font-bold text-slate-dark">Compact Combed Ring</span></div>
+<div class="flex justify-between text-slate-muted"><span>Suggested Silhouette:</span><span class="font-bold text-slate-dark">Boxy Hoodies &amp; Sweats</span></div>
+</div>
+</div>
+</div>
+<!-- Card 2: 300-340 GSM Heavy Jersey -->
+<div class="bg-surface-bright rounded border border-border-hairline overflow-hidden flex flex-col group hover:shadow-xl transition-all duration-300">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High angle macro texture photograph of 320 GSM heavy single jersey knit cotton fabric in washed vintage slate grey, showcasing ultra-tight weave tension, rigid knit thickness, and zero translucency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzYTT1S-IsCieFiyMPKiSZ3_5Bw3Enxpdov1NPCzso8J3cX388A7TGh6FnaP_ssp1ztry9ttEE8ZTrjpy_X23Lj463wEJpFvPYYbERDDzEo5BClYkhqFKONolS5n4rFsMuha6i9zsJlV1mp2rqiM91WCYhpMlkMgcmCV9Dl0fpiUm86w-Vt5PzhWEdbTxodKcgEr1SJQOgy8LYHrAqiUGGs6-Wt0wHl0qiX2Oh0_3p"/>
+<div class="absolute top-3 left-3 bg-slate-dark text-canvas-white px-2.5 py-1 rounded text-[11px] font-label-action font-bold">
+              300 – 340 GSM
+            </div>
+<div class="absolute top-3 right-3 bg-slate-mid text-canvas-white px-2 py-0.5 rounded text-[10px] font-label-eyebrow font-bold">
+              HEAVY PENYE
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-sm">
+<div>
+<span class="text-gold-deep font-label-eyebrow text-[11px] tracking-wider block">COMPACT RING JERSEY</span>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark mt-1">Heavy Jersey Penye T-Shirt</h3>
+<p class="font-body-sm text-body-sm text-slate-muted mt-2">
+                16/1 Compact Ring combed jersey. Ultra-clean surface, zero show-through, rigid boxy silhouettes that hold shape across 50+ domestic laundry cycles without neck curling.
+              </p>
+</div>
+<div class="pt-space-sm border-t border-border-hairline space-y-1.5 text-[12px]">
+<div class="flex justify-between text-slate-muted"><span>Opacity Level:</span><span class="font-bold text-slate-dark">100% Solid Non-Sheer</span></div>
+<div class="flex justify-between text-slate-muted"><span>Print Compatibility:</span><span class="font-bold text-slate-dark">Puff, Discharge, Screen</span></div>
+<div class="flex justify-between text-slate-muted"><span>Suggested Silhouette:</span><span class="font-bold text-slate-dark">Oversized Drop-Tee</span></div>
+</div>
+</div>
+</div>
+<!-- Card 3: 240-260 GSM Premium Supima -->
+<div class="bg-surface-bright rounded border border-border-hairline overflow-hidden flex flex-col group hover:shadow-xl transition-all duration-300">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Elegant close up textile photo of 250 GSM premium Supima long staple combed cotton interlock knit in deep ecru cream tone, showing smooth silk-like luster, fluid drape, and refined textile weave." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnIEATpPAAvYsRU8GZeQZFgtHeqmBY9m4VgKbSUuTAKnlQXjAlfvZTJ0Odnfic_csU40t6pUYa48QXyTsYRyuar7uUAVx65eNa-GVumGBnCiL5xDkIy-5LgXRGF0kIxu7qVmjJ5nYZ_pjfsubU65UmXxocJPMKPycKXder6DvRsJ4afgkvUZSp5s92rhiUPavq15VqtNHcQZgVJ3V-WxKIg4NRhNtteqCv5QSzAA4I"/>
+<div class="absolute top-3 left-3 bg-slate-dark text-canvas-white px-2.5 py-1 rounded text-[11px] font-label-action font-bold">
+              240 – 260 GSM
+            </div>
+<div class="absolute top-3 right-3 bg-gold-deep text-canvas-white px-2 py-0.5 rounded text-[10px] font-label-eyebrow font-bold">
+              SILKEN TOUCH
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-sm">
+<div>
+<span class="text-gold-deep font-label-eyebrow text-[11px] tracking-wider block">EXTRA-LONG STAPLE</span>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark mt-1">Premium Supima &amp; Pima Touch</h3>
+<p class="font-body-sm text-body-sm text-slate-muted mt-2">
+                24/1 long-staple combed cotton with silken enzyme carbonized wash. Developed for luxury minimalist streetwear lines requiring exceptional softness paired with robust dimensional stability.
+              </p>
+</div>
+<div class="pt-space-sm border-t border-border-hairline space-y-1.5 text-[12px]">
+<div class="flex justify-between text-slate-muted"><span>Hand-Feel:</span><span class="font-bold text-slate-dark">Peachskin Silken Soft</span></div>
+<div class="flex justify-between text-slate-muted"><span>Torque Twist:</span><span class="font-bold text-slate-dark">&lt; 1.5 degrees</span></div>
+<div class="flex justify-between text-slate-muted"><span>Suggested Silhouette:</span><span class="font-bold text-slate-dark">Luxury Minimal Tees</span></div>
+</div>
+</div>
+</div>
+<!-- Card 4: 450 GSM Ribbing & Trims -->
+<div class="bg-surface-bright rounded border border-border-hairline overflow-hidden flex flex-col group hover:shadow-xl transition-all duration-300">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Technical macro shot of dense 450 GSM 1x1 elastane rib knit fabric collar banding in jet black, stretched taut to demonstrate superior elastic memory, shape retention, and heavy gauge construction." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2uxE3x3KnztkDQgyuHsrcrd79m7X5mxG3JHPoptjW-rNS8CQFrW0b18KDeEO8c0hSyJJLKxBk3Y15I4265fBoMqIhRUUxHBs3n76aXYUP59vsndU9HsP4K1zwEZ2anES80YAOWtY9WwOIWfu9lU72Z2QECk--ERMMjvn039Igekn3ts0wjn_4NJh73eRuMl_ziSaQoxLGOFzMIAa1yYsdxg3QvxaJg2LnicoQrzzS"/>
+<div class="absolute top-3 left-3 bg-slate-dark text-canvas-white px-2.5 py-1 rounded text-[11px] font-label-action font-bold">
+              420 – 480 GSM
+            </div>
+<div class="absolute top-3 right-3 bg-emerald-700 text-canvas-white px-2 py-0.5 rounded text-[10px] font-label-eyebrow font-bold">
+              GOTS ELASTANE
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-sm">
+<div>
+<span class="text-gold-deep font-label-eyebrow text-[11px] tracking-wider block">REINFORCED EDGING</span>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark mt-1">450 GSM 1x1 &amp; 2x2 Ribbing</h3>
+<p class="font-body-sm text-body-sm text-slate-muted mt-2">
+                Engineered with 95% combed cotton and 5% Invista Lycra/Spandex. High-elasticity recovery engineered specifically to completely eliminate "bacon-neck" distortion after repeat wash cycles.
+              </p>
+</div>
+<div class="pt-space-sm border-t border-border-hairline space-y-1.5 text-[12px]">
+<div class="flex justify-between text-slate-muted"><span>Elastic Recovery:</span><span class="font-bold text-slate-dark">98.5% Elastic Return</span></div>
+<div class="flex justify-between text-slate-muted"><span>Rib Width Specs:</span><span class="font-bold text-slate-dark">2.5 cm to 4.0 cm custom</span></div>
+<div class="flex justify-between text-slate-muted"><span>Suggested Silhouette:</span><span class="font-bold text-slate-dark">Neckbands, Cuffs, Hem</span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Laboratory Testing Metrics Ledger Banner -->
+<div class="bg-surface-container p-space-lg rounded border border-border-prominent/40 grid grid-cols-1 md:grid-cols-3 gap-space-md items-center">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded bg-slate-dark text-gold-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">thermostat</span>
+</div>
+<div>
+<span class="font-label-eyebrow text-[11px] text-gold-deep uppercase">Dimensional Stability</span>
+<h4 class="font-headline-sm text-slate-dark">&lt; 1.0% Shrinkage Guarantee</h4>
+<p class="font-body-sm text-slate-muted text-[12px]">ISO 6330 tested after 3 domestic wash cycles at 40°C.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded bg-slate-dark text-gold-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">cycle</span>
+</div>
+<div>
+<span class="font-label-eyebrow text-[11px] text-gold-deep uppercase">Abrasion &amp; Pilling</span>
+<h4 class="font-headline-sm text-slate-dark">&gt; 60,000 Martindale Rubs</h4>
+<p class="font-body-sm text-slate-muted text-[12px]">ISO 12947-2 zero surface fuzzing or yarn degradation.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded bg-slate-dark text-gold-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">palette</span>
+</div>
+<div>
+<span class="font-label-eyebrow text-[11px] text-gold-deep uppercase">Color &amp; Wash Fastness</span>
+<h4 class="font-headline-sm text-slate-dark">Grade 4-5 Color Retention</h4>
+<p class="font-body-sm text-slate-muted text-[12px]">Reactive vat dyeing system with premium eco-friendly fixatives.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Anatomy of Luxury Streetwear Tailoring & Finishes -->
+<section class="w-full bg-surface py-space-2xl border-b border-border-hairline">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<div class="max-w-2xl mb-space-xl">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase tracking-widest block">02 / SARTORIAL CRAFT</span>
+<h2 class="font-headline-lg text-headline-lg text-slate-dark font-serif mt-1">
+          Anatomy of Heavyweight Tailoring &amp; Finishes
+        </h2>
+<p class="font-body-md text-body-md text-slate-muted mt-2">
+          Industrial production capacity meets bespoke couture craftsmanship. Every streetwear garment produced in our Istanbul and Van ateliers features structural reinforcements designed to withstand decades of wear.
+        </p>
+</div>
+<!-- Feature Grid: 4 Core Tailoring Pillars -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-2xl">
+<div class="bg-canvas-white p-space-lg rounded border border-border-hairline flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-full bg-slate-dark text-gold-primary font-bold text-xs flex items-center justify-center">01</span>
+<span class="material-symbols-outlined text-gold-deep text-[22px]">architecture</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark">Twin-Needle &amp; Chain Stitch</h3>
+<p class="font-body-sm text-body-sm text-slate-muted">
+              Reinforced twin-needle topstitching along collar seams, drop shoulder attachments, and armholes with internal self-fabric herringbone cotton neck tape.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-border-hairline text-[11px] font-label-action text-slate-dark">
+            TEST SPEC: 12-14 SPI (STITCHES PER INCH)
+          </div>
+</div>
+<div class="bg-canvas-white p-space-lg rounded border border-border-hairline flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-full bg-slate-dark text-gold-primary font-bold text-xs flex items-center justify-center">02</span>
+<span class="material-symbols-outlined text-gold-deep text-[22px]">dry_cleaning</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark">Anti-Sag Heavy Rib Collar</h3>
+<p class="font-body-sm text-body-sm text-slate-muted">
+              3.0 cm to 3.5 cm high-density 1x1 ribbed collar constructed with 5% integrated Lycra core. Engineered to stay flush against the neck without waving.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-border-hairline text-[11px] font-label-action text-slate-dark">
+            RETAIN SHAPE: 50+ COMMERCIAL LAUNDRIES
+          </div>
+</div>
+<div class="bg-canvas-white p-space-lg rounded border border-border-hairline flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-full bg-slate-dark text-gold-primary font-bold text-xs flex items-center justify-center">03</span>
+<span class="material-symbols-outlined text-gold-deep text-[22px]">brush</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark">Specialty Art Treatments</h3>
+<p class="font-body-sm text-body-sm text-slate-muted">
+              In-house 3D High-Density Puff Print, Vintage Pigment Acid Wash, Heavyweight Silicone Screen Printing, 3D Chenille, and 120,000-stitch micro-embroidery.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-border-hairline text-[11px] font-label-action text-slate-dark">
+            TECHNIQUES: SILICONE, PUFF, DISTRESSED
+          </div>
+</div>
+<div class="bg-canvas-white p-space-lg rounded border border-border-hairline flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-full bg-slate-dark text-gold-primary font-bold text-xs flex items-center justify-center">04</span>
+<span class="material-symbols-outlined text-gold-deep text-[22px]">hardware</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark">Bespoke Gunmetal Hardware</h3>
+<p class="font-body-sm text-body-sm text-slate-muted">
+              Custom debossed matte gunmetal eyelets, waxed cotton tubular drawstrings with laser-engraved metal aglets, and high-definition woven damask branding labels.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-border-hairline text-[11px] font-label-action text-slate-dark">
+            HARDWARE: NICKEL-FREE ZAMAK ALLOY
+          </div>
+</div>
+</div>
+<!-- Factory Floor Operational Workflow Gallery -->
+<div class="bg-canvas-white p-space-lg rounded border border-border-hairline">
+<div class="flex items-center justify-between border-b border-border-hairline pb-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-gold-primary text-[20px]">precision_manufacturing</span>
+<span class="font-headline-sm text-slate-dark">Integrated Manufacturing Workflow (Istanbul &amp; Van Facilities)</span>
+</div>
+<span class="hidden sm:inline-block font-label-eyebrow text-slate-muted uppercase">CAPACITY: 150,000 PCS/MONTH</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="space-y-space-xs">
+<div class="relative h-48 overflow-hidden rounded border border-border-hairline">
+<img class="w-full h-full object-cover" data-alt="Industrial apparel factory photo showing modern Gerber computerized automated CNC multi-ply fabric cutting machine precision cutting heavy 500 GSM fleece panels with laser precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYHBp8ydWvv04MQh9CPkkZtRB1_onjgED2484GgWAJXwWnsZv_NA37BkD_Ngu6fUsBLyrT283UQ87v3d-bgsyT0Bnh8k55pFNlpHInbE59xc5tPdLg_yPzZelOgieWyT4mmkoMMDcc8iGsegEDI5hCgNNWiwKsP5VJre9NSD9_e7LZFdNrHnVFcFDY0ijNW8LHmqHFV5_CCYpinrSdIOFv3uCqTfgJ5R1H2JmsPX_O"/>
+<span class="absolute bottom-2 left-2 bg-slate-dark/90 text-canvas-white text-[10px] font-label-eyebrow px-2 py-1 rounded">STAGE 01 // CNC MULTI-PLY CUTTING</span>
+</div>
+<h4 class="font-headline-sm text-slate-dark text-[15px] font-bold">CAD/CAM Automated Cutting</h4>
+<p class="font-body-sm text-slate-muted text-[12px]">Computerized nesting achieving 94% marker efficiency with zero grain-line distortion.</p>
+</div>
+<div class="space-y-space-xs">
+<div class="relative h-48 overflow-hidden rounded border border-border-hairline">
+<img class="w-full h-full object-cover" data-alt="Textile print studio view showing high-precision automatic carousel textile screen-printing station applying ultra-sharp raised 3D high density puff graphic on black heavy cotton hoodie." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5y5208sro2Oh0-cAY_n1JECrAeCZrguDMK22K5nIM8AHx-sUvLpByy8G6rVio6mdBgIEVjF11mtxYBvo8-CDl4oXoIdOGQWgcPMM3Br9CEMHCescz1zDRbYxypLGVW_K1n1ww41F1rM7ZlopvTM-_iWTbVRGCOH-oHG5-9CHNE-jcRfMAmrnZRBoxYJtUPmWqpsT50zyMMTn7TcJwT1wc_dQ2EUVQfyvPcYz8yHz8"/>
+<span class="absolute bottom-2 left-2 bg-slate-dark/90 text-canvas-white text-[10px] font-label-eyebrow px-2 py-1 rounded">STAGE 02 // 3D PUFF &amp; SCREEN LAB</span>
+</div>
+<h4 class="font-headline-sm text-slate-dark text-[15px] font-bold">Specialty In-House Print Lab</h4>
+<p class="font-body-sm text-slate-muted text-[12px]">Automatic 12-color carousels, laser alignment, and infrared cure tunnels for flawless puff relief.</p>
+</div>
+<div class="space-y-space-xs">
+<div class="relative h-48 overflow-hidden rounded border border-border-hairline">
+<img class="w-full h-full object-cover" data-alt="Clean bright quality control inspection department in textile manufacturing plant with professional inspectors checking garment stitching using digital calipers under 1000 lux lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzFJwr7IadXuMcfZ0wJw4H155A5mtcf3mZOZ9OUFPkCunukmaDLCPXyyh_FqyF1UMH6BXNAhqiJVezV1wsDFLGbJajqj7GYmFAg3g0MfwsSaKp3WydAduTIRuc33Gm6qQMyD8eaZVyOW5PA_9X1C3hrwH83Ejgi4WphN6PU_Jmc6s-_JvvzGGBhgJoHwlfU_SH9uGh6uM2EwEDpB1AdGbWCAKgMsMl-s5Q_APZeNZ-"/>
+<span class="absolute bottom-2 left-2 bg-slate-dark/90 text-canvas-white text-[10px] font-label-eyebrow px-2 py-1 rounded">STAGE 03 // 100% INLINE &amp; FINAL AQL 1.5</span>
+</div>
+<h4 class="font-headline-sm text-slate-dark text-[15px] font-bold">AQL 1.5 Quality Assurance</h4>
+<p class="font-body-sm text-slate-muted text-[12px]">Every garment is hand-measured, needle-scanned, pressed, barcode-tagged, and polybagged.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Bestseller Streetwear Block Fits (3 Silhouette Cards) -->
+<section class="w-full bg-canvas-white py-space-2xl border-b border-border-hairline">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-sm border-b border-border-hairline pb-space-md">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase tracking-widest block">03 / PROVEN BLOCK PATTERNS</span>
+<h2 class="font-headline-lg text-headline-lg text-slate-dark font-serif mt-1">
+            Bestseller Streetwear Block Fits
+          </h2>
+</div>
+<p class="font-body-sm text-slate-muted max-w-md text-right md:text-left">
+          Production-ready master grading patterns ready for immediate private label branding, customization, and bulk manufacturing.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Block 01: Boxy Drop-Shoulder Heavy Tee -->
+<div class="bg-surface-bright rounded border border-border-hairline overflow-hidden flex flex-col group hover:shadow-xl transition-all duration-300">
+<div class="relative h-[380px] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Lookbook fashion model wearing oversized boxy drop shoulder heavyweight t-shirt in washed charcoal black, clean drape, thick ribbed collar, wide chest cut, modern minimalist luxury editorial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVFIFYEYrkeDJd11rcsh1YGRCQ155GUAWvdo_hUTnqwiiqQZm3pbZ__cNMQTUZURN1G2Dp7hQAI1gGPF60YsrbLNSSuQTTTXQYUT_VXXeo9KnbCpvu-YYoC5Rb2qBq7TyxLgV39J0kN8wQyRN385hXW_qbXFIBnD17qmTXxAn5nLPQOV9Vo4Htw01gRiqP6xbMBSnBdqn2igOEilMjnJTVJs0_eampqRI5ujneNOlg"/>
+<div class="absolute bottom-3 left-3 bg-slate-dark/95 text-canvas-white px-3 py-1.5 rounded text-[11px] font-label-action">
+              BLOCK: BSN-TE-01 (BOXY FIT)
+            </div>
+<div class="absolute top-3 right-3 bg-gold-primary text-slate-dark px-2.5 py-1 rounded text-[10px] font-label-eyebrow font-bold">
+              300 – 340 GSM
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div class="space-y-space-xs">
+<span class="text-gold-deep font-label-eyebrow text-[11px] uppercase">ESSENTIAL BASELAYER</span>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark">Boxy Drop-Shoulder Heavy Tee</h3>
+<p class="font-body-sm text-body-sm text-slate-muted">
+                Extended chest width with a slightly cropped vertical hemline. Features a tight 3.0cm rib collar and reinforced shoulder-to-shoulder taped seams for structured posture.
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-border-hairline space-y-2 text-[12px]">
+<div class="flex justify-between text-slate-muted"><span>Standard Fabric:</span><span class="font-semibold text-slate-dark">320 GSM 16/1 Ring Jersey</span></div>
+<div class="flex justify-between text-slate-muted"><span>Collar Rib:</span><span class="font-semibold text-slate-dark">420 GSM 1x1 Cotton/Lycra</span></div>
+<div class="flex justify-between text-slate-muted"><span>Available Sizes:</span><span class="font-semibold text-slate-dark">XS to 3XL (Extended)</span></div>
+<a class="inline-flex items-center justify-between w-full mt-2 py-2 px-3 bg-slate-dark text-canvas-white hover:bg-slate-mid rounded font-label-action text-[11px] transition-colors" href="#rfq-costing">
+<span>SELECT THIS BLOCK PATTERN</span>
+<span class="text-gold-primary">↗</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Block 02: Oversized Architectural Boxy Hoodie -->
+<div class="bg-surface-bright rounded border border-border-hairline overflow-hidden flex flex-col group hover:shadow-xl transition-all duration-300">
+<div class="relative h-[380px] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial fashion studio model wearing oversized architectural boxy hoodie in vintage washed concrete olive, huge double layer hood with seamless structure, deep dropped shoulders, rigid heavy French terry drape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFZ3mNV5aJn_3tkEbgEGM5mTGr3qQpnOHFgUB8HsrwD2syKnYW5-rBGZGNEVveje9aASM3if5kUHKcHwx2iuIpVcKF-XeJtB1yEGiRXjeBi_8wQa25CelmsBXIp8TnXoCxDKWOh8kmdv2Bt98YBPzkXQSH9okUl94kibhYfjZrCPL-sHZNgXiZcWExn3BAhDiW0tdhrnb3wMDolSIn_7K6P7ftC4J4mfc_OBm9w-_8"/>
+<div class="absolute bottom-3 left-3 bg-slate-dark/95 text-canvas-white px-3 py-1.5 rounded text-[11px] font-label-action">
+              BLOCK: BSN-HD-03 (ARCHITECTURAL)
+            </div>
+<div class="absolute top-3 right-3 bg-gold-primary text-slate-dark px-2.5 py-1 rounded text-[10px] font-label-eyebrow font-bold">
+              480 – 520 GSM
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div class="space-y-space-xs">
+<span class="text-gold-deep font-label-eyebrow text-[11px] uppercase">FLAGSHIP KNITWEAR</span>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark">Oversized Architectural Hoodie</h3>
+<p class="font-body-sm text-body-sm text-slate-muted">
+                Engineered with a double-layer crossover hood without drawstring eyelets for clean runway minimalism. Deep kangaroo pocket, dropped shoulders, and ultra-wide elastic hem band.
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-border-hairline space-y-2 text-[12px]">
+<div class="flex justify-between text-slate-muted"><span>Standard Fabric:</span><span class="font-semibold text-slate-dark">500 GSM Diagonal Loopback</span></div>
+<div class="flex justify-between text-slate-muted"><span>Hood Construction:</span><span class="font-semibold text-slate-dark">2-Panel Seamless Double Layer</span></div>
+<div class="flex justify-between text-slate-muted"><span>Available Sizes:</span><span class="font-semibold text-slate-dark">S to 2XL (True Boxy)</span></div>
+<a class="inline-flex items-center justify-between w-full mt-2 py-2 px-3 bg-slate-dark text-canvas-white hover:bg-slate-mid rounded font-label-action text-[11px] transition-colors" href="#rfq-costing">
+<span>SELECT THIS BLOCK PATTERN</span>
+<span class="text-gold-primary">↗</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Block 03: Vintage Relaxed Crewneck Sweatshirt -->
+<div class="bg-surface-bright rounded border border-border-hairline overflow-hidden flex flex-col group hover:shadow-xl transition-all duration-300">
+<div class="relative h-[380px] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-end streetwear lookbook shot of premium heavyweight crewneck sweatshirt in washed vintage bone white, showing wide rib side gussets, vintage triangular collar insert, and relaxed dropped shoulder silhouette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCntMX7EyCDZS3rnC9bXvhci61ZFkVdiOqAjrhAURd5Z-2WIfHFwgZMAJDjrqrJupP-tf-RlseDfgnBK6yKQkIvwyWaSg8m00JzGVrd2XNxKeMHBi8JvJO7Eq7_SXwstEtLva3tBjiHg9ybK2ikvUGQ_5U4011f2QRWJzhmSbCRd6RqQ9uo4NKyl3RFIU-X8V0NCcOPecfycZkpKruhmFFNUkpsEKlH-yAGBOQm7y4W"/>
+<div class="absolute bottom-3 left-3 bg-slate-dark/95 text-canvas-white px-3 py-1.5 rounded text-[11px] font-label-action">
+              BLOCK: BSN-CR-02 (VINTAGE CREW)
+            </div>
+<div class="absolute top-3 right-3 bg-gold-primary text-slate-dark px-2.5 py-1 rounded text-[10px] font-label-eyebrow font-bold">
+              420 – 460 GSM
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div class="space-y-space-xs">
+<span class="text-gold-deep font-label-eyebrow text-[11px] uppercase">VINTAGE RE-ENGINEERED</span>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark">Relaxed Heavy Crewneck</h3>
+<p class="font-body-sm text-body-sm text-slate-muted">
+                Inspired by 1990s athletic collegiate heavyweights. Enhanced with ribbed side-panel gussets for ergonomic flexibility and reinforced cross-stitched v-insert collar.
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-border-hairline space-y-2 text-[12px]">
+<div class="flex justify-between text-slate-muted"><span>Standard Fabric:</span><span class="font-semibold text-slate-dark">440 GSM Brushed Cotton Fleece</span></div>
+<div class="flex justify-between text-slate-muted"><span>Side Panels:</span><span class="font-semibold text-slate-dark">450 GSM Ribbed Insert Gusset</span></div>
+<div class="flex justify-between text-slate-muted"><span>Available Sizes:</span><span class="font-semibold text-slate-dark">XS to 3XL</span></div>
+<a class="inline-flex items-center justify-between w-full mt-2 py-2 px-3 bg-slate-dark text-canvas-white hover:bg-slate-mid rounded font-label-action text-[11px] transition-colors" href="#rfq-costing">
+<span>SELECT THIS BLOCK PATTERN</span>
+<span class="text-gold-primary">↗</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Direct Factory RFQ & Tech Pack Costing Wizard -->
+<section class="w-full bg-surface-container py-space-2xl" id="rfq-costing">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left: Export Management Desk & Direct Contact -->
+<div class="lg:col-span-4 space-y-space-md">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase tracking-widest block">DIRECT PROCUREMENT DESK</span>
+<h2 class="font-headline-lg text-slate-dark font-serif mt-1">
+              Start Streetwear Production
+            </h2>
+<p class="font-body-sm text-slate-muted mt-2">
+              Submit your tech packs, target fabric weight, and order projections for a verified factory FOB/CIF quote within 24 business hours.
+            </p>
+</div>
+<!-- Direct Executive Contact Card -->
+<div class="bg-canvas-white p-space-md rounded border border-border-hairline space-y-space-sm shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-slate-dark text-gold-light flex items-center justify-center font-bold text-base shrink-0">
+                SÜ
+              </div>
+<div>
+<h4 class="font-headline-sm text-[16px] text-slate-dark leading-tight">Sedat Üzümcü</h4>
+<span class="font-label-eyebrow text-[11px] text-gold-deep block mt-0.5">Head of International Procurement &amp; Export</span>
+</div>
+</div>
+<div class="pt-space-xs space-y-2 text-[13px] border-t border-border-hairline">
+<div class="flex items-center gap-2 text-slate-mid">
+<span class="material-symbols-outlined text-gold-deep text-[18px]">phone_iphone</span>
+<a class="hover:text-gold-deep font-semibold" href="tel:+905352336073">+90 535 233 6073</a>
+</div>
+<div class="flex items-center gap-2 text-slate-mid">
+<span class="material-symbols-outlined text-gold-deep text-[18px]">mail</span>
+<a class="hover:text-gold-deep" href="mailto:sedatuzumcu@bsntextile.com">sedatuzumcu@bsntextile.com</a>
+</div>
+<div class="flex items-center gap-2 text-slate-mid">
+<span class="material-symbols-outlined text-gold-deep text-[18px]">chat</span>
+<a class="hover:text-gold-deep text-emerald-700 font-semibold" href="https://wa.me/905352336073" target="_blank">Direct WhatsApp Chat ↗</a>
+</div>
+</div>
+</div>
+<!-- Strict NDA & IP Protection Badge -->
+<div class="bg-slate-dark text-canvas-white p-space-md rounded border border-border-hairline/20 space-y-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-gold-primary text-[20px]">verified_user</span>
+<span class="font-label-action text-[12px] uppercase tracking-wider text-canvas-white">Non-Disclosure Protection Guarantee</span>
+</div>
+<p class="text-[12px] text-slate-muted leading-relaxed">
+              All proprietary patterns, graphics, custom Pantone formulas, and CAD tech packs remain strictly protected under international intellectual property agreements.
+            </p>
+</div>
+<!-- Dual Factory Production Addresses -->
+<div class="bg-canvas-white p-space-md rounded border border-border-hairline space-y-3 text-[12px] text-slate-muted">
+<div class="font-label-action text-slate-dark uppercase font-bold text-[11px]">Factory Locations:</div>
+<div>
+<span class="font-semibold text-slate-dark block">Istanbul Headquarters:</span>
+              Avrasya Plaza, Tekstilkent Cad. No:10-B/208, Esenler / Istanbul
+            </div>
+<div>
+<span class="font-semibold text-slate-dark block">Van Industrial Production Plant:</span>
+              Tekstilkent 2. Etap 4. Blok No:12, İpekyolu / Van
+            </div>
+</div>
+</div>
+<!-- Right: RFQ & Costing Calculator Form -->
+<div class="lg:col-span-8">
+<div class="bg-canvas-white p-space-lg lg:p-space-xl rounded border border-border-prominent shadow-md">
+<div class="flex items-center justify-between border-b border-border-hairline pb-space-sm mb-space-md">
+<div class="space-y-0.5">
+<h3 class="font-headline-sm text-slate-dark">Fast Tech Pack Quotation &amp; Spec Wizard</h3>
+<span class="text-[12px] text-slate-muted">Select baseline parameters for custom manufacturing</span>
+</div>
+<span class="hidden sm:inline-block font-label-eyebrow text-gold-deep uppercase">STEP 1 OF 2</span>
+</div>
+<form class="space-y-space-md" onsubmit="event.preventDefault(); alert('Inquiry submitted successfully. Sedat Üzümcü and the BSN Textile team will respond within 24 hours.');">
+<!-- Row 1: Fabric Selection & Silhouette Type -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-eyebrow text-[11px] text-slate-muted uppercase mb-1">Target Fabric Grade</label>
+<select class="w-full h-12 px-3 rounded bg-canvas-white border border-border-prominent text-slate-dark font-body-sm focus:outline-none focus:border-gold-primary focus:ring-1 focus:ring-gold-primary">
+<option value="500-terry">Super Heavyweight French Terry (480-520 GSM)</option>
+<option value="320-jersey">Heavy Ring Combed Jersey (300-340 GSM)</option>
+<option value="250-supima">Silken Touch Supima / Pima (240-260 GSM)</option>
+<option value="440-fleece">Vintage Brushed Cotton Fleece (420-460 GSM)</option>
+<option value="custom">Custom Yarn Formulation (Provide in Tech Pack)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-eyebrow text-[11px] text-slate-muted uppercase mb-1">Primary Silhouette</label>
+<select class="w-full h-12 px-3 rounded bg-canvas-white border border-border-prominent text-slate-dark font-body-sm focus:outline-none focus:border-gold-primary focus:ring-1 focus:ring-gold-primary">
+<option value="hoodie">Architectural Boxy Hoodie</option>
+<option value="tee">Boxy Drop-Shoulder Heavy T-Shirt</option>
+<option value="crew">Relaxed Collegiate Crewneck Sweatshirt</option>
+<option value="jogger">Heavyweight Fleece Sweatpants / Track Pant</option>
+<option value="ziphood">Double-Ended Zip Luxury Hoodie</option>
+<option value="custom-pattern">Custom Client Pattern (Full Tech Pack)</option>
+</select>
+</div>
+</div>
+<!-- Row 2: Projected Quantity Tier & Delivery Window -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-eyebrow text-[11px] text-slate-muted uppercase mb-1">Order Volume Projection</label>
+<select class="w-full h-12 px-3 rounded bg-canvas-white border border-border-prominent text-slate-dark font-body-sm focus:outline-none focus:border-gold-primary focus:ring-1 focus:ring-gold-primary">
+<option value="500-1000">500 – 1,000 Pcs (Pilot Production / Sample Run)</option>
+<option value="1000-3000">1,000 – 3,000 Pcs (Collection Rollout)</option>
+<option value="3000-10000">3,000 – 10,000 Pcs (Full Commercial Run)</option>
+<option value="10000-plus">10,000+ Pcs (High-Volume Enterprise Contract)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-eyebrow text-[11px] text-slate-muted uppercase mb-1">Target Delivery Window</label>
+<select class="w-full h-12 px-3 rounded bg-canvas-white border border-border-prominent text-slate-dark font-body-sm focus:outline-none focus:border-gold-primary focus:ring-1 focus:ring-gold-primary">
+<option value="urgent">Express Sample &amp; Production (4-5 Weeks)</option>
+<option value="standard">Standard Seasonal Schedule (6-8 Weeks)</option>
+<option value="future">Upcoming Season Planning (Q3/Q4 2025)</option>
+</select>
+</div>
+</div>
+<!-- Row 3: Art & Finish Treatment Multi-Select -->
+<div>
+<label class="block font-label-eyebrow text-[11px] text-slate-muted uppercase mb-1.5">Special Finishes &amp; Art Work (Select All Applicable)</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-[12px]">
+<label class="flex items-center gap-2 p-2 rounded bg-surface border border-border-hairline cursor-pointer hover:border-gold-primary">
+<input checked="" class="accent-gold-primary" type="checkbox"/>
+<span>3D Puff Print</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded bg-surface border border-border-hairline cursor-pointer hover:border-gold-primary">
+<input checked="" class="accent-gold-primary" type="checkbox"/>
+<span>Acid / Sun Wash</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded bg-surface border border-border-hairline cursor-pointer hover:border-gold-primary">
+<input class="accent-gold-primary" type="checkbox"/>
+<span>Micro-Embroidery</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded bg-surface border border-border-hairline cursor-pointer hover:border-gold-primary">
+<input class="accent-gold-primary" type="checkbox"/>
+<span>Custom Metal Trims</span>
+</label>
+</div>
+</div>
+<!-- Row 4: Client Coordinates -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div>
+<label class="block font-label-eyebrow text-[11px] text-slate-muted uppercase mb-1">Contact Name &amp; Title</label>
+<input class="w-full h-12 px-3 rounded bg-canvas-white border border-border-prominent text-slate-dark text-[14px] focus:outline-none focus:border-gold-primary focus:ring-1 focus:ring-gold-primary" placeholder="e.g. Alexander Vance, Creative Dir." required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-eyebrow text-[11px] text-slate-muted uppercase mb-1">Brand / Company Name</label>
+<input class="w-full h-12 px-3 rounded bg-canvas-white border border-border-prominent text-slate-dark text-[14px] focus:outline-none focus:border-gold-primary focus:ring-1 focus:ring-gold-primary" placeholder="e.g. Atelier London Studio Ltd" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-eyebrow text-[11px] text-slate-muted uppercase mb-1">Corporate Email &amp; WhatsApp</label>
+<input class="w-full h-12 px-3 rounded bg-canvas-white border border-border-prominent text-slate-dark text-[14px] focus:outline-none focus:border-gold-primary focus:ring-1 focus:ring-gold-primary" placeholder="name@brand.com / +44 ..." required="" type="text"/>
+</div>
+</div>
+<!-- Tech Pack Upload Dropzone -->
+<div>
+<label class="block font-label-eyebrow text-[11px] text-slate-muted uppercase mb-1">Attach Tech Pack / Artwork / Pantone Specs</label>
+<div class="border-2 border-dashed border-border-prominent rounded p-space-md text-center hover:border-gold-primary transition-colors cursor-pointer bg-surface-bright">
+<div class="flex flex-col items-center justify-center space-y-1">
+<span class="material-symbols-outlined text-gold-deep text-[28px]">cloud_upload</span>
+<span class="font-body-sm font-semibold text-slate-dark">Click to browse or drag &amp; drop files here</span>
+<span class="text-[11px] text-slate-muted">Supported formats: PDF, AI, PSD, ZIP, DXF (Max 50MB per submission)</span>
+</div>
+</div>
+</div>
+<!-- Submit Button & SLA Disclaimer -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-xs border-t border-border-hairline">
+<div class="flex items-center gap-2 text-[12px] text-slate-muted">
+<span class="material-symbols-outlined text-gold-primary text-[18px]">lock</span>
+<span>Instant NDA execution. Inquiries routed directly to Sedat Üzümcü.</span>
+</div>
+<button class="inline-flex items-center justify-center gap-space-xs bg-slate-dark hover:bg-slate-mid text-canvas-white hover:text-gold-light font-label-action text-label-action px-8 py-3.5 rounded transition-all duration-200 tracking-wider shadow-lg" type="submit">
+<span>DISPATCH COSTING INQUIRY</span>
+<span class="text-gold-primary font-bold">↗</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Export Compliance Ledger Strip -->
+<section class="w-full bg-slate-dark text-canvas-white py-space-md border-t border-border-hairline/20">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin flex flex-wrap items-center justify-between gap-space-md text-[12px]">
+<div class="flex items-center gap-space-sm text-slate-muted">
+<span class="w-2 h-2 rounded-full bg-gold-primary"></span>
+<span class="text-canvas-white font-bold">BSN TEXTILE INDUSTRIAL EXPORT DESK</span>
+<span>— Direct European Customs Union (ATR-1 Free Trade Zone Status)</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-md font-label-action text-slate-muted">
+<span class="hover:text-gold-light transition-colors">GERMAN TÜV AUDITED</span>
+<span class="text-border-prominent/40">•</span>
+<span class="hover:text-gold-light transition-colors">BSCI SOCIAL COMPLIANCE</span>
+<span class="text-border-prominent/40">•</span>
+<span class="hover:text-gold-light transition-colors">REACH CHEMICAL SAFE</span>
+<span class="text-border-prominent/40">•</span>
+<span class="hover:text-gold-light transition-colors">SEDEX SMETA 4-PILLAR</span>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-slate-dark text-surface-container-low pt-space-2xl pb-space-xl"><div class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter mb-space-2xl"><div class="lg:col-span-4 flex flex-col justify-between pr-0 lg:pr-space-lg"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="BSN Textile Logo" class="h-8 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/ALJJyrBHyroOpXF3UQhUkdr0oiKgzBro-s5ECOmLRxlxW8_wHTm9DEwJWPCnD_U7T8VJ4q1tv7s6YX5SgGcVO2LrQvZdVbK0DqEfiwzvJTNAeIKPpeDsB4uOFv7tL0DE1w8cKyYtvBYPGnW2oFAQy4pan50LqdLcTvKsMVccIxi1N003MPD1TLFdAUiP4sYETY76CLeiBeX78MVrhbkRigzKY5bnA1RiWJAl7msLd2pIsKe97A"/><span class="font-headline-sm text-headline-sm text-canvas-white tracking-tight">BSN TEXTILE</span></div><p class="font-body-sm text-body-sm text-slate-muted leading-relaxed">BSN Textile is a European-standard OEM/ODM garment manufacturer and exporter headquartered in Istanbul, operating high-volume integrated production facilities in Van Tekstilkent.</p><div class="pt-space-xs"><span class="font-label-eyebrow text-label-eyebrow text-gold-primary uppercase tracking-widest block mb-space-xs">Certified Production Standards</span><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center px-2 py-1 rounded bg-slate-mid text-gold-light text-[11px] font-bold font-label-action">OEKO-TEX 100</span><span class="inline-flex items-center px-2 py-1 rounded bg-slate-mid text-gold-light text-[11px] font-bold font-label-action">BSCI AUDITED</span><span class="inline-flex items-center px-2 py-1 rounded bg-slate-mid text-gold-light text-[11px] font-bold font-label-action">ISO 9001</span><span class="inline-flex items-center px-2 py-1 rounded bg-slate-mid text-gold-light text-[11px] font-bold font-label-action">GOTS ORGANIC</span></div></div></div></div><div class="lg:col-span-2 space-y-space-md"><h4 class="font-label-action text-label-action text-canvas-white uppercase tracking-wider">Core Collections</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-slate-muted"><li><a class="hover:text-gold-light transition-colors flex items-center justify-between" data-path="products-swim-shorts" href="#"><span>Swim Shorts</span><span class="text-[11px] text-gold-deep">↗</span></a></li><li><a class="hover:text-gold-light transition-colors flex items-center justify-between" data-path="products-knit-pants" href="#"><span>Knit Pants</span><span class="text-[11px] text-gold-deep">↗</span></a></li><li><a class="hover:text-gold-light transition-colors flex items-center justify-between" data-path="products-womens-dresses" href="#"><span>Women's Dresses</span><span class="text-[11px] text-gold-deep">↗</span></a></li><li><a class="hover:text-gold-light transition-colors flex items-center justify-between" data-path="products-streetwear" href="#"><span>Streetwear</span><span class="text-[11px] text-gold-deep">↗</span></a></li><li><a class="hover:text-gold-light transition-colors text-gold-primary font-medium pt-space-xs inline-block" data-path="digital-catalogue" href="#">View 2025 Lookbook →</a></li></ul></div><div class="lg:col-span-3 space-y-space-md"><h4 class="font-label-action text-label-action text-canvas-white uppercase tracking-wider">Manufacturing Facilities</h4><div class="space-y-space-md font-body-sm text-body-sm text-slate-muted"><div class="space-y-space-xs"><div class="flex items-center gap-space-xs text-canvas-white font-medium"><span class="material-symbols-outlined text-gold-primary text-[16px]">apartment</span><span>Istanbul HQ &amp; Showroom</span></div><p class="pl-6 text-[12px] leading-relaxed text-slate-muted">Avrasya Plaza, Oruçreis Mah. Tekstilkent Cad. No:10-B/208, Esenler / Istanbul, Turkey</p></div><div class="space-y-space-xs"><div class="flex items-center gap-space-xs text-canvas-white font-medium"><span class="material-symbols-outlined text-gold-primary text-[16px]">precision_manufacturing</span><span>Van Production Plant</span></div><p class="pl-6 text-[12px] leading-relaxed text-slate-muted">Tekstilkent 2. Etap 4. Blok No:12, İpekyolu / Van, Turkey</p></div></div></div><div class="lg:col-span-3 space-y-space-md"><h4 class="font-label-action text-label-action text-canvas-white uppercase tracking-wider">Direct Procurement</h4><div class="space-y-space-sm font-body-sm text-body-sm"><div class="flex items-start gap-space-xs text-slate-muted"><span class="material-symbols-outlined text-gold-primary text-[18px] shrink-0 mt-0.5">call</span><div><span class="block text-[11px] uppercase tracking-wider text-slate-muted">Direct Phone &amp; Export Desk</span><a class="text-canvas-white hover:text-gold-light font-medium tracking-wide transition-colors" href="tel:+905352336073">+90 535 233 6073</a></div></div><div class="flex items-start gap-space-xs text-slate-muted"><span class="material-symbols-outlined text-gold-primary text-[18px] shrink-0 mt-0.5">mail</span><div><span class="block text-[11px] uppercase tracking-wider text-slate-muted">Procurement &amp; Management</span><a class="block text-canvas-white hover:text-gold-light transition-colors" href="mailto:sedatuzumcu@bsntextile.com">sedatuzumcu@bsntextile.com</a><a class="block text-canvas-white hover:text-gold-light transition-colors" href="mailto:info@bsntextile.com">info@bsntextile.com</a></div></div><div class="pt-space-xs"><a class="inline-flex items-center gap-space-xs bg-slate-mid hover:bg-slate-dark text-canvas-white hover:text-gold-light text-label-action font-label-action px-space-md py-space-xs rounded transition-colors" href="https://wa.me/905352336073" target="_blank"><span class="material-symbols-outlined text-gold-primary text-[16px]">chat</span><span>WHATSAPP DIRECT INQUIRY</span></a></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-slate-muted"><div class="flex flex-wrap items-center gap-space-md text-[12px]"><span>© 2025 BSN Textile Sanayi ve Dış Ticaret A.Ş. All rights reserved.</span><span class="hidden md:inline text-slate-mid">|</span><span class="text-gold-deep">Bespoke Garment &amp; Technical Apparel Sourcing</span></div><div class="flex items-center gap-space-lg text-[12px]"><a class="hover:text-canvas-white transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-canvas-white transition-colors" data-path="terms-of-trade" href="#">Terms of Trade</a><a class="hover:text-canvas-white transition-colors" data-path="kvkk-compliance" href="#">KVKK Compliance</a><a class="hover:text-canvas-white transition-colors" data-path="quality-assurance" href="#">Quality Assurance</a></div></div></div></footer></body></html>

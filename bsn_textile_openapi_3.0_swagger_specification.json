@@ -1,0 +1,438 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "BSN Textile Global B2B API",
+    "description": "BSN Textile (bsntextile.com) çok dilli kurumsal hazır giyim ve fason üretim platformu için resmi API spesifikasyonu. RFQ teklif sihirbazı, showroom randevuları, katalog filtreleme ve webhook entegrasyonlarını kapsar.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Sedat Üzümcü - İhracat Masası",
+      "url": "https://www.bsntextile.com",
+      "email": "sedatuzumcu@bsntextile.com"
+    },
+    "license": {
+      "name": "Proprietary & Confidential - BSN Textile Ltd."
+    }
+  },
+  "servers": [
+    {
+      "url": "https://api.bsntextile.com/v1",
+      "description": "Canlı Üretim Sunucusu (Production)"
+    },
+    {
+      "url": "https://staging-api.bsntextile.com/v1",
+      "description": "Test & Geliştirme Sunucusu (Staging)"
+    }
+  ],
+  "security": [
+    {
+      "ApiKeyAuth": []
+    }
+  ],
+  "paths": {
+    "/rfq/submit": {
+      "post": {
+        "tags": ["RFQ & Teklif Sihirbazı"],
+        "summary": "5 Adımlı Fiyat Teklifi ve Numune Talebi Gönderimi",
+        "description": "Masaüstü ve mobil ekranlardaki RFQ sihirbazı verilerini ve tech-pack teknik çizim dosyasını alır. Otomatik takip kodu ve direktör ataması döndürür.",
+        "operationId": "submitRFQ",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/RFQSubmissionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "RFQ başarıyla oluşturuldu ve teknik inceleme sırasına alındı.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RFQSuccessResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Geçersiz form verisi (Validasyon hatası)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Dosya boyutu 50MB sınırını aştı.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "İstek limiti aşıldı (IP başına maks. 10 istek/dakika).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/appointments/book": {
+      "post": {
+        "tags": ["Showroom & Randevu"],
+        "summary": "Fiziki Showroom veya Çevrimiçi Teknik Toplantı Randevusu",
+        "description": "İstanbul Koza Plaza Showroom ziyareti veya Zoom/Teams çevrimiçi toplantısı için randevu oluşturur.",
+        "operationId": "bookAppointment",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AppointmentRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Randevu talebi onaylandı ve takvim daveti iletildi.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AppointmentSuccessResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Eksik veya geçersiz randevu parametreleri.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/catalogue/specifications": {
+      "get": {
+        "tags": ["Dijital Katalog & Şartnameler"],
+        "summary": "Kategori ve Kumaş Teknik Şartname Listesi",
+        "description": "4 ana imalat kategorisi (Sokak Giyimi, Deniz Şortu, Örme Pantolon, Kadın Elbise) için onaylı kumaş, gramaj ve tolerans listelerini döndürür.",
+        "operationId": "getSpecifications",
+        "parameters": [
+          {
+            "name": "locale",
+            "in": "query",
+            "description": "İçerik yerelleştirme kodu",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": ["tr", "en", "ar", "ru", "fa"],
+              "default": "tr"
+            }
+          },
+          {
+            "name": "category",
+            "in": "query",
+            "description": "Filtrelenecek üretim kategorisi",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": ["streetwear_heavyweight", "swim_shorts", "knit_pants", "women_dresses"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Kategori teknik spesifikasyon listesi.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CatalogueSpecsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-KEY",
+        "description": "Genel istemci form gönderimleri ve katalog sorguları için genel anahtar."
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT",
+        "description": "CRM webhook ve yönetim paneli entegrasyonları için JWT token."
+      }
+    },
+    "schemas": {
+      "RFQSubmissionRequest": {
+        "type": "object",
+        "required": [
+          "locale",
+          "category_id",
+          "target_quantity",
+          "company_name",
+          "contact_name",
+          "email",
+          "phone",
+          "nda_agreed",
+          "captcha_token"
+        ],
+        "properties": {
+          "locale": {
+            "type": "string",
+            "enum": ["tr", "en", "ar", "ru", "fa"],
+            "example": "tr"
+          },
+          "category_id": {
+            "type": "string",
+            "enum": [
+              "streetwear_heavyweight",
+              "swim_shorts",
+              "knit_pants",
+              "women_dresses"
+            ],
+            "example": "streetwear_heavyweight"
+          },
+          "target_quantity": {
+            "type": "integer",
+            "minimum": 500,
+            "description": "Asgari sipariş adedi (MOQ 500 adet)",
+            "example": 500
+          },
+          "fabric_type": {
+            "type": "string",
+            "example": "French Terry"
+          },
+          "fabric_gsm": {
+            "type": "integer",
+            "minimum": 100,
+            "maximum": 600,
+            "example": 450
+          },
+          "pantone_code": {
+            "type": "string",
+            "example": "19-4052 TCX"
+          },
+          "organic_cert_required": {
+            "type": "boolean",
+            "default": false,
+            "example": true
+          },
+          "custom_notes": {
+            "type": "string",
+            "maxLength": 2000,
+            "example": "Oversize fit, asit yıkama ve ön göğüste 3D puff baskı numunesi."
+          },
+          "target_delivery_date": {
+            "type": "string",
+            "format": "date",
+            "example": "2025-09-30"
+          },
+          "company_name": {
+            "type": "string",
+            "example": "Studio Sartorialist Ltd."
+          },
+          "contact_name": {
+            "type": "string",
+            "example": "Kerem Yılmaz"
+          },
+          "position": {
+            "type": "string",
+            "example": "Satın Alma Direktörü"
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "example": "purchasing@studiosartorialist.com"
+          },
+          "phone_country_code": {
+            "type": "string",
+            "example": "+90"
+          },
+          "phone": {
+            "type": "string",
+            "example": "5320000000"
+          },
+          "country": {
+            "type": "string",
+            "example": "TR"
+          },
+          "tech_pack_file": {
+            "type": "string",
+            "format": "binary",
+            "description": "CAD, Gerber DXF, CLO 3D ZPRJ, AI veya PDF teknik şartname dosyası (Maks. 50MB)"
+          },
+          "nda_agreed": {
+            "type": "boolean",
+            "description": "Dijital gizlilik sözleşmesi (NDA) onayı",
+            "example": true
+          },
+          "captcha_token": {
+            "type": "string",
+            "description": "Cloudflare Turnstile veya reCAPTCHA v3 doğrulama belirteci",
+            "example": "0x4AAAAAAABcdEF123..."
+          }
+        }
+      },
+      "RFQSuccessResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "example": "success"
+          },
+          "data": {
+            "type": "object",
+            "properties": {
+              "rfq_tracking_code": {
+                "type": "string",
+                "example": "BSN-RFQ-2025-8841"
+              },
+              "created_at": {
+                "type": "string",
+                "format": "date-time",
+                "example": "2025-05-14T10:30:00Z"
+              },
+              "lead_status": {
+                "type": "string",
+                "enum": ["PENDING_TECHNICAL_REVIEW", "IN_SAMPLE_PLANNING", "OFFER_SENT"],
+                "example": "PENDING_TECHNICAL_REVIEW"
+              },
+              "assigned_rep": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string", "example": "Sedat Üzümcü" },
+                  "email": { "type": "string", "example": "sedatuzumcu@bsntextile.com" },
+                  "phone": { "type": "string", "example": "+90 535 233 6073" }
+                }
+              },
+              "sla_guarantee": {
+                "type": "string",
+                "example": "24 hours"
+              },
+              "estimated_sample_dispatch_days": {
+                "type": "string",
+                "example": "5-7 business days"
+              }
+            }
+          }
+        }
+      },
+      "AppointmentRequest": {
+        "type": "object",
+        "required": [
+          "locale",
+          "appointment_type",
+          "location",
+          "preferred_date",
+          "preferred_time_slot",
+          "company_name",
+          "full_name",
+          "email",
+          "phone"
+        ],
+        "properties": {
+          "locale": { "type": "string", "enum": ["tr", "en", "ar", "ru", "fa"], "example": "en" },
+          "appointment_type": { "type": "string", "enum": ["physical_showroom", "online_video_call"], "example": "physical_showroom" },
+          "location": { "type": "string", "enum": ["koza_plaza_istanbul", "van_integrated_facility"], "example": "koza_plaza_istanbul" },
+          "preferred_date": { "type": "string", "format": "date", "example": "2025-06-15" },
+          "preferred_time_slot": { "type": "string", "example": "14:00-15:30" },
+          "company_name": { "type": "string", "example": "Nordic Retail Group" },
+          "full_name": { "type": "string", "example": "Selin Karaca" },
+          "email": { "type": "string", "format": "email", "example": "selin@nordicretail.com" },
+          "phone": { "type": "string", "example": "+46 70 123 4567" },
+          "interests": {
+            "type": "array",
+            "items": { "type": "string" },
+            "example": ["luxury_knitwear", "french_seam_dresses"]
+          },
+          "estimated_order_volume": { "type": "string", "example": "2500_plus" },
+          "nda_required": { "type": "boolean", "default": true, "example": true }
+        }
+      },
+      "AppointmentSuccessResponse": {
+        "type": "object",
+        "properties": {
+          "status": { "type": "string", "example": "success" },
+          "data": {
+            "type": "object",
+            "properties": {
+              "appointment_id": { "type": "string", "example": "BSN-APT-9042" },
+              "calendar_invite_url": { "type": "string", "example": "https://calendar.google.com/calendar/event?eid=..." },
+              "meeting_type": { "type": "string", "example": "physical_showroom" },
+              "venue_address": { "type": "string", "example": "Oruçreis Mh. Tekstilkent Cad. Koza Plaza B Blok Kat:14 No:52, Esenler / İstanbul" },
+              "assigned_host": { "type": "string", "example": "Sedat Üzümcü" }
+            }
+          }
+        }
+      },
+      "CatalogueSpecsResponse": {
+        "type": "object",
+        "properties": {
+          "status": { "type": "string", "example": "success" },
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category_id": { "type": "string", "example": "streetwear_heavyweight" },
+                "moq": { "type": "integer", "example": 500 },
+                "sample_lead_time": { "type": "string", "example": "5-7 days" },
+                "fabric_weight_range": { "type": "string", "example": "240 - 520 GSM" },
+                "certifications": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "example": ["OEKO-TEX Standard 100", "GOTS Organic", "amfori BSCI", "ISO 9001:2015"]
+                }
+              }
+            }
+          }
+        }
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "properties": {
+          "status": { "type": "string", "example": "error" },
+          "error_code": {
+            "type": "string",
+            "enum": ["ERR_MIN_MOQ", "ERR_INVALID_EMAIL", "ERR_TECHPACK_SIZE", "ERR_REQUIRED_FIELD", "ERR_RATE_LIMIT", "ERR_CAPTCHA_FAILED"],
+            "example": "ERR_MIN_MOQ"
+          },
+          "message": {
+            "type": "string",
+            "example": "Asgari sipariş adedi 500 adettir. (Minimum order quantity is 500 pcs.)"
+          },
+          "details": {
+            "type": "object",
+            "additionalProperties": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

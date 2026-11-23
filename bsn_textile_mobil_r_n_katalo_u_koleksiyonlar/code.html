@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#ffffff", "slate-dark": "#0F172A", "surface-container-high": "#e6e8ea", "on-tertiary-container": "#76859b", "tertiary-fixed-dim": "#b9c7e0", "secondary-fixed-dim": "#e9c176", "surface-container": "#eceef0", "on-primary-fixed-variant": "#3f465c", "on-secondary-fixed": "#261900", "on-primary": "#ffffff", "on-surface-variant": "#45464d", "on-secondary-container": "#785a1a", "slate-muted": "#64748B", "tertiary-container": "#0d1c2f", "gold-primary": "#C5A059", "on-error-container": "#93000a", "surface-container-highest": "#e0e3e5", "gold-light": "#E2C98F", "surface-variant": "#e0e3e5", "on-surface": "#191c1e", "on-tertiary": "#ffffff", "surface-container-low": "#f2f4f6", "primary-container": "#131b2e", "primary": "#000000", "on-secondary-fixed-variant": "#5d4201", "canvas-subtle": "#F8FAFC", "border-prominent": "#CBD5E1", "on-error": "#ffffff", "canvas-white": "#FFFFFF", "on-tertiary-fixed": "#0d1c2f", "on-primary-container": "#7c839b", "inverse-on-surface": "#eff1f3", "primary-fixed-dim": "#bec6e0", "on-primary-fixed": "#131b2e", "outline-variant": "#c6c6cd", "error-container": "#ffdad6", "surface-dim": "#d8dadc", "tertiary": "#000000", "inverse-surface": "#2d3133", "slate-mid": "#1E293B", "tertiary-fixed": "#d5e3fd", "border-hairline": "#E2E8F0", "secondary-fixed": "#ffdea5", "outline": "#76777d", "primary-fixed": "#dae2fd", "on-secondary": "#ffffff", "secondary": "#775a19", "inverse-primary": "#bec6e0", "on-background": "#191c1e", "surface-tint": "#565e74", "surface-bright": "#f7f9fb", "background": "#f7f9fb", "surface": "#f7f9fb", "secondary-container": "#fed488", "on-tertiary-fixed-variant": "#3a485c", "gold-deep": "#9E7B35", "error": "#ba1a1a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1.25rem", "space-lg": "1.5rem", "space-2xl": "4rem", "margin": "3rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-xs": "0.25rem" }, "fontFamily": { "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-hero": ["Playfair Display"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "metric-display": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "label-action": ["Plus Jakarta Sans"], "label-eyebrow": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-hero-mobile": ["Playfair Display"], "headline-lg": ["Playfair Display"] }, "fontSize": { "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "600" }], "metric-display": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "label-action": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700" }], "label-eyebrow": ["11px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-canvas-white/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="BSN Textile Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNhgfAFamoSDq0KkisQF_yB9_JO6nvA-voPhK5S59e2B0X6oePzheopIuM-UmRGx-uIE6AboM7z9gsNsy5me0JdrkH_auZjeDR8VECNM5P6xHnpLXfeTWgBv4KmYeHKJk59R8jLk2tcvz0RDomX19-bd3rzOgcbXVmerDMUM9gi7XaurORcADX5VvP3MaftF67Z0YBVVQhy2clRihNM_G-KBQrZCen80O18TpAOObp"/><div class="flex flex-col"><span class="font-label-eyebrow text-label-eyebrow text-gold-primary tracking-widest uppercase">BSN TEXTILE</span><span class="font-headline-sm text-headline-sm text-slate-dark tracking-tight leading-none">Products Catalogue</span></div></div><div class="flex items-center gap-1"><div class="flex items-center gap-1 px-2 py-1 rounded bg-canvas-subtle"><button class="font-label-action text-[10px] text-slate-dark font-bold underline decoration-gold-primary decoration-2 underline-offset-4 min-w-[20px] h-6 flex items-center justify-center" type="button">TR</button><span class="text-[10px] text-border-prominent">|</span><button class="font-label-action text-[10px] text-slate-muted hover:text-slate-dark min-w-[20px] h-6 flex items-center justify-center" type="button">EN</button><span class="text-[10px] text-border-prominent">|</span><button class="font-label-action text-[10px] text-slate-muted hover:text-slate-dark min-w-[20px] h-6 flex items-center justify-center" type="button">AR</button></div><a aria-label="WhatsApp Quick Contact" class="w-11 h-11 flex items-center justify-center text-slate-dark hover:text-gold-primary transition-colors" href="https://wa.me/905000000000"><span class="material-symbols-outlined text-[20px]">chat</span></a><button aria-label="Navigation Menu" class="w-11 h-11 flex items-center justify-center text-slate-dark hover:text-gold-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-0.5"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-10">
+<!-- Search & Quick Navigation Header Segment -->
+<section class="px-margin-mobile pt-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase tracking-widest">DİJİTAL FABRİKA KATALOĞU 2025</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px] text-slate-muted">verified</span>
+<span class="font-label-eyebrow text-[10px] text-slate-dark font-semibold uppercase">OEKO-TEX / GOTS</span>
+</div>
+</div>
+<!-- Search Bar with Live Filter Input -->
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-muted">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full bg-canvas-white text-slate-dark placeholder-slate-muted font-body-sm text-body-sm pl-11 pr-10 py-3 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-gold-primary/30 transition-all" id="catalogue-search" placeholder="Kumaş gramajı, iplik türü veya kategori ara..." type="search"/>
+<button class="hidden absolute inset-y-0 right-0 pr-3 flex items-center text-slate-muted hover:text-slate-dark" id="clear-search" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Horizontal Filter Chips / Category Pill Ribbon -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar -mx-margin-mobile px-margin-mobile py-1">
+<button class="filter-chip active flex items-center gap-1.5 px-3.5 py-1.5 rounded-full font-label-action text-label-action whitespace-nowrap bg-slate-dark text-canvas-white shadow-sm transition-all" data-filter="all" type="button">
+<span>Tümü</span>
+<span class="text-[10px] opacity-75 font-normal">(4 Koleksiyon)</span>
+</button>
+<button class="filter-chip flex items-center gap-1.5 px-3.5 py-1.5 rounded-full font-label-action text-label-action whitespace-nowrap bg-surface-container text-slate-dark hover:bg-surface-container-high transition-all" data-filter="streetwear" type="button">
+<span>Sokak Giyimi</span>
+</button>
+<button class="filter-chip flex items-center gap-1.5 px-3.5 py-1.5 rounded-full font-label-action text-label-action whitespace-nowrap bg-surface-container text-slate-dark hover:bg-surface-container-high transition-all" data-filter="swimwear" type="button">
+<span>Deniz Şortu</span>
+</button>
+<button class="filter-chip flex items-center gap-1.5 px-3.5 py-1.5 rounded-full font-label-action text-label-action whitespace-nowrap bg-surface-container text-slate-dark hover:bg-surface-container-high transition-all" data-filter="knitwear" type="button">
+<span>Örme Pantolon</span>
+</button>
+<button class="filter-chip flex items-center gap-1.5 px-3.5 py-1.5 rounded-full font-label-action text-label-action whitespace-nowrap bg-surface-container text-slate-dark hover:bg-surface-container-high transition-all" data-filter="dresses" type="button">
+<span>Kadın Elbise</span>
+</button>
+</div>
+</section>
+<!-- Production Spec Announcement / Atelier Summary Banner -->
+<section class="px-margin-mobile mt-space-md">
+<div class="bg-primary-container text-canvas-white p-space-md rounded-xl shadow-md relative overflow-hidden flex flex-col gap-2.5">
+<div class="flex items-center justify-between relative z-10">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-light tracking-widest uppercase">ENDÜSTRİYEL SERİ İMALAT</span>
+<span class="px-2 py-0.5 rounded bg-gold-deep/20 text-gold-light font-label-action text-[10px]">MOQ: 300 PCS</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-canvas-white relative z-10 leading-snug">
+        Koleksiyon Şartnameleri &amp; Doğrudan Üretim Reçeteleri
+      </p>
+<div class="flex items-center gap-4 text-on-primary-container font-body-sm text-body-sm relative z-10 pt-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-gold-primary">swap_driving_apps_wheel</span>
+<span>CLO 3D Kalıp</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-gold-primary">science</span>
+<span>ISO 105 Lab Testi</span>
+</div>
+</div>
+<!-- Decorative geometric line art (woven fabric motif) -->
+<svg class="absolute -right-6 -bottom-6 w-36 h-36 opacity-10 text-gold-light pointer-events-none" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 100 100">
+<line stroke-dasharray="2 3" x1="0" x2="100" y1="20" y2="20"></line>
+<line stroke-dasharray="4 2" x1="0" x2="100" y1="40" y2="40"></line>
+<line stroke-dasharray="1 3" x1="0" x2="100" y1="60" y2="60"></line>
+<line stroke-dasharray="2 2" x1="0" x2="100" y1="80" y2="80"></line>
+<line stroke-dasharray="3 3" x1="20" x2="20" y1="0" y2="100"></line>
+<line stroke-dasharray="1 4" x1="40" x2="40" y1="0" y2="100"></line>
+<line stroke-dasharray="2 2" x1="60" x2="60" y1="0" y2="100"></line>
+<line stroke-dasharray="4 1" x1="80" x2="80" y1="0" y2="100"></line>
+</svg>
+</div>
+</section>
+<!-- Spec Sheets Feed -->
+<section class="px-margin-mobile mt-space-lg flex flex-col gap-space-lg" id="collection-feed">
+<!-- CARD 1: Streetwear & Heavyweight Hoodies/Tees -->
+<article class="catalogue-item flex flex-col bg-surface-container-lowest rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="streetwear">
+<!-- Media Frame with Technical Overlay -->
+<div class="relative w-full aspect-[16/10] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Editorial fashion lookbook shot of premium oversized streetwear heavyweight cotton hoodie and t-shirt draped on an architectural concrete pedestal, warm studio side-lighting, ultra-refined texture of 480 GSM French terry loopback weave, subtle champagne gold reflection, minimalist European luxury textile atelier aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmZJp0llyrUDdCliHugGjQo6X8CdpcqI3RWOSLgvWLDkU_kMCbTSkuONDJaDfBXMgPIV-n2CmQePoY0yQD0uPrwgi8q7ntizmkO-2yi2vhxRwznyC_bx1rz4ygm7OrtuN_XGLnulvs9uJR7bmlW__oJVab_r7ErdTbsf_Jn-sf3lWb4WP8PpOux9lZu8vD5rBW35VOdGGWADzL4Yj-NxyntCqXymsctIatvQhE-QNx"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-dark/80 via-transparent to-transparent flex flex-col justify-end p-space-md text-canvas-white">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-light tracking-widest uppercase">KOD: BSN-ST-2501</span>
+<span class="px-2 py-0.5 rounded bg-canvas-white/20 backdrop-blur-md font-label-action text-[10px] text-canvas-white">PRE-SHRUNK (0% ÇEKME)</span>
+</div>
+<h2 class="font-display-hero-mobile text-headline-lg-mobile text-canvas-white font-display-hero tracking-tight mt-0.5">Heavyweight Streetwear</h2>
+</div>
+</div>
+<!-- Spec Content Module -->
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-gold-primary"></span>
+<span class="font-label-action text-label-action text-slate-dark uppercase">Kumaş ve Ağırlık Spektrumu</span>
+</div>
+<span class="font-label-action text-label-action text-gold-deep font-bold">240 - 520 GSM</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-muted">
+          Yüksek yoğunluklu kompakt penye iplik (%100 Organik Ege Pamuğu). Çift kat dikişli oversize kalıplar, ribana manşet elastan takviyeli yapı ve karbon süetleme yüzey tuşesi.
+        </p>
+<!-- Technical Specification Bento-Row -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase">İPLİK NO</span>
+<span class="font-headline-sm text-[13px] text-slate-dark font-semibold">16/1 &amp; 20/1 Open-End / Penye</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase">BOYA VE YIKAMA</span>
+<span class="font-headline-sm text-[13px] text-slate-dark font-semibold">Reaktif / Acid Wash / Pigment</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase">BASKI UYGULAMA</span>
+<span class="font-headline-sm text-[13px] text-slate-dark font-semibold">Kabartma Puff &amp; HD Serigrafi</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase">TEST STANDARDI</span>
+<span class="font-headline-sm text-[13px] text-slate-dark font-semibold">ISO 105-C06 (4-5 Haslık)</span>
+</div>
+</div>
+<!-- Action Drawer: Quick Download & RFQ Button Matrix -->
+<div class="flex items-center gap-2 pt-2">
+<button class="spec-download-btn flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-surface-container text-slate-dark font-label-action text-[11px] font-bold hover:bg-surface-container-high transition-colors active:scale-[0.98]" onclick="downloadSpecSheet('BSN-ST-2501', 'Streetwear Heavyweight')" type="button">
+<span class="material-symbols-outlined text-[18px] text-gold-deep">picture_as_pdf</span>
+<span>ŞARTNAME İNDİR</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-slate-dark text-canvas-white font-label-action text-[11px] font-bold hover:bg-slate-mid transition-all shadow-sm active:scale-[0.98]" onclick="openQuickQuoteModal('Streetwear Heavyweight Series (240-520 GSM)')" type="button">
+<span class="material-symbols-outlined text-[16px] text-gold-light">add_shopping_cart</span>
+<span>RFQ REÇETE AL ↗</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 2: Deniz Şortu & Swim Shorts -->
+<article class="catalogue-item flex flex-col bg-surface-container-lowest rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="swimwear">
+<div class="relative w-full aspect-[16/10] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Luxury resortwear swim shorts laying flat beside polished brass tailoring instruments and water droplet beading effect, ultra-soft peach skin microfiber fabric with hydrophobic coating, elegant Mediterranean aesthetic with subtle golden warmth and crisp slate accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSjz2O0YIjtwiw_3j-ve1pxX0JJQEdODf2TV9t46qJDXexzILfxrUT6s2zBVVghGAmRRf7zBH2vV1GVUYebWYkErFDf0frMHNtxrOfs4dwcDi6Q1mTGEk6nEzxAKyY_6_cvwandm8Os9EukmVCGKEdEd_66r-7LbagCXyt34TebBIY9tnXLKUrnW_B_aU8LMP-mcA1UtkQiEXMKzIeYIIKPAg5DzfFokLz6f3ZoUvi"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-dark/80 via-transparent to-transparent flex flex-col justify-end p-space-md text-canvas-white">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-light tracking-widest uppercase">KOD: BSN-SW-8804</span>
+<span class="px-2 py-0.5 rounded bg-canvas-white/20 backdrop-blur-md font-label-action text-[10px] text-canvas-white">KLOR DİRENCİ SEVİYE 5</span>
+</div>
+<h2 class="font-display-hero-mobile text-headline-lg-mobile text-canvas-white font-display-hero tracking-tight mt-0.5">Deniz Şortu &amp; Mayo Grubu</h2>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-gold-primary"></span>
+<span class="font-label-action text-label-action text-slate-dark uppercase">Kumaş Mimarisi</span>
+</div>
+<span class="font-label-action text-label-action text-gold-deep font-bold">115 - 145 GSM</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-muted">
+          Kadifemsi dokulu "Peach Skin" Micro-Polyester dokuma. Çift taraflı DWR (Durable Water Repellent) hidrofobik kaplama ile 90 saniyede ultra hızlı kuruma ve klor koruması.
+        </p>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase">İÇ ASTAR / FİLE</span>
+<span class="font-headline-sm text-[13px] text-slate-dark font-semibold">Anti-Bakteriyel Mikrofiber Mesh</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase">HİDROFOBİK DEĞER</span>
+<span class="font-headline-sm text-[13px] text-slate-dark font-semibold">AATCC 22 Sprey Test: 100/100</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase">AKSESUAR &amp; KUŞGÖZÜ</span>
+<span class="font-headline-sm text-[13px] text-slate-dark font-semibold">Paslanmaz Pirinç Kapsül &amp; Kordon</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase">DİJİTAL BASKI</span>
+<span class="font-headline-sm text-[13px] text-slate-dark font-semibold">Süblimasyon UV Korumalı Renkler</span>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="spec-download-btn flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-surface-container text-slate-dark font-label-action text-[11px] font-bold hover:bg-surface-container-high transition-colors active:scale-[0.98]" onclick="downloadSpecSheet('BSN-SW-8804', 'Deniz Şortu &amp; Mayo')" type="button">
+<span class="material-symbols-outlined text-[18px] text-gold-deep">picture_as_pdf</span>
+<span>ŞARTNAME İNDİR</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-slate-dark text-canvas-white font-label-action text-[11px] font-bold hover:bg-slate-mid transition-all shadow-sm active:scale-[0.98]" onclick="openQuickQuoteModal('Deniz Şortu Peach Skin Koleksiyonu (BSN-SW-8804)')" type="button">
+<span class="material-symbols-outlined text-[16px] text-gold-light">add_shopping_cart</span>
+<span>RFQ REÇETE AL ↗</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 3: Kadın Elbise & Dokuma -->
+<article class="catalogue-item flex flex-col bg-surface-container-lowest rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="dresses">
+<div class="relative w-full aspect-[16/10] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Couture dressmaking workshop setting showing fine flowing silk viscose crepe tailored dress on atelier mannequin, meticulous clean French seams visible, YKK concealed zip detailing, editorial high fashion lighting with warm gold highlights and soft architectural shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7UZ6hRAaiUFL2WDoXVW8lNgOyjsXbWcmilSv_UpiW2cvqfHy10HHOyCXGEB2jnFn7aPfm87Gex-tKq5rqJ0SX_Lp_szuXJLazPIJBz9BL9LpkSyhkaEqnEulWGuoac0FG0aR0Vo-EfCOCf4jA0ixy_ZYS8w-LDNstQ8D16klzrumuViNhPySF8BcFFSBTGnyfZAiIdVO9xvnWckyWPuCjasaQpkjlhU73WTsDrEgG"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-dark/80 via-transparent to-transparent flex flex-col justify-end p-space-md text-canvas-white">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-light tracking-widest uppercase">KOD: BSN-DR-4120</span>
+<span class="px-2 py-0.5 rounded bg-canvas-white/20 backdrop-blur-md font-label-action text-[10px] text-canvas-white">CLO 3D AVATAR HAZIR</span>
+</div>
+<h2 class="font-display-hero-mobile text-headline-lg-mobile text-canvas-white font-display-hero tracking-tight mt-0.5">Kadın Elbise &amp; Dokuma</h2>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-gold-primary"></span>
+<span class="font-label-action text-label-action text-slate-dark uppercase">Dokuma Konstrüksiyonu</span>
+</div>
+<span class="font-label-action text-label-action text-gold-deep font-bold">130 - 210 GSM</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-muted">
+          Viskon krep, tensel ve cupro harmanları. Temiz Fransız dikişi (French Seam) temizleme, orijinal YKK Conceal® gizli fermuar montajı ve dijital kalıp hassasiyeti.
+        </p>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase">DİKİŞ TEKNOLOJİSİ</span>
+<span class="font-headline-sm text-[13px] text-slate-dark font-semibold">İğne Adımı 5/cm Temiz Kenar</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase">FERMUAR / DETAY</span>
+<span class="font-headline-sm text-[13px] text-slate-dark font-semibold">YKK Gizli / Agraf Destekli</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase">3D PROTOTİPLEME</span>
+<span class="font-headline-sm text-[13px] text-slate-dark font-semibold">CLO 3D .zprj &amp; Gerber DXF</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase">SERTİFİKASYON</span>
+<span class="font-headline-sm text-[13px] text-slate-dark font-semibold">Lenzing™ Ecovero Viscose</span>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="spec-download-btn flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-surface-container text-slate-dark font-label-action text-[11px] font-bold hover:bg-surface-container-high transition-colors active:scale-[0.98]" onclick="downloadSpecSheet('BSN-DR-4120', 'Kadın Elbise &amp; Dokuma')" type="button">
+<span class="material-symbols-outlined text-[18px] text-gold-deep">picture_as_pdf</span>
+<span>ŞARTNAME İNDİR</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-slate-dark text-canvas-white font-label-action text-[11px] font-bold hover:bg-slate-mid transition-all shadow-sm active:scale-[0.98]" onclick="openQuickQuoteModal('Kadın Elbise &amp; Dokuma Serisi (BSN-DR-4120)')" type="button">
+<span class="material-symbols-outlined text-[16px] text-gold-light">add_shopping_cart</span>
+<span>RFQ REÇETE AL ↗</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 4: Örme Pantolon & Joggers -->
+<article class="catalogue-item flex flex-col bg-surface-container-lowest rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="knitwear">
+<div class="relative w-full aspect-[16/10] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Technical luxury tailored sweatpants and knit joggers in slate charcoal tones laid on minimalist architectural marble tile, showing ergonomic knee paneling, concealed zippered tech pockets with rubber dip drawstrings, fine textile manufacturing close-up with warm golden hour highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL3M5W-pIf_q719Dm9IBrJEbAjslYrGHi5ucJ2h3aWEIbVXIM-MHyIlnKxfIs7KodBAF0V8m_rL_vwdKmCExC-5axXj51ewAOdDztWJtFEn1OTVYMtIRkZqrtob53AH0HqINDkugjpih1MN1AnCHjf31FmS4MzW8CF6izWuLUm8eC-oFkH24FPpnLSZ4d93R9jQjlORC_DkAJBquEZQ5tIFIsXNGddDeZHFk2doahR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-dark/80 via-transparent to-transparent flex flex-col justify-end p-space-md text-canvas-white">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-light tracking-widest uppercase">KOD: BSN-JG-7330</span>
+<span class="px-2 py-0.5 rounded bg-canvas-white/20 backdrop-blur-md font-label-action text-[10px] text-canvas-white">ERGONOMİK DİZ KORUYUCU</span>
+</div>
+<h2 class="font-display-hero-mobile text-headline-lg-mobile text-canvas-white font-display-hero tracking-tight mt-0.5">Örme Pantolon &amp; Joggers</h2>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-gold-primary"></span>
+<span class="font-label-action text-label-action text-slate-dark uppercase">Kumaş Gramaj &amp; Tip</span>
+</div>
+<span class="font-label-action text-label-action text-gold-deep font-bold">340 - 450 GSM</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-muted">
+          3 İplik Şardonlu ve Diyagonal Örgü seçenekleri. Dize özel anatomik hareket kupları, kaynaklı fermuarlı yan cep torbaları ve balmumu uçlu balıksırtı kordon takviyesi.
+        </p>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase">DİZ KUPU KALIBI</span>
+<span class="font-headline-sm text-[13px] text-slate-dark font-semibold">Anatomik 3 Parçalı Form</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase">CEP ÇÖZÜMÜ</span>
+<span class="font-headline-sm text-[13px] text-slate-dark font-semibold">Gizli YKK Ters Fermuar &amp; Lamine</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase">BEL KORDONU</span>
+<span class="font-headline-sm text-[13px] text-slate-dark font-semibold">%100 Pamuk Balıksırtı + Silikon Uç</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase">DİZ DİZ ÇIKMA TESTİ</span>
+<span class="font-headline-sm text-[13px] text-slate-dark font-semibold">DIN EN 14704 Elastik İyileşme</span>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="spec-download-btn flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-surface-container text-slate-dark font-label-action text-[11px] font-bold hover:bg-surface-container-high transition-colors active:scale-[0.98]" onclick="downloadSpecSheet('BSN-JG-7330', 'Örme Pantolon &amp; Joggers')" type="button">
+<span class="material-symbols-outlined text-[18px] text-gold-deep">picture_as_pdf</span>
+<span>ŞARTNAME İNDİR</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-slate-dark text-canvas-white font-label-action text-[11px] font-bold hover:bg-slate-mid transition-all shadow-sm active:scale-[0.98]" onclick="openQuickQuoteModal('Örme Pantolon &amp; Jogger Serisi (BSN-JG-7330)')" type="button">
+<span class="material-symbols-outlined text-[16px] text-gold-light">add_shopping_cart</span>
+<span>RFQ REÇETE AL ↗</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Empty Search State -->
+<div class="hidden flex-col items-center justify-center text-center p-8 bg-surface-container-lowest rounded-xl shadow-sm" id="no-results">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-slate-muted mb-3">
+<span class="material-symbols-outlined text-[24px]">inventory_2</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-slate-dark">Kriterlere uygun ürün bulunamadı</p>
+<p class="font-body-sm text-body-sm text-slate-muted mt-1 max-w-xs">
+        Özel kumaş karışımı veya özel konstrüksiyon talepleriniz için doğrudan teknik ekibimizle görüşebilirsiniz.
+      </p>
+<button class="mt-4 px-4 py-2 bg-slate-dark text-canvas-white font-label-action text-label-action rounded-lg" onclick="resetFilters()" type="button">
+        FİLTRELERİ SIFIRLA
+      </button>
+</div>
+</section>
+<!-- Sticky Bottom Quick Conversion Prompt Bar -->
+<aside class="sticky bottom-20 z-40 px-margin-mobile mt-space-xl">
+<div class="bg-slate-dark text-canvas-white p-3.5 rounded-xl shadow-xl flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 shrink-0 rounded-lg bg-gold-primary/20 flex items-center justify-center text-gold-primary">
+<span class="material-symbols-outlined text-[22px]">developer_guide</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[13px] text-canvas-white truncate font-semibold">Özel Tech Pack Hazırla</span>
+<span class="font-body-sm text-[11px] text-slate-muted truncate">Ölçü tablosu, kalıp &amp; kumaş varyantları</span>
+</div>
+</div>
+<button class="shrink-0 flex items-center gap-1 px-3.5 py-2 rounded-lg bg-gold-primary text-slate-dark font-label-action text-[11px] font-bold tracking-wider hover:bg-gold-light transition-all active:scale-[0.98]" onclick="openQuickQuoteModal('Kapsamlı Özel Koleksiyon Talebi')" type="button">
+<span>BAŞLAT</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</aside>
+<!-- Atelier Modal Dialog: Quick RFQ / Tech Pack Customizer -->
+<dialog class="fixed inset-0 m-0 w-full h-full bg-slate-dark/70 backdrop-blur-sm z-50 p-margin-mobile items-end justify-center" id="rfq-modal">
+<div class="w-full max-w-md bg-canvas-white rounded-t-2xl shadow-2xl p-space-md flex flex-col gap-space-sm max-h-[85vh] overflow-y-auto">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-gold-primary"></span>
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep uppercase tracking-widest">HIZLI TEKLİF &amp; REÇETE FORMU</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-slate-dark" onclick="closeQuickQuoteModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col gap-1">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase">SEÇİLEN ÜRETİM REÇETESİ</span>
+<span class="font-headline-sm text-body-md text-slate-dark font-semibold" id="modal-product-title">Koleksiyon Belirtilmedi</span>
+</div>
+<form class="flex flex-col gap-3 pt-1" id="rfq-quick-form" onsubmit="handleQuoteSubmit(event)">
+<div class="flex flex-col gap-1">
+<label class="font-label-eyebrow text-[11px] text-slate-muted uppercase">Firma / Marka Adı *</label>
+<input class="w-full h-11 px-3 bg-canvas-white text-slate-dark rounded-lg text-body-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-gold-primary" placeholder="Örn: Studio Atelier Milano" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="flex flex-col gap-1">
+<label class="font-label-eyebrow text-[11px] text-slate-muted uppercase">Tahmini Adet (MOQ 300) *</label>
+<input class="w-full h-11 px-3 bg-canvas-white text-slate-dark rounded-lg text-body-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-gold-primary" min="300" placeholder="500 Adet" required="" type="number"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-eyebrow text-[11px] text-slate-muted uppercase">Hedef Teslim Ülkesi</label>
+<input class="w-full h-11 px-3 bg-canvas-white text-slate-dark rounded-lg text-body-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-gold-primary" placeholder="Almanya / UK / TR" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-eyebrow text-[11px] text-slate-muted uppercase">Kurumsal E-posta / WhatsApp *</label>
+<input class="w-full h-11 px-3 bg-canvas-white text-slate-dark rounded-lg text-body-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-gold-primary" placeholder="procurement@brand.com" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-eyebrow text-[11px] text-slate-muted uppercase">Özel Notlar (İplik, Etiket, Paketleme)</label>
+<textarea class="w-full p-2.5 bg-canvas-white text-slate-dark rounded-lg text-body-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-gold-primary resize-none" placeholder="Özel renk kodları, yıkama efektleri veya etiket detayları..." rows="2"></textarea>
+</div>
+<div class="pt-2 flex flex-col gap-2">
+<button class="w-full py-3 bg-slate-dark text-canvas-white rounded-lg font-label-action text-label-action tracking-wider font-bold hover:bg-slate-mid transition-all shadow-md flex items-center justify-center gap-2" type="submit">
+<span>RESMİ RFQ TEKLİFİ OLUŞTUR ↗</span>
+</button>
+<p class="font-body-sm text-[11px] text-slate-muted text-center">
+            Teklifiniz 24 saat içinde fabrika ihracat koordinatörümüz tarafından yanıtlanacaktır.
+          </p>
+</div>
+</form>
+</div>
+</dialog>
+<!-- Interactive Feedback Toast -->
+<div class="fixed top-20 inset-x-4 mx-auto max-w-sm z-50 transform -translate-y-24 opacity-0 transition-all duration-300 pointer-events-none bg-slate-dark text-canvas-white px-4 py-3 rounded-xl shadow-xl flex items-center gap-3" id="toast-notification">
+<span class="material-symbols-outlined text-gold-primary text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-body-sm text-[13px] text-canvas-white font-medium" id="toast-message">İşlem başarıyla tamamlandı.</span>
+</div>
+</div>
+<script>
+  // Filter Functionality
+  const filterButtons = document.querySelectorAll('.filter-chip');
+  const catalogueCards = document.querySelectorAll('.catalogue-item');
+  const noResultsBlock = document.getElementById('no-results');
+  const searchInput = document.getElementById('catalogue-search');
+  const clearSearchBtn = document.getElementById('clear-search');
+
+  let currentCategory = 'all';
+  let searchQuery = '';
+
+  function applyFilters() {
+    let visibleCount = 0;
+    catalogueCards.forEach(card => {
+      const category = card.getAttribute('data-category');
+      const textContent = card.innerText.toLowerCase();
+      const matchesCategory = (currentCategory === 'all' || category === currentCategory);
+      const matchesSearch = textContent.includes(searchQuery.toLowerCase());
+
+      if (matchesCategory && matchesSearch) {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    if (visibleCount === 0) {
+      noResultsBlock.classList.remove('hidden');
+      noResultsBlock.classList.add('flex');
+    } else {
+      noResultsBlock.classList.add('hidden');
+      noResultsBlock.classList.remove('flex');
+    }
+  }
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => {
+        b.classList.remove('active', 'bg-slate-dark', 'text-canvas-white');
+        b.classList.add('bg-surface-container', 'text-slate-dark');
+      });
+      btn.classList.add('active', 'bg-slate-dark', 'text-canvas-white');
+      btn.classList.remove('bg-surface-container', 'text-slate-dark');
+
+      currentCategory = btn.getAttribute('data-filter');
+      applyFilters();
+    });
+  });
+
+  searchInput.addEventListener('input', (e) => {
+    searchQuery = e.target.value.trim();
+    if (searchQuery.length > 0) {
+      clearSearchBtn.classList.remove('hidden');
+    } else {
+      clearSearchBtn.classList.add('hidden');
+    }
+    applyFilters();
+  });
+
+  clearSearchBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    searchQuery = '';
+    clearSearchBtn.classList.add('hidden');
+    applyFilters();
+  });
+
+  function resetFilters() {
+    searchInput.value = '';
+    searchQuery = '';
+    clearSearchBtn.classList.add('hidden');
+    filterButtons[0].click();
+  }
+
+  // Spec Sheet Instant Download Emulation
+  function downloadSpecSheet(code, name) {
+    showToast(`PDF Şartname İndiriliyor: ${code} - ${name}`, 'download');
+    // Emulated client micro-delay
+    setTimeout(() => {
+      showToast(`${code} Koleksiyon Şartnamesi İndirildi!`, 'check_circle');
+    }, 1200);
+  }
+
+  // Toast Notification System
+  function showToast(message, icon = 'check_circle') {
+    const toast = document.getElementById('toast-notification');
+    const toastMsg = document.getElementById('toast-message');
+    const toastIcon = document.getElementById('toast-icon');
+
+    toastMsg.textContent = message;
+    toastIcon.textContent = icon;
+
+    toast.classList.remove('-translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('-translate-y-24', 'opacity-0');
+    }, 2800);
+  }
+
+  // RFQ Modal Handlers
+  const modal = document.getElementById('rfq-modal');
+  const modalProductTitle = document.getElementById('modal-product-title');
+
+  function openQuickQuoteModal(productName) {
+    modalProductTitle.textContent = productName;
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeQuickQuoteModal() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = '';
+  }
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeQuickQuoteModal();
+    }
+  });
+
+  function handleQuoteSubmit(e) {
+    e.preventDefault();
+    closeQuickQuoteModal();
+    showToast('Talebiniz alındı. RFQ Reçetesi hazırlanıyor.', 'task_alt');
+    e.target.reset();
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-canvas-white/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.06)]" data-active-classes="text-gold-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[48px] h-12 text-slate-muted hover:text-slate-dark transition-all" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-eyebrow text-[10px] tracking-wider uppercase">Ana Sayfa</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[48px] h-12 transition-all text-gold-primary font-bold" data-path="products-catalogue" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-eyebrow text-[10px] tracking-wider uppercase">Katalog</span></a><a class="relative -top-2 flex flex-col items-center justify-center gap-0.5 px-3 py-1.5 rounded-lg bg-slate-dark text-canvas-white shadow-[0_4px_12px_rgba(15,23,42,0.2)] hover:bg-slate-mid transition-all" data-path="rfq-quick-quote" href="#"><span class="material-symbols-outlined text-[20px] text-gold-primary">request_quote</span><span class="font-label-action text-[9px] text-canvas-white tracking-widest uppercase">RFQ AL ↗</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[48px] h-12 text-slate-muted hover:text-slate-dark transition-all" data-path="production-specs" href="#"><span class="material-symbols-outlined text-[22px]">precision_manufacturing</span><span class="font-label-eyebrow text-[10px] tracking-wider uppercase">Üretim</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[48px] h-12 text-slate-muted hover:text-slate-dark transition-all" data-path="contact-inquiry" href="#"><span class="material-symbols-outlined text-[22px]">call</span><span class="font-label-eyebrow text-[10px] tracking-wider uppercase">İletişim</span></a></div></nav></body></html>

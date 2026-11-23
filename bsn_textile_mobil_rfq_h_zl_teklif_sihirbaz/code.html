@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#ffffff", "slate-dark": "#0F172A", "surface-container-high": "#e6e8ea", "on-tertiary-container": "#76859b", "tertiary-fixed-dim": "#b9c7e0", "secondary-fixed-dim": "#e9c176", "surface-container": "#eceef0", "on-primary-fixed-variant": "#3f465c", "on-secondary-fixed": "#261900", "on-primary": "#ffffff", "on-surface-variant": "#45464d", "on-secondary-container": "#785a1a", "slate-muted": "#64748B", "tertiary-container": "#0d1c2f", "gold-primary": "#C5A059", "on-error-container": "#93000a", "surface-container-highest": "#e0e3e5", "gold-light": "#E2C98F", "surface-variant": "#e0e3e5", "on-surface": "#191c1e", "on-tertiary": "#ffffff", "surface-container-low": "#f2f4f6", "primary-container": "#131b2e", "primary": "#000000", "on-secondary-fixed-variant": "#5d4201", "canvas-subtle": "#F8FAFC", "border-prominent": "#CBD5E1", "on-error": "#ffffff", "canvas-white": "#FFFFFF", "on-tertiary-fixed": "#0d1c2f", "on-primary-container": "#7c839b", "inverse-on-surface": "#eff1f3", "primary-fixed-dim": "#bec6e0", "on-primary-fixed": "#131b2e", "outline-variant": "#c6c6cd", "error-container": "#ffdad6", "surface-dim": "#d8dadc", "tertiary": "#000000", "inverse-surface": "#2d3133", "slate-mid": "#1E293B", "tertiary-fixed": "#d5e3fd", "border-hairline": "#E2E8F0", "secondary-fixed": "#ffdea5", "outline": "#76777d", "primary-fixed": "#dae2fd", "on-secondary": "#ffffff", "secondary": "#775a19", "inverse-primary": "#bec6e0", "on-background": "#191c1e", "surface-tint": "#565e74", "surface-bright": "#f7f9fb", "background": "#f7f9fb", "surface": "#f7f9fb", "secondary-container": "#fed488", "on-tertiary-fixed-variant": "#3a485c", "gold-deep": "#9E7B35", "error": "#ba1a1a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1.25rem", "space-lg": "1.5rem", "space-2xl": "4rem", "margin": "3rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-xs": "0.25rem" }, "fontFamily": { "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-hero": ["Playfair Display"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "metric-display": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "label-action": ["Plus Jakarta Sans"], "label-eyebrow": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-hero-mobile": ["Playfair Display"], "headline-lg": ["Playfair Display"] }, "fontSize": { "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "600" }], "metric-display": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "label-action": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700" }], "label-eyebrow": ["11px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-canvas-white/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="BSN Textile Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP26RugPjNRZ152Qf1Dvi5wwdfnFaJwdqCPKQ81tZQkBw76-k7BhcdmjV0xaOe65kxQAC9Nqw44wKw98NsviA3AmCGPSoPkuFUkhhEZW8KzQKhAWnWqMZMXuPLWXzi_7UlpWS89PBQgiHDb5EdyKwILoGZVVMRtd3jysLUGxMV2o7d693dfuDJQjUnOAl51vO-QrSciBjP2U6q8EmMNS3PseJOCBK4n1y911v7jn_Q"/><div class="flex flex-col"><span class="font-label-eyebrow text-label-eyebrow text-gold-primary tracking-widest uppercase">BSN TEXTILE</span><span class="font-headline-sm text-headline-sm text-slate-dark tracking-tight leading-none">Rfq Quick Quote</span></div></div><div class="flex items-center gap-1"><div class="flex items-center gap-1 px-2 py-1 rounded bg-canvas-subtle"><button class="font-label-action text-[10px] text-slate-dark font-bold underline decoration-gold-primary decoration-2 underline-offset-4 min-w-[20px] h-6 flex items-center justify-center" type="button">TR</button><span class="text-[10px] text-border-prominent">|</span><button class="font-label-action text-[10px] text-slate-muted hover:text-slate-dark min-w-[20px] h-6 flex items-center justify-center" type="button">EN</button><span class="text-[10px] text-border-prominent">|</span><button class="font-label-action text-[10px] text-slate-muted hover:text-slate-dark min-w-[20px] h-6 flex items-center justify-center" type="button">AR</button></div><a aria-label="WhatsApp Quick Contact" class="w-11 h-11 flex items-center justify-center text-slate-dark hover:text-gold-primary transition-colors" href="https://wa.me/905000000000"><span class="material-symbols-outlined text-[20px]">chat</span></a><button aria-label="Navigation Menu" class="w-11 h-11 flex items-center justify-center text-slate-dark hover:text-gold-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-0.5"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-8">
+<!-- Top Reassurance Banner -->
+<section class="px-margin-mobile pt-3 pb-2">
+<div class="flex items-center gap-space-sm p-3 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="w-8 h-8 rounded-full bg-gold-primary/15 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-gold-deep text-[18px]">verified</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-deep tracking-wider uppercase">BSN Global Garantisi</span>
+<p class="font-body-sm text-body-sm text-slate-dark font-medium leading-tight">24 Saat İçinde Resmi Maliyet Tablosu &amp; Prototip Takvimi</p>
+</div>
+</div>
+</section>
+<!-- Interactive Form Container -->
+<form class="flex flex-col gap-space-lg px-margin-mobile mt-2" id="rfqWizard" onsubmit="event.preventDefault(); showSuccessState();">
+<!-- STEP 1: Product Category -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-primary uppercase tracking-widest">ADIM 01 / 05</span>
+<span class="font-body-sm text-body-sm text-slate-muted">Ürün Gamı</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-slate-dark">Üretim Kategorisi Seçin</h2>
+<p class="font-body-sm text-body-sm text-slate-muted">Koleksiyonunuzun ana odağını belirleyin; teknik şablon otomatik uyarlanır.</p>
+<div class="grid grid-cols-2 gap-2 mt-2" id="categoryOptions">
+<label class="relative flex flex-col p-3 rounded-lg bg-canvas-subtle hover:bg-surface-container cursor-pointer transition-all duration-200">
+<input checked="" class="peer sr-only" name="category" type="radio" value="streetwear"/>
+<div class="flex items-center justify-between mb-1">
+<span class="material-symbols-outlined text-slate-dark peer-checked:text-gold-primary text-[20px]">apparel</span>
+<span class="w-3.5 h-3.5 rounded-full bg-border-prominent flex items-center justify-center text-[10px] text-canvas-white peer-checked:bg-gold-primary">
+<span class="material-symbols-outlined text-[12px] opacity-0 peer-checked:opacity-100">check</span>
+</span>
+</div>
+<span class="font-label-action text-label-action text-slate-dark">Sokak Giyimi</span>
+<span class="font-body-sm text-[11px] text-slate-muted">Hoodie, T-Shirt, Sweat</span>
+</label>
+<label class="relative flex flex-col p-3 rounded-lg bg-canvas-subtle hover:bg-surface-container cursor-pointer transition-all duration-200">
+<input class="peer sr-only" name="category" type="radio" value="swimwear"/>
+<div class="flex items-center justify-between mb-1">
+<span class="material-symbols-outlined text-slate-dark peer-checked:text-gold-primary text-[20px]">water_drop</span>
+<span class="w-3.5 h-3.5 rounded-full bg-border-prominent flex items-center justify-center text-[10px] text-canvas-white peer-checked:bg-gold-primary">
+<span class="material-symbols-outlined text-[12px] opacity-0 peer-checked:opacity-100">check</span>
+</span>
+</div>
+<span class="font-label-action text-label-action text-slate-dark">Deniz Şortu</span>
+<span class="font-body-sm text-[11px] text-slate-muted">Quick-dry, Su İtici</span>
+</label>
+<label class="relative flex flex-col p-3 rounded-lg bg-canvas-subtle hover:bg-surface-container cursor-pointer transition-all duration-200">
+<input class="peer sr-only" name="category" type="radio" value="pants"/>
+<div class="flex items-center justify-between mb-1">
+<span class="material-symbols-outlined text-slate-dark peer-checked:text-gold-primary text-[20px]">styler</span>
+<span class="w-3.5 h-3.5 rounded-full bg-border-prominent flex items-center justify-center text-[10px] text-canvas-white peer-checked:bg-gold-primary">
+<span class="material-symbols-outlined text-[12px] opacity-0 peer-checked:opacity-100">check</span>
+</span>
+</div>
+<span class="font-label-action text-label-action text-slate-dark">Örme Pantolon</span>
+<span class="font-body-sm text-[11px] text-slate-muted">Jogger, Eşofman Altı</span>
+</label>
+<label class="relative flex flex-col p-3 rounded-lg bg-canvas-subtle hover:bg-surface-container cursor-pointer transition-all duration-200">
+<input class="peer sr-only" name="category" type="radio" value="dresses"/>
+<div class="flex items-center justify-between mb-1">
+<span class="material-symbols-outlined text-slate-dark peer-checked:text-gold-primary text-[20px]">dry_cleaning</span>
+<span class="w-3.5 h-3.5 rounded-full bg-border-prominent flex items-center justify-center text-[10px] text-canvas-white peer-checked:bg-gold-primary">
+<span class="material-symbols-outlined text-[12px] opacity-0 peer-checked:opacity-100">check</span>
+</span>
+</div>
+<span class="font-label-action text-label-action text-slate-dark">Kadın Elbise</span>
+<span class="font-body-sm text-[11px] text-slate-muted">Poplin, Viskon, Şifon</span>
+</label>
+</div>
+</div>
+<!-- STEP 2: Volume & Capacity -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-primary uppercase tracking-widest">ADIM 02 / 05</span>
+<span class="font-body-sm text-body-sm text-slate-muted">Hedef Parti</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-slate-dark">Hedef Üretim Adedi</h2>
+<p class="font-body-sm text-body-sm text-slate-muted">Yüksek hacimlerde parça başı birim maliyet avantajı sağlanır.</p>
+<div class="flex flex-col gap-2 mt-1" id="quantitySelector">
+<label class="flex items-center justify-between p-3 rounded-lg bg-canvas-subtle hover:bg-surface-container cursor-pointer transition-all">
+<div class="flex items-center gap-3">
+<input checked="" class="accent-slate-dark" name="quantity" type="radio" value="500"/>
+<div class="flex flex-col">
+<span class="font-label-action text-label-action text-slate-dark">500 Adet</span>
+<span class="font-body-sm text-[11px] text-gold-deep font-semibold">Minimum Deneme &amp; Lansman Siparişi</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-surface-container-high text-slate-dark">HIZLI TEST</span>
+</label>
+<label class="flex items-center justify-between p-3 rounded-lg bg-canvas-subtle hover:bg-surface-container cursor-pointer transition-all">
+<div class="flex items-center gap-3">
+<input class="accent-slate-dark" name="quantity" type="radio" value="1000"/>
+<div class="flex flex-col">
+<span class="font-label-action text-label-action text-slate-dark">1.000 Adet</span>
+<span class="font-body-sm text-[11px] text-slate-muted">Standart E-Ticaret &amp; Butik Dağıtım</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-gold-primary/20 text-gold-deep">OPTIMAL</span>
+</label>
+<label class="flex items-center justify-between p-3 rounded-lg bg-canvas-subtle hover:bg-surface-container cursor-pointer transition-all">
+<div class="flex items-center gap-3">
+<input class="accent-slate-dark" name="quantity" type="radio" value="2500"/>
+<div class="flex flex-col">
+<span class="font-label-action text-label-action text-slate-dark">2.500+ Adet</span>
+<span class="font-body-sm text-[11px] text-slate-muted">Çoklu Renk / Beden Varyantları</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-surface-container-high text-slate-dark">TOPTAN</span>
+</label>
+<label class="flex items-center justify-between p-3 rounded-lg bg-canvas-subtle hover:bg-surface-container cursor-pointer transition-all">
+<div class="flex items-center gap-3">
+<input class="accent-slate-dark" name="quantity" type="radio" value="5000"/>
+<div class="flex flex-col">
+<span class="font-label-action text-label-action text-slate-dark">5.000+ Adet</span>
+<span class="font-body-sm text-[11px] text-slate-muted">Uluslararası Zincir Perakende</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-dark text-canvas-white">GLOBAL</span>
+</label>
+</div>
+</div>
+<!-- STEP 3: GSM & Fabric Target -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-primary uppercase tracking-widest">ADIM 03 / 05</span>
+<span class="font-body-sm text-body-sm text-slate-muted">Hammadde</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-slate-dark">Hedef Kumaş Gramajı &amp; Cinsi</h2>
+<p class="font-body-sm text-body-sm text-slate-muted">Avrupa standartlarında sertifikalı OEKO-TEX ve GOTS iplik opsiyonları.</p>
+<div class="flex flex-col gap-2.5 mt-1">
+<label class="flex items-start gap-3 p-3 rounded-lg bg-canvas-subtle hover:bg-surface-container cursor-pointer">
+<input checked="" class="mt-1 accent-slate-dark" name="fabric_type" type="radio" value="450_fleece"/>
+<div class="flex flex-col">
+<span class="font-label-action text-label-action text-slate-dark">450 GSM Heavyweight 3-İplik Futer</span>
+<span class="font-body-sm text-[12px] text-slate-muted">%100 Ege Pamuğu, Fırçalanmış / Şardonlu lüks hissiyat.</span>
+</div>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-lg bg-canvas-subtle hover:bg-surface-container cursor-pointer">
+<input class="mt-1 accent-slate-dark" name="fabric_type" type="radio" value="microfiber"/>
+<div class="flex flex-col">
+<span class="font-label-action text-label-action text-slate-dark">Hızlı Kuruyan Su İtici Mikrofiber (135 GSM)</span>
+<span class="font-body-sm text-[12px] text-slate-muted">Teflon kaplama, klor &amp; tuzlu su dayanımlı deniz şortu kumaşı.</span>
+</div>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-lg bg-canvas-subtle hover:bg-surface-container cursor-pointer">
+<input class="mt-1 accent-slate-dark" name="fabric_type" type="radio" value="interlock"/>
+<div class="flex flex-col">
+<span class="font-label-action text-label-action text-slate-dark">320 GSM Scuba / Çift İplik Interlock</span>
+<span class="font-body-sm text-[12px] text-slate-muted">Formunu koruyan pürüzsüz yüzey, lüks eşofman ve ceketler için.</span>
+</div>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-lg bg-canvas-subtle hover:bg-surface-container cursor-pointer">
+<input class="mt-1 accent-slate-dark" name="fabric_type" type="radio" value="custom"/>
+<div class="flex flex-col">
+<span class="font-label-action text-label-action text-slate-dark">Özel Reçete / Numuneye Göre Kumaş Analizi</span>
+<span class="font-body-sm text-[12px] text-slate-muted">Fiziki numunenizi laboratuvarımızda analiz edip birebir üretelim.</span>
+</div>
+</label>
+</div>
+<!-- Optional Fabric Spec Note -->
+<div class="mt-2 flex flex-col gap-1">
+<label class="font-label-eyebrow text-label-eyebrow text-slate-muted" for="fabric_notes">ÖZEL KUMAŞ DETAYI VEYA RENK KODU (OPSİYONEL)</label>
+<input class="h-12 px-3 rounded-lg bg-canvas-subtle text-slate-dark font-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all" id="fabric_notes" placeholder="Örn: Pantone 19-4052 TCX, Reaktif Boyama, Karbon Şardon" type="text"/>
+</div>
+</div>
+<!-- STEP 4: Technical Pack Upload -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-primary uppercase tracking-widest">ADIM 04 / 05</span>
+<span class="font-body-sm text-body-sm text-slate-muted">Teknik Dosya</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-slate-dark">Tech Pack &amp; Referans Görsel</h2>
+<p class="font-body-sm text-body-sm text-slate-muted">Hızlı kalıp çıkarma ve tolerans analizi için çizim veya numune fotoğrafları ekleyin.</p>
+<!-- Dropzone Interactive Card -->
+<div class="flex flex-col items-center justify-center p-6 rounded-xl bg-canvas-subtle text-center cursor-pointer transition-all hover:bg-surface-container" id="dropZone" onclick="document.getElementById('fileInput').click()">
+<input accept=".pdf,.ai,.psd,.jpg,.png,.zip" class="hidden" id="fileInput" multiple="" onchange="handleFileSelect(event)" type="file"/>
+<div class="w-12 h-12 rounded-full bg-gold-primary/10 flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-gold-deep text-[26px]">cloud_upload</span>
+</div>
+<span class="font-headline-sm text-[15px] text-slate-dark mb-0.5">Dosyaları Buraya Sürükleyin veya Seçin</span>
+<span class="font-body-sm text-[12px] text-slate-muted mb-2">PDF, AI, JPG, PNG veya ZIP (Maks. 50 MB)</span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded bg-slate-dark text-canvas-white font-label-action text-[10px]">
+<span class="material-symbols-outlined text-[14px]">attachment</span>
+          DOSYA SEÇ ↗
+        </span>
+</div>
+<!-- File Preview Container -->
+<div class="flex flex-col gap-2 mt-1 empty:hidden" id="fileList"></div>
+</div>
+<!-- STEP 5: Corporate Contact Info -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-primary uppercase tracking-widest">ADIM 05 / 05</span>
+<span class="font-body-sm text-body-sm text-slate-muted">İletişim</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-slate-dark">Kurumsal Bilgiler</h2>
+<p class="font-body-sm text-body-sm text-slate-muted">Resmi teklif dosyası ve numune kargo takip detayları bu kanallardan iletilir.</p>
+<div class="flex flex-col gap-3 mt-1">
+<div class="flex flex-col gap-1">
+<label class="font-label-eyebrow text-label-eyebrow text-slate-muted" for="companyName">ŞİRKET / MARKA ADI *</label>
+<input class="h-12 px-3 rounded-lg bg-canvas-subtle text-slate-dark font-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all" id="companyName" placeholder="Örn: Studio Sartorialist Ltd." required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-eyebrow text-label-eyebrow text-slate-muted" for="fullName">AD SOYAD &amp; ÜNVAN *</label>
+<input class="h-12 px-3 rounded-lg bg-canvas-subtle text-slate-dark font-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all" id="fullName" placeholder="Örn: Kerem Yılmaz (Satın Alma Direktörü)" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-eyebrow text-label-eyebrow text-slate-muted" for="emailAddr">RESMİ KURUMSAL E-POSTA *</label>
+<input class="h-12 px-3 rounded-lg bg-canvas-subtle text-slate-dark font-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all" id="emailAddr" placeholder="ad.soyad@markaniz.com" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-eyebrow text-label-eyebrow text-slate-muted" for="phoneNum">DOĞRUDAN TELEFON / WHATSAPP *</label>
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center h-12 px-3 rounded-lg bg-canvas-subtle font-label-action text-label-action text-slate-dark select-none">+90</span>
+<input class="h-12 flex-1 px-3 rounded-lg bg-canvas-subtle text-slate-dark font-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all" id="phoneNum" placeholder="5XX XXX XX XX" required="" type="tel"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-eyebrow text-label-eyebrow text-slate-muted" for="targetDeadline">HEDEF TESLİMAT VEYA DEFİLE TARİHİ</label>
+<input class="h-12 px-3 rounded-lg bg-canvas-subtle text-slate-dark font-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all" id="targetDeadline" placeholder="Örn: 2025 Sonbahar / Kış Koleksiyonu (Eylül 2025)" type="text"/>
+</div>
+</div>
+</div>
+<!-- Security & NDA Assurance Banner -->
+<div class="p-3.5 rounded-lg bg-surface-container-lowest flex items-center gap-space-sm shadow-sm">
+<div class="w-7 h-7 rounded-full bg-slate-dark text-gold-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-action text-[11px] text-slate-dark font-bold">%100 NDA Gizlilik Sözleşmesi Koruması</span>
+<p class="font-body-sm text-[11px] text-slate-muted leading-tight">Yüklenen tüm tasarım, desen ve teknik kalıplar hukuki gizlilik kapsamındadır. Üçüncü şahıslarla paylaşılmaz.</p>
+</div>
+</div>
+<!-- Submit Action Button -->
+<div class="flex flex-col gap-2 pt-1">
+<button class="w-full h-14 rounded-lg bg-slate-dark hover:bg-slate-mid text-canvas-white flex items-center justify-center gap-2 shadow-md transition-all active:scale-[0.99]" type="submit">
+<span class="font-label-action text-[13px] tracking-wider uppercase">Hızlı Fiyat Teklifi &amp; Numune Talebi Gönder</span>
+<span class="text-gold-primary font-bold text-lg leading-none">↗</span>
+</button>
+<span class="text-center font-body-sm text-[11px] text-slate-muted">Teklifiniz mühendislerimiz tarafından incelenip 24 saat içinde yanıtlanacaktır.</span>
+</div>
+</form>
+<!-- Direct Export Manager Contact Card (Sedat Üzümcü) -->
+<section class="px-margin-mobile mt-8">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-primary tracking-widest uppercase">DOĞRUDAN DANIŞMAN</span>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-800 font-label-action text-[10px]">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-700 animate-pulse"></span>
+          ÇEVRİMİÇİ
+        </span>
+</div>
+<div class="flex items-center gap-3">
+<img class="w-16 h-16 rounded-full object-cover shadow-sm shrink-0" data-alt="Portrait of Sedat Üzümcü, Global Export and Sourcing Director at BSN Textile, wearing a sharp tailored charcoal suit with subtle gold lapel pin in a contemporary bright Istanbul textile showroom, warm executive lighting, premium architectural aesthetic, professional confidence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARzrScUB3chh-UnzrlvNbM8R41DHgGR7980lfYVhyyEG0kq9ef85gfXxqEpp1uK_pyhrNxjVNmOKkDnxWPt9YC1B5UPoDH3GTjoJ2uhOfsADSeHnPq3_PFTQKLhIYC1BYWonwkZTc4qYLQ2rKNX2IEZSludhSoFK14Ndu4TOldZGB01sGX6M6F81uGFY1qoGv9uHydueinxbDhZrNBrb8bejC6KA5lBwWLJ6gTCuM2"/>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-slate-dark leading-tight">Sedat Üzümcü</h3>
+<span class="font-label-action text-[11px] text-gold-deep tracking-wider uppercase">Global Export &amp; Sourcing Manager</span>
+<span class="font-body-sm text-body-sm text-slate-muted">15+ Yıl Uluslararası Fason &amp; Özel Üretim Uzmanı</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-slate-muted">
+        Özel kumaş testleri, fabrika fiziki ziyareti veya acil termin gerektiren toplu üretimleriniz için doğrudan ihracat departmanımızla görüşün.
+      </p>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="h-11 rounded-lg bg-canvas-subtle hover:bg-surface-container text-slate-dark flex items-center justify-center gap-1.5 transition-all" href="tel:+905320000000">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span class="font-label-action text-label-action tracking-wider">HEMEN ARA</span>
+</a>
+<a class="h-11 rounded-lg bg-slate-dark hover:bg-slate-mid text-canvas-white flex items-center justify-center gap-1.5 transition-all" href="https://wa.me/905320000000?text=Merhaba%20Sedat%20Bey,%20BSN%20Textile%20üretim%20ve%20fiyat%20teklifi%20almak%20istiyorum." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-gold-primary text-[18px]">chat</span>
+<span class="font-label-action text-label-action tracking-wider">WHATSAPP</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Manufacturing Guarantees Grid -->
+<section class="px-margin-mobile mt-6">
+<div class="grid grid-cols-2 gap-2.5">
+<div class="p-3 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<span class="material-symbols-outlined text-gold-primary text-[20px]">precision_manufacturing</span>
+<span class="font-label-action text-[11px] text-slate-dark">Aylık 120.000 Pcs</span>
+<span class="font-body-sm text-[11px] text-slate-muted leading-tight">Yüksek kapasiteli entegre örme &amp; dikiş bandı</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<span class="material-symbols-outlined text-gold-primary text-[20px]">science</span>
+<span class="font-label-action text-[11px] text-slate-dark">Ön Prototip 5 Gün</span>
+<span class="font-body-sm text-[11px] text-slate-muted leading-tight">Hızlı kalıp çıkarma ve fiziksel numune kargo</span>
+</div>
+</div>
+</section>
+<!-- Interactive Submission Success Modal / Feedback Overlay -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-dark/70 backdrop-blur-sm" id="rfqSuccessDialog">
+<div class="w-full max-w-sm p-space-lg rounded-2xl bg-canvas-white shadow-xl flex flex-col items-center text-center">
+<div class="w-14 h-14 rounded-full bg-emerald-500/15 flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-emerald-800 text-[32px]">check_circle</span>
+</div>
+<span class="font-label-eyebrow text-label-eyebrow text-gold-primary tracking-widest uppercase">TALEP ALINDI</span>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark mt-1">Teklif Dosyanız Hazırlanıyor</h3>
+<p class="font-body-sm text-body-sm text-slate-muted mt-2">
+        Teknik şartnameniz ve dosyanız başarıyla iletildi. Sedat Üzümcü ve üretim ekibimiz <strong>24 saat içerisinde</strong> resmi maliyet dökümünü tarafınıza gönderecektir.
+      </p>
+<div class="w-full mt-4 pt-3 flex flex-col gap-2">
+<button class="w-full h-11 rounded-lg bg-slate-dark text-canvas-white font-label-action text-label-action uppercase tracking-widest" onclick="closeSuccessState()" type="button">
+          TAMAMDIR
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function handleFileSelect(e) {
+    const list = document.getElementById('fileList');
+    list.innerHTML = '';
+    const files = e.target.files;
+    if (files.length === 0) return;
+
+    for (let i = 0; i < files.length; i++) {
+      const file = files[i];
+      const fileSize = (file.size / (1024 * 1024)).toFixed(2);
+      const item = document.createElement('div');
+      item.className = 'flex items-center justify-between p-2.5 rounded-lg bg-canvas-subtle text-slate-dark';
+      item.innerHTML = `
+        <div class="flex items-center gap-2 min-w-0">
+          <span class="material-symbols-outlined text-gold-deep text-[18px]">draft</span>
+          <span class="font-body-sm text-[12px] truncate max-w-[180px]">${file.name}</span>
+          <span class="font-label-eyebrow text-[10px] text-slate-muted">(${fileSize} MB)</span>
+        </div>
+        <span class="material-symbols-outlined text-emerald-800 text-[18px]">done</span>
+      `;
+      list.appendChild(item);
+    }
+  }
+
+  function showSuccessState() {
+    const dialog = document.getElementById('rfqSuccessDialog');
+    if (dialog) {
+      dialog.classList.remove('hidden');
+    }
+  }
+
+  function closeSuccessState() {
+    const dialog = document.getElementById('rfqSuccessDialog');
+    if (dialog) {
+      dialog.classList.add('hidden');
+    }
+    const form = document.getElementById('rfqWizard');
+    if (form) {
+      form.reset();
+      const list = document.getElementById('fileList');
+      if (list) list.innerHTML = '';
+    }
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-canvas-white/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.06)]" data-active-classes="text-gold-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[48px] h-12 text-slate-muted hover:text-slate-dark transition-all" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-eyebrow text-[10px] tracking-wider uppercase">Ana Sayfa</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[48px] h-12 text-slate-muted hover:text-slate-dark transition-all" data-path="products-catalogue" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-eyebrow text-[10px] tracking-wider uppercase">Katalog</span></a><a aria-current="page" class="relative -top-2 flex flex-col items-center justify-center gap-0.5 px-3 py-1.5 rounded-lg bg-slate-dark shadow-[0_4px_12px_rgba(15,23,42,0.2)] hover:bg-slate-mid transition-all text-gold-primary font-bold" data-path="rfq-quick-quote" href="#"><span class="material-symbols-outlined text-[20px] text-gold-primary">request_quote</span><span class="font-label-action text-[9px] text-canvas-white tracking-widest uppercase">RFQ AL ↗</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[48px] h-12 text-slate-muted hover:text-slate-dark transition-all" data-path="production-specs" href="#"><span class="material-symbols-outlined text-[22px]">precision_manufacturing</span><span class="font-label-eyebrow text-[10px] tracking-wider uppercase">Üretim</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[48px] h-12 text-slate-muted hover:text-slate-dark transition-all" data-path="contact-inquiry" href="#"><span class="material-symbols-outlined text-[22px]">call</span><span class="font-label-eyebrow text-[10px] tracking-wider uppercase">İletişim</span></a></div></nav></body></html>

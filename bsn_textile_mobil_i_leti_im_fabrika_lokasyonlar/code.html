@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#ffffff", "slate-dark": "#0F172A", "surface-container-high": "#e6e8ea", "on-tertiary-container": "#76859b", "tertiary-fixed-dim": "#b9c7e0", "secondary-fixed-dim": "#e9c176", "surface-container": "#eceef0", "on-primary-fixed-variant": "#3f465c", "on-secondary-fixed": "#261900", "on-primary": "#ffffff", "on-surface-variant": "#45464d", "on-secondary-container": "#785a1a", "slate-muted": "#64748B", "tertiary-container": "#0d1c2f", "gold-primary": "#C5A059", "on-error-container": "#93000a", "surface-container-highest": "#e0e3e5", "gold-light": "#E2C98F", "surface-variant": "#e0e3e5", "on-surface": "#191c1e", "on-tertiary": "#ffffff", "surface-container-low": "#f2f4f6", "primary-container": "#131b2e", "primary": "#000000", "on-secondary-fixed-variant": "#5d4201", "canvas-subtle": "#F8FAFC", "border-prominent": "#CBD5E1", "on-error": "#ffffff", "canvas-white": "#FFFFFF", "on-tertiary-fixed": "#0d1c2f", "on-primary-container": "#7c839b", "inverse-on-surface": "#eff1f3", "primary-fixed-dim": "#bec6e0", "on-primary-fixed": "#131b2e", "outline-variant": "#c6c6cd", "error-container": "#ffdad6", "surface-dim": "#d8dadc", "tertiary": "#000000", "inverse-surface": "#2d3133", "slate-mid": "#1E293B", "tertiary-fixed": "#d5e3fd", "border-hairline": "#E2E8F0", "secondary-fixed": "#ffdea5", "outline": "#76777d", "primary-fixed": "#dae2fd", "on-secondary": "#ffffff", "secondary": "#775a19", "inverse-primary": "#bec6e0", "on-background": "#191c1e", "surface-tint": "#565e74", "surface-bright": "#f7f9fb", "background": "#f7f9fb", "surface": "#f7f9fb", "secondary-container": "#fed488", "on-tertiary-fixed-variant": "#3a485c", "gold-deep": "#9E7B35", "error": "#ba1a1a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1.25rem", "space-lg": "1.5rem", "space-2xl": "4rem", "margin": "3rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-xs": "0.25rem" }, "fontFamily": { "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-hero": ["Playfair Display"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "metric-display": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "label-action": ["Plus Jakarta Sans"], "label-eyebrow": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-hero-mobile": ["Playfair Display"], "headline-lg": ["Playfair Display"] }, "fontSize": { "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "600" }], "metric-display": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "label-action": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700" }], "label-eyebrow": ["11px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-canvas-white/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="BSN Textile Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk3HfJ2BGlzPonZiw1rnD8DxROZphO9Iov9B40xUH8sQE184rlczms5qaIWeP_c5NRhwfHRvr7P_RVFNRglGD0PDwprqr6BFRyubE0iZUl097BzpgqmMHvEZFIGvDbdXOLi5MD8rNgLKoRiSuHY4DVOPtrgb3-BfqvJ1T3wj81iAqzaKcO8ECqysIfSrp9r4Lp3EcdEt0-PHSJyW508KHEV2ifnREwXfjRXwYzu-EK"/><div class="flex flex-col"><span class="font-label-eyebrow text-label-eyebrow text-gold-primary tracking-widest uppercase">BSN TEXTILE</span><span class="font-headline-sm text-headline-sm text-slate-dark tracking-tight leading-none">Contact Inquiry</span></div></div><div class="flex items-center gap-1"><div class="flex items-center gap-1 px-2 py-1 rounded bg-canvas-subtle"><button class="font-label-action text-[10px] text-slate-dark font-bold underline decoration-gold-primary decoration-2 underline-offset-4 min-w-[20px] h-6 flex items-center justify-center" type="button">TR</button><span class="text-[10px] text-border-prominent">|</span><button class="font-label-action text-[10px] text-slate-muted hover:text-slate-dark min-w-[20px] h-6 flex items-center justify-center" type="button">EN</button><span class="text-[10px] text-border-prominent">|</span><button class="font-label-action text-[10px] text-slate-muted hover:text-slate-dark min-w-[20px] h-6 flex items-center justify-center" type="button">AR</button></div><a aria-label="WhatsApp Quick Contact" class="w-11 h-11 flex items-center justify-center text-slate-dark hover:text-gold-primary transition-colors" href="https://wa.me/905000000000"><span class="material-symbols-outlined text-[20px]">chat</span></a><button aria-label="Navigation Menu" class="w-11 h-11 flex items-center justify-center text-slate-dark hover:text-gold-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-0.5"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-8">
+<!-- Top Visual Accent & Editorial Introduction -->
+<div class="px-margin-mobile pt-space-md pb-space-sm flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-gold-primary"></span>
+<span class="font-label-eyebrow text-label-eyebrow text-gold-primary tracking-widest uppercase">KÜRESEL İHRACAT &amp; ÜRETİM AĞI</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-slate-dark tracking-tight">
+      Doğrudan Temas &amp; Üretim Merkezleri
+    </h1>
+<p class="font-body-sm text-body-sm text-slate-muted">
+      Tekstil markanız için İstanbul merkezli tasarım &amp; numune laboratuvarımız ve Doğu Anadolu’nun en yüksek kapasiteli entegre tesisleriyle kesintisiz üretim hattı kuruyoruz.
+    </p>
+</div>
+<!-- Direct Speed Dial CTAs (High Conversion) -->
+<div class="px-margin-mobile my-space-sm flex flex-col gap-space-sm">
+<a class="w-full bg-slate-dark text-on-primary rounded-xl px-space-md py-3.5 flex items-center justify-between shadow-md active:scale-[0.99] transition-transform" href="tel:+905352336073">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-gold-primary text-[22px]">phone_in_talk</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-eyebrow text-[10px] text-gold-light uppercase tracking-wider">İhracat Doğrudan Masası</span>
+<span class="font-headline-sm text-[15px] font-semibold text-canvas-white truncate">+90 535 233 6073</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-gold-primary text-[20px] shrink-0">arrow_forward</span>
+</a>
+<a class="w-full bg-surface-container-lowest text-slate-dark rounded-xl px-space-md py-3.5 flex items-center justify-between shadow-sm active:scale-[0.99] transition-transform" href="https://wa.me/905352336073?text=Merhaba%2C%20BSN%20Textile%20üretim%20ve%20numune%20süreçleri%20hakkında%20bilgi%20almak%20istiyorum." rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-slate-dark text-[22px]">chat</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase tracking-wider">7/24 Teknik Ön Değerlendirme</span>
+<span class="font-headline-sm text-[15px] font-semibold text-slate-dark truncate">WhatsApp ile Hızlı Mesajlaş</span>
+</div>
+</div>
+<span class="font-label-action text-label-action text-gold-deep shrink-0">BAĞLAN ↗</span>
+</a>
+</div>
+<!-- Director Profile Card -->
+<div class="px-margin-mobile my-space-sm">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative shrink-0">
+<img class="w-16 h-16 rounded-full object-cover shadow-inner" data-alt="Refined editorial portrait of Sedat Üzümcü, Director of Export and Business Development, European sartorial tailored dark navy blazer, sharp studio lighting, subtle warm champagne highlights, luxury corporate textile industry backdrop with fabric swatches." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAuDIDHlpq7eGlVIWnSUvB65OpOAVah7ooZrIuPP_-t9LJWfvWX3q4ZK4biKycTttVyjXv1VjWM74SyFRB8yMZ2m5XOhvpEGpn3AEJkeDz51vi_MSygVR_RG14RFlGx6UhMZcsLhpB-DpOE1D9Soa6uSv8XVc4ntykXxht01JsV0HCdXCrHCr_PIDpdIKRDHeo4AY5Le0BruAUs99F9EDlVRY-vBbzfuiv_Mo6ELQJ"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-gold-primary ring-2 ring-surface-container-lowest" title="Aktif Mesai"></span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-eyebrow text-[10px] text-gold-primary uppercase tracking-widest">Kıdemli Yönetim</span>
+<h2 class="font-headline-sm text-headline-sm text-slate-dark truncate">Sedat Üzümcü</h2>
+<span class="font-body-sm text-body-sm text-slate-muted truncate">İhracat &amp; İş Geliştirme Direktörü</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs bg-canvas-subtle p-space-sm rounded-lg">
+<div class="flex flex-col gap-0.5 min-w-0">
+<span class="font-label-eyebrow text-[9px] text-slate-muted uppercase tracking-wider">Mesai Saatleri</span>
+<div class="flex items-center gap-1 text-slate-dark font-body-sm text-[12px] font-semibold">
+<span class="material-symbols-outlined text-[14px] text-gold-primary">schedule</span>
+<span>08:30 – 18:30</span>
+</div>
+<span class="text-[10px] text-slate-muted font-body-sm">GMT+3 / İstanbul</span>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<span class="font-label-eyebrow text-[9px] text-slate-muted uppercase tracking-wider">Doğrudan E-Posta</span>
+<a class="text-slate-dark font-body-sm text-[12px] font-semibold truncate hover:text-gold-primary transition-colors flex items-center gap-1" href="mailto:sedatuzumcu@bsntextile.com">
+<span class="material-symbols-outlined text-[14px] text-gold-primary shrink-0">mail</span>
+<span class="truncate">sedatuzumcu@</span>
+</a>
+<span class="text-[10px] text-slate-muted font-body-sm">bsntextile.com</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-[12px] text-slate-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-gold-primary">verified</span>
+          Kurumsal NDA &amp; Özel Koleksiyon Masası
+        </span>
+<a class="font-label-action text-[11px] text-slate-dark font-bold hover:text-gold-primary uppercase tracking-wider" href="mailto:sedatuzumcu@bsntextile.com?subject=BSN%20Textile%20Toplantı%20Talebi">
+          Randevu Talep Et ↗
+        </a>
+</div>
+</div>
+</div>
+<!-- Interactive Facilities Showcase -->
+<div class="px-margin-mobile mt-space-md mb-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-gold-primary uppercase tracking-widest">ENTEGRE YERLEŞKELER</span>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark">Tesis &amp; Operasyon Noktalarımız</h3>
+</div>
+<span class="text-[11px] font-label-action uppercase tracking-widest text-slate-muted">2 LOKASYON</span>
+</div>
+<!-- Facility Switcher Tabs -->
+<div class="flex p-1 bg-surface-container rounded-lg gap-1" id="hub-tab-bar">
+<button class="flex-1 py-2 px-space-xs rounded-md text-center font-label-action text-[11px] font-bold uppercase transition-all bg-canvas-white text-slate-dark shadow-sm" id="tab-btn-istanbul" onclick="switchHub('istanbul')" type="button">
+        İstanbul Merkez &amp; Ar-Ge
+      </button>
+<button class="flex-1 py-2 px-space-xs rounded-md text-center font-label-action text-[11px] font-bold uppercase transition-all text-slate-muted hover:text-slate-dark" id="tab-btn-van" onclick="switchHub('van')" type="button">
+        Van Entegre Fabrika
+      </button>
+</div>
+<!-- Facility Panel 1: Istanbul -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md transition-opacity" id="hub-panel-istanbul">
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-slate-mid">
+<img class="w-full h-full object-cover" data-alt="High-end apparel showroom and textile design laboratory in Koza Plaza Esenler Istanbul, architectural glass displays, garment racks with premium fabric bolts, tailored mannequins, contemporary luxury interior lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY8njMUv4D84r1MXKQWCmNEA5AIbEiicJS2ZI3eOqKwNhiZ202M_oImvZ1ZD6WuyZ_oJ0w5xcYltF5_8Jlj43P4xFcLf6PMN_RbotdUmQo6xuciYr_84VtEHzgp7-ejuat7zY0EDfjnAAxoUqa8Tiq0G79wHD8UUsfOA2WtiK7cKoDq8PiNMOb_FvLvjUdp8ID4ppZZxrJu5w6yBm8674Lelgb3wXFf4ItwhQJAY_j"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-dark/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-canvas-white">
+<span class="font-label-eyebrow text-[10px] tracking-widest text-gold-light uppercase bg-slate-dark/60 backdrop-blur-md px-2 py-0.5 rounded">Genel Merkez &amp; Showroom</span>
+<span class="font-body-sm text-[11px] text-surface-container-lowest font-medium">Numune Süresi: 3-5 Gün</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-headline-sm text-headline-sm text-slate-dark">İstanbul Showroom &amp; Tasarım Laboratuvarı</h4>
+<p class="font-body-sm text-body-sm text-slate-muted">
+          Oruçreis Mh. Tekstilkent Cad. Koza Plaza B Blok Kat: 14 No: 52, Esenler / İstanbul, Türkiye
+        </p>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[9px] text-slate-muted uppercase">Fonksiyon</span>
+<span class="font-body-sm text-[12px] font-semibold text-slate-dark">Showroom &amp; 3D Fitting</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[9px] text-slate-muted uppercase">Lojistik Bağlantı</span>
+<span class="font-body-sm text-[12px] font-semibold text-slate-dark">İst. Havalimanı 28 dk</span>
+</div>
+</div>
+<!-- Map Snapshot Trigger -->
+<a class="w-full py-2.5 rounded-lg bg-surface-container text-slate-dark flex items-center justify-center gap-2 hover:bg-surface-container-high transition-colors" href="https://maps.google.com/?q=Koza+Plaza+Esenler+Istanbul" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-gold-primary">directions</span>
+<span class="font-label-action text-[11px] font-bold uppercase tracking-wider">Google Maps ile Yol Tarifi ↗</span>
+</a>
+</div>
+<!-- Facility Panel 2: Van (Initially Hidden) -->
+<div class="hidden bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md transition-opacity" id="hub-panel-van">
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-slate-mid">
+<img class="w-full h-full object-cover" data-alt="Expansive industrial high-capacity textile manufacturing plant floor in Tuşba Van Tekstilkent, clean organized automated cutting tables, rows of precision sewing machines, skilled operators in uniform, bright industrial architectural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF6aVUDK-ZtZm6-EAmupMny8Ng-miRbLisKjXD37WjolK57EtZf1dG1CtgKgwLUpoYrUUyBBiKFY61952fdh9IWo7RHf0nPJmeenzAvkEYNSuwHUnZjfb6Uh1LazisNE8Wv_-alqK0pS_ni8A2VZO9p9IW2LYzVTqSKs5JKIdeh7sVW30ESViKKessjxfmKkXy7UrbWxahOQ6Tuh2WkTIzJacT0Stju3B8T7djnY1W"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-dark/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-canvas-white">
+<span class="font-label-eyebrow text-[10px] tracking-widest text-gold-light uppercase bg-slate-dark/60 backdrop-blur-md px-2 py-0.5 rounded">Entegre Üretim Kampüsü</span>
+<span class="font-body-sm text-[11px] text-surface-container-lowest font-medium">8.500 m² Kapalı Alan</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-headline-sm text-headline-sm text-slate-dark">Van Kesim-Dikim &amp; Paketleme Kompleksi</h4>
+<p class="font-body-sm text-body-sm text-slate-muted">
+          Tekstilkent 2. Etap Yerleşkesi, Fabrika No: 12, Tuşba / Van, Türkiye
+        </p>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[9px] text-slate-muted uppercase">Aylık Kapasite</span>
+<span class="font-body-sm text-[12px] font-semibold text-slate-dark">150.000+ Adet / Ay</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-[9px] text-slate-muted uppercase">İş Gücü &amp; Hat</span>
+<span class="font-body-sm text-[12px] font-semibold text-slate-dark">18 Paralel Üretim Hattı</span>
+</div>
+</div>
+<!-- Map Snapshot Trigger -->
+<a class="w-full py-2.5 rounded-lg bg-surface-container text-slate-dark flex items-center justify-center gap-2 hover:bg-surface-container-high transition-colors" href="https://maps.google.com/?q=Van+Tekstilkent+Tusba+Van" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-gold-primary">directions</span>
+<span class="font-label-action text-[11px] font-bold uppercase tracking-wider">Van Yerleşkesi Yol Tarifi ↗</span>
+</a>
+</div>
+</div>
+<!-- Interactive Map Preview Section -->
+<div class="px-margin-mobile my-space-sm">
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-space-xs py-1">
+<span class="font-label-eyebrow text-[10px] text-slate-muted uppercase tracking-wider">Canlı Navigasyon &amp; Konum Ağı</span>
+<span class="font-body-sm text-[11px] text-gold-deep font-semibold">İstanbul • Van</span>
+</div>
+<div class="w-full h-40 bg-cover bg-center rounded-lg relative overflow-hidden flex items-end p-space-sm" data-location="Koza Plaza Esenler Istanbul" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB2bT1B8KOPibQHRo0Jg7I-HsOr2pKNAQLgLREGp0tFwIsHKJfwJQbEoCzo3BA4T2eMJ9y2Vq995cILzhxAO3a0DJdidUVsPI35pIJLljilq2hI0B-vETQ95Gom4dZ2T4RmTLzXlZaBX5cgLTSqY6Gid24i1sJteX3yzXn7B9W9EKiT4-wiB01YvjtRh1BiG3vFQhDEjp7c9wGvYwSf6Q5-o3iBsh-byDb3a3e3-VA8')">
+<div class="bg-slate-dark/85 backdrop-blur-md rounded-md p-2 w-full flex items-center justify-between text-canvas-white">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-gold-primary text-[18px] shrink-0">pin_drop</span>
+<span class="font-body-sm text-[12px] truncate">Koza Plaza B Blok No:52 Esenler</span>
+</div>
+<span class="font-label-action text-[10px] text-gold-light uppercase tracking-wider shrink-0">AÇ ↗</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Mobile Production Inquiry & Appointment Form -->
+<div class="px-margin-mobile my-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="inline-flex items-center gap-1.5">
+<span class="material-symbols-outlined text-gold-primary text-[18px]">calendar_month</span>
+<span class="font-label-eyebrow text-label-eyebrow text-gold-primary tracking-widest uppercase">HIZLI RANDEVU &amp; TEKNİK TALEP</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-slate-dark">Showroom veya Çevrimiçi Toplantı</h3>
+<p class="font-body-sm text-body-sm text-slate-muted">
+          Markanızın numune talebi, üretim planlaması veya toptan tedarik şartları için 2 iş saati içinde dönüş alacaksınız.
+        </p>
+</div>
+<form class="flex flex-col gap-space-sm" id="contact-inquiry-form" onsubmit="event.preventDefault(); submitInquiry();">
+<div class="flex flex-col gap-1">
+<label class="font-label-eyebrow text-[10px] text-slate-muted uppercase tracking-wider" for="contact-name">Ad Soyad &amp; Şirket / Marka Ünvanı *</label>
+<input class="w-full h-11 px-3 rounded bg-canvas-subtle text-slate-dark font-body-sm text-[13px] placeholder:text-slate-muted/60 focus:bg-canvas-white focus:outline-none focus:ring-1 focus:ring-gold-primary" id="contact-name" placeholder="Örn: Selin Karaca (Nordic Retail Group)" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="flex flex-col gap-1">
+<label class="font-label-eyebrow text-[10px] text-slate-muted uppercase tracking-wider" for="contact-phone">Telefon / WhatsApp *</label>
+<input class="w-full h-11 px-3 rounded bg-canvas-subtle text-slate-dark font-body-sm text-[13px] placeholder:text-slate-muted/60 focus:bg-canvas-white focus:outline-none focus:ring-1 focus:ring-gold-primary" id="contact-phone" placeholder="+90 5xx xxx xx xx" required="" type="tel"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-eyebrow text-[10px] text-slate-muted uppercase tracking-wider" for="contact-email">Kurumsal E-Posta *</label>
+<input class="w-full h-11 px-3 rounded bg-canvas-subtle text-slate-dark font-body-sm text-[13px] placeholder:text-slate-muted/60 focus:bg-canvas-white focus:outline-none focus:ring-1 focus:ring-gold-primary" id="contact-email" placeholder="ad@marka.com" required="" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-eyebrow text-[10px] text-slate-muted uppercase tracking-wider" for="contact-type">Talep Konusu &amp; İlgi Alanı</label>
+<select class="w-full h-11 px-3 rounded bg-canvas-subtle text-slate-dark font-body-sm text-[13px] focus:bg-canvas-white focus:outline-none focus:ring-1 focus:ring-gold-primary" id="contact-type">
+<option value="showroom">İstanbul Showroom Ziyareti &amp; Numune İncelemesi</option>
+<option value="van-facility">Van Fabrika Yerleşkesi Teknik Denetim Ziyareti</option>
+<option value="rfq-direct">Doğrudan Üretim Fiyatlandırma Teklifi (RFQ)</option>
+<option value="online-meet">Online Zoom / Teams Teknik Ön Toplantı</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-eyebrow text-[10px] text-slate-muted uppercase tracking-wider" for="contact-notes">Tahmini Adet &amp; Özel Notlar</label>
+<textarea class="w-full p-3 rounded bg-canvas-subtle text-slate-dark font-body-sm text-[13px] placeholder:text-slate-muted/60 focus:bg-canvas-white focus:outline-none focus:ring-1 focus:ring-gold-primary resize-none" id="contact-notes" placeholder="Örn: 2.500 adet deniz şortu &amp; keten gömlek üretimi için görüşmek istiyoruz." rows="2"></textarea>
+</div>
+<button class="w-full mt-1 bg-slate-dark hover:bg-slate-mid text-canvas-white rounded-lg py-3.5 px-space-md flex items-center justify-center gap-2 shadow-md active:scale-[0.99] transition-all" id="form-submit-btn" type="submit">
+<span class="font-label-action text-[11px] font-bold tracking-widest uppercase text-canvas-white">TALEBİ İHRACAT MASASINA İLET</span>
+<span class="material-symbols-outlined text-[16px] text-gold-primary">arrow_forward</span>
+</button>
+<div class="hidden mt-2 p-space-sm bg-surface-container rounded-lg flex items-center gap-space-sm" id="form-success-banner">
+<span class="material-symbols-outlined text-gold-primary text-[20px] shrink-0">check_circle</span>
+<p class="font-body-sm text-[12px] text-slate-dark">
+            Talebiniz kaydedildi. Sedat Üzümcü ve teknik ekip en geç 2 saat içinde iletişime geçecektir.
+          </p>
+</div>
+</form>
+</div>
+</div>
+<!-- Global Certifications & Standards Strip -->
+<div class="px-margin-mobile mt-space-sm mb-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-[10px] text-gold-primary uppercase tracking-widest">AKREDİTE KALİTE STANDARTLARI</span>
+<span class="font-label-action text-[10px] text-slate-muted tracking-wider uppercase">ULUSLARARASI ONAY</span>
+</div>
+<div class="grid grid-cols-4 gap-space-xs">
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex flex-col items-center justify-center gap-1 shadow-sm text-center">
+<span class="material-symbols-outlined text-slate-dark text-[22px]">verified_user</span>
+<span class="font-label-eyebrow text-[9px] font-bold text-slate-dark tracking-tight">ISO 9001</span>
+<span class="text-[8px] text-slate-muted leading-tight">Yönetim Kalitesi</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex flex-col items-center justify-center gap-1 shadow-sm text-center">
+<span class="material-symbols-outlined text-slate-dark text-[22px]">eco</span>
+<span class="font-label-eyebrow text-[9px] font-bold text-slate-dark tracking-tight">OEKO-TEX</span>
+<span class="text-[8px] text-slate-muted leading-tight">Standard 100</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex flex-col items-center justify-center gap-1 shadow-sm text-center">
+<span class="material-symbols-outlined text-slate-dark text-[22px]">nest_eco_leaf</span>
+<span class="font-label-eyebrow text-[9px] font-bold text-slate-dark tracking-tight">GOTS</span>
+<span class="text-[8px] text-slate-muted leading-tight">Organik Tekstil</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex flex-col items-center justify-center gap-1 shadow-sm text-center">
+<span class="material-symbols-outlined text-slate-dark text-[22px]">handshake</span>
+<span class="font-label-eyebrow text-[9px] font-bold text-slate-dark tracking-tight">BSCI</span>
+<span class="text-[8px] text-slate-muted leading-tight">Sosyal Denetim</span>
+</div>
+</div>
+</div>
+<!-- Executive Trust Quote Footer Note -->
+<div class="px-margin-mobile mb-space-md">
+<div class="bg-canvas-subtle p-space-md rounded-xl flex flex-col gap-1.5 text-center">
+<span class="font-label-eyebrow text-[10px] text-gold-deep uppercase tracking-widest">GÜVEN VE ŞEFFAFLIK PROTOKOLÜ</span>
+<p class="font-body-sm text-[12px] text-slate-muted leading-relaxed">
+        Tüm numune, tasarım ve sipariş verileriniz BSN Textile gizlilik sözleşmesi (NDA) çerçevesinde korunmaktadır. Ziyaret öncesinde teknik ekibimiz gerekli güvenlik akreditasyonunu tamamlar.
+      </p>
+</div>
+</div>
+</div>
+<script>
+  function switchHub(hub) {
+    const pIstanbul = document.getElementById('hub-panel-istanbul');
+    const pVan = document.getElementById('hub-panel-van');
+    const bIstanbul = document.getElementById('tab-btn-istanbul');
+    const bVan = document.getElementById('tab-btn-van');
+
+    if (hub === 'istanbul') {
+      pIstanbul.classList.remove('hidden');
+      pVan.classList.add('hidden');
+      bIstanbul.className = 'flex-1 py-2 px-space-xs rounded-md text-center font-label-action text-[11px] font-bold uppercase transition-all bg-canvas-white text-slate-dark shadow-sm';
+      bVan.className = 'flex-1 py-2 px-space-xs rounded-md text-center font-label-action text-[11px] font-bold uppercase transition-all text-slate-muted hover:text-slate-dark';
+    } else {
+      pVan.classList.remove('hidden');
+      pIstanbul.classList.add('hidden');
+      bVan.className = 'flex-1 py-2 px-space-xs rounded-md text-center font-label-action text-[11px] font-bold uppercase transition-all bg-canvas-white text-slate-dark shadow-sm';
+      bIstanbul.className = 'flex-1 py-2 px-space-xs rounded-md text-center font-label-action text-[11px] font-bold uppercase transition-all text-slate-muted hover:text-slate-dark';
+    }
+  }
+
+  function submitInquiry() {
+    const btn = document.getElementById('form-submit-btn');
+    const banner = document.getElementById('form-success-banner');
+    if (!btn || !banner) return;
+    
+    btn.disabled = true;
+    btn.classList.add('opacity-60');
+    btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[16px]">progress_activity</span> <span class="font-label-action text-[11px] tracking-widest uppercase">GÖNDERİLİYOR...</span>';
+    
+    setTimeout(() => {
+      btn.classList.add('hidden');
+      banner.classList.remove('hidden');
+    }, 700);
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-canvas-white/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.06)]" data-active-classes="text-gold-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[48px] h-12 text-slate-muted hover:text-slate-dark transition-all" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-eyebrow text-[10px] tracking-wider uppercase">Ana Sayfa</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[48px] h-12 text-slate-muted hover:text-slate-dark transition-all" data-path="products-catalogue" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-eyebrow text-[10px] tracking-wider uppercase">Katalog</span></a><a class="relative -top-2 flex flex-col items-center justify-center gap-0.5 px-3 py-1.5 rounded-lg bg-slate-dark text-canvas-white shadow-[0_4px_12px_rgba(15,23,42,0.2)] hover:bg-slate-mid transition-all" data-path="rfq-quick-quote" href="#"><span class="material-symbols-outlined text-[20px] text-gold-primary">request_quote</span><span class="font-label-action text-[9px] text-canvas-white tracking-widest uppercase">RFQ AL ↗</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[48px] h-12 text-slate-muted hover:text-slate-dark transition-all" data-path="production-specs" href="#"><span class="material-symbols-outlined text-[22px]">precision_manufacturing</span><span class="font-label-eyebrow text-[10px] tracking-wider uppercase">Üretim</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[48px] h-12 transition-all text-gold-primary font-bold" data-path="contact-inquiry" href="#"><span class="material-symbols-outlined text-[22px]">call</span><span class="font-label-eyebrow text-[10px] tracking-wider uppercase">İletişim</span></a></div></nav></body></html>
